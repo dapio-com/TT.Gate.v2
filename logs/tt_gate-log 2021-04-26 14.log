@@ -1,0 +1,220 @@
+2021-04-26 14:43:32.685 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-04-26 14:43:32 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.123    
+HOST_PORT               : 10011           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-04-26 14:43:55.442 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-04-26 14:43:55 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.123    
+HOST_PORT               : 10011           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-04-26 14:44:15.915 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-04-26 14:44:15 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : false           
+FUEL_SERVICE_IP         : 192.168.101.200 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.123    
+HOST_PORT               : 10011           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-04-26 14:44:54.965 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-04-26 14:44:54 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 192.168.101.200 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.123    
+HOST_PORT               : 10011           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-04-26 14:53:47.932 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2624
+2021-04-26 14:53:48.272 [INFO ] [T 192.168.101.228:2624   ] [                   main.util.Reader] - 192.168.101.228:2624 RECEIVING FROM TERMINAL ...
+2021-04-26 14:53:48.545 [INFO ] [T 192.168.101.228:2624   ] [                   main.util.Reader] - 192.168.101.228:2624 324 BYTES FROM TERMINAL RECEIVED
+2021-04-26 14:53:48.673 [INFO ] [T 192.168.101.228:2624   ] [               main.data.DataParser] - 192.168.101.228:2624 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-04-26 14:53:48.690 [INFO ] [T 192.168.101.228:2624   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0320
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000001
+								field 7  [DATE_TIME]         = 0426150130
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210426150130
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 6711910012474430=24016261976800000414
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000001234
+								field 49 [CURRENCY_CODE]     = 700
+								field 52 [PIN]               = F9 FA 7B 12 4A 25 83 7B
+								field 55 [EMV_DATA]          = 01 79 4F 07 A0 00 00 00 04 30 60 5F 2A 02 07 00 71 00 72 00 82 02 39 00 84 07 A0 00 00 00 04 30 60 91 00 95 05 00 00 04 00 00 9A 03 21 04 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 00 01 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 10 A0 40 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 32 31 32 30 32 36 39 33 9F 26 08 BC 61 F8 B0 25 86 A5 AB 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 02 00 00 9F 35 01 22 9F 36 02 00 6B 9F 37 04 75 5B A4 43 9F 41 03 00 00 00 9F 6E 07 07 95 00 00 30 30 00 9F 53 01 52 5F 34 01 01
+								
+2021-04-26 14:53:48.742 [INFO ] [T 192.168.101.228:2624   ] [      main.builders.SendBackBuilder] - 192.168.101.228:2624 [TID] 60009296 SEND_BACK 0210 (000) BUILD COMPLETED
+2021-04-26 14:53:48.759 [INFO ] [T 192.168.101.228:2624   ] [                   main.util.Sender] - 192.168.101.228:2624 [TID] 60009296 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 36 37 31 31 39 31 30 30 31 32 34 37 34 34 
+												33 30 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 30 30 31 32 36 30 34 31 34 35 33 34 38 30 30 
+												30 30 30 31 32 31 32 36 30 34 31 34 35 33 34 38 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 36 
+												30 30 30 39 32 39 36 37 30 30
+												TO TERMINAL OK ! 0.816 sec.
+
+2021-04-26 14:56:09.464 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-04-26 14:56:09 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 192.168.101.200 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.123    
+HOST_PORT               : 10011           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-04-26 14:56:27.601 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2625
+2021-04-26 14:56:27.606 [INFO ] [T 192.168.101.228:2625   ] [                   main.util.Reader] - 192.168.101.228:2625 RECEIVING FROM TERMINAL ...
+2021-04-26 14:56:28.227 [INFO ] [T 192.168.101.228:2625   ] [                   main.util.Reader] - 192.168.101.228:2625 324 BYTES FROM TERMINAL RECEIVED
+2021-04-26 14:56:28.242 [INFO ] [T 192.168.101.228:2625   ] [               main.data.DataParser] - 192.168.101.228:2625 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-04-26 14:56:28.246 [INFO ] [T 192.168.101.228:2625   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0320
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000015
+								field 7  [DATE_TIME]         = 0426150412
+								field 11 [STAN]              = 000002
+								field 12 [DATE_TIME_LOCAL]   = 210426150412
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 6711910012474430=24016261976800000414
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000001234
+								field 49 [CURRENCY_CODE]     = 700
+								field 52 [PIN]               = F9 FA 7B 12 4A 25 83 7B
+								field 55 [EMV_DATA]          = 01 79 4F 07 A0 00 00 00 04 30 60 5F 2A 02 07 00 71 00 72 00 82 02 39 00 84 07 A0 00 00 00 04 30 60 91 00 95 05 00 00 04 10 00 9A 03 21 04 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 00 15 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 10 A0 40 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 32 31 32 30 32 36 39 33 9F 26 08 FC B9 E5 7A 5A 8C F7 8D 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 02 00 00 9F 35 01 22 9F 36 02 00 6C 9F 37 04 68 41 B5 9B 9F 41 03 00 00 01 9F 6E 07 07 95 00 00 30 30 00 9F 53 01 52 5F 34 01 01
+								
+2021-04-26 14:56:30.280 [ERROR] [T 192.168.101.228:2625   ] [  main.connections.ToHostConnection] - 192.168.101.228:2625 [TID] 60009296 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.TermHandleThread.run(TermHandleThread.java:368)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-04-26 14:56:30.296 [INFO ] [T 192.168.101.228:2625   ] [      main.builders.SendBackBuilder] - 192.168.101.228:2625 [TID] 60009296 SEND_BACK 0210 (700) BUILD COMPLETED
+2021-04-26 14:56:30.299 [INFO ] [T 192.168.101.228:2625   ] [                   main.util.Sender] - 192.168.101.228:2625 [TID] 60009296 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 36 37 31 31 39 31 30 30 31 32 34 37 34 34 
+												33 30 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 30 31 35 32 36 30 34 31 34 35 36 33 30 30 30 
+												30 30 30 32 32 31 32 36 30 34 31 34 35 36 33 30 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 30 30 36 
+												30 30 30 39 32 39 36 37 30 30
+												TO TERMINAL OK ! 2.693 sec.
+

@@ -1,0 +1,220 @@
+2021-04-08 12:24:00.509 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2581
+2021-04-08 12:24:00.514 [INFO ] [T 192.168.101.228:2581   ] [                   main.util.Reader] - 192.168.101.228:2581 RECEIVING FROM TERMINAL ...
+2021-04-08 12:24:01.115 [INFO ] [T 192.168.101.228:2581   ] [                   main.util.Reader] - 192.168.101.228:2581 307 BYTES FROM TERMINAL RECEIVED
+2021-04-08 12:24:01.116 [INFO ] [T 192.168.101.228:2581   ] [               main.data.DataParser] - 192.168.101.228:2581 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-04-08 12:24:01.117 [INFO ] [T 192.168.101.228:2581   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0303
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000100
+								field 7  [DATE_TIME]         = 0408123143
+								field 11 [STAN]              = 000008
+								field 12 [DATE_TIME_LOCAL]   = 210408123143
+								field 22 [POS_ENTRY_MOE]     = 059
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934111000216249=59036011287400000014
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000012334
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 50 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 40 40 00 10 00 9A 03 21 04 08 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 10 A5 00 03 02 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 32 31 32 30 32 36 39 33 9F 26 08 67 47 5A F4 23 8B D0 13 9F 27 01 80 9F 33 03 E0 F8 C8 9F 34 03 41 00 02 9F 35 01 22 9F 36 02 05 66 9F 37 04 F0 BC C5 DD 9F 41 03 00 00 07 9F 6E 00 5F 34 01 01
+								
+2021-04-08 12:24:02.153 [INFO ] [T 192.168.101.228:2581   ] [  main.connections.ToHostConnection] - 192.168.101.228:2581 [TID] 60009296 TO HOST CONNECTED
+2021-04-08 12:24:02.154 [INFO ] [T 192.168.101.228:2581   ] [                   main.util.Sender] - 192.168.101.228:2581 [TID] 60009296 0200 = 307 BYTES >>> TO HOST
+
+												30 33 30 33 30 32 30 30 32 30 05 80 20 C0 82 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												30 30 30 34 30 38 31 32 33 31 34 33 30 30 30 30 
+												30 38 32 31 30 34 30 38 31 32 33 31 34 33 30 35 
+												39 32 30 30 30 30 33 37 39 39 33 34 31 31 31 30 
+												30 30 32 31 36 32 34 39 3D 35 39 30 33 36 30 31 
+												31 32 38 37 34 30 30 30 30 30 30 31 34 36 30 30 
+												30 39 32 39 36 30 30 30 30 30 30 30 30 30 30 31 
+												32 33 33 34 39 33 34 01 70 4F 08 43 42 54 20 43 
+												61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 50 00 
+												84 08 43 42 54 20 43 61 72 64 91 00 95 05 40 40 
+												00 10 00 9A 03 21 04 08 9B 02 E8 00 9C 01 00 9F 
+												02 06 00 00 00 00 01 00 9F 03 06 00 00 00 00 00 
+												00 9F 09 02 00 02 9F 10 12 01 10 A5 00 03 02 00 
+												00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 
+												9F 1E 08 32 31 32 30 32 36 39 33 9F 26 08 67 47 
+												5A F4 23 8B D0 13 9F 27 01 80 9F 33 03 E0 F8 C8 
+												9F 34 03 41 00 02 9F 35 01 22 9F 36 02 05 66 9F 
+												37 04 F0 BC C5 DD 9F 41 03 00 00 07 9F 6E 00 5F 
+												34 01 01
+												TO HOST OK ! 1.641 sec.
+
+2021-04-08 12:24:02.155 [INFO ] [T 192.168.101.228:2581   ] [                   main.util.Reader] - 192.168.101.228:2581 [TID] 60009296 RECEIVING FROM HOST ...
+2021-04-08 12:24:03.253 [INFO ] [T 192.168.101.228:2581   ] [                   main.util.Reader] - 192.168.101.228:2581 [TID] 60009296 130 BYTES FROM HOST RECEIVED
+2021-04-08 12:24:03.253 [INFO ] [T 192.168.101.228:2581   ] [               main.data.DataParser] - 192.168.101.228:2581 [TID] 60009296 DATA FROM HOST PARSED
+2021-04-08 12:24:03.253 [INFO ] [T 192.168.101.228:2581   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0126
+								         [MTI]               = 0210
+								field 2  [PAN]               = 9934111000216249
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000100
+								field 7  [DATE_TIME]         = 0408123157
+								field 11 [STAN]              = 000008
+								field 12 [DATE_TIME_LOCAL]   = 210408123143
+								field 37 [RET_REF_NUM]       = 001191154618
+								field 38 [APPROVAL_NUM]      = 154618
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60009296
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 16 91 0A A5 D6 B9 31 BC 4A 3F F4 00 10 8A 02 30 30
+								
+2021-04-08 12:24:03.254 [INFO ] [T 192.168.101.228:2581   ] [                   main.util.Sender] - 192.168.101.228:2581 [TID] 60009296 0210 = 130 BYTES >>> TO TERMINAL
+
+												30 31 32 36 30 32 31 30 72 30 00 00 0E 80 82 00 
+												31 36 39 39 33 34 31 31 31 30 30 30 32 31 36 32 
+												34 39 30 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 30 30 34 30 38 31 32 33 31 35 37 30 30 
+												30 30 30 38 32 31 30 34 30 38 31 32 33 31 34 33 
+												30 30 31 31 39 31 31 35 34 36 31 38 31 35 34 36 
+												31 38 30 30 30 36 30 30 30 39 32 39 36 39 33 34 
+												00 16 91 0A A5 D6 B9 31 BC 4A 3F F4 00 10 8A 02 
+												30 30
+												TO TERMINAL OK ! 2.74 sec.
+
+2021-04-08 12:24:03.589 [ERROR] [T 192.168.101.228:2581   ] [            main.repo.OperationRepo] - 192.168.101.228:2581 ERROR: UNABLE TO GET ORG_ID SOMETHING WRONG WITH DB ! :( 
+org.postgresql.util.PSQLException: ОШИБКА: отношение "terminals" не существует
+  Позиция: 75
+2021-04-08 12:24:03.591 [ERROR] [T 192.168.101.228:2581   ] [                   main.repo.SaveOp] - 192.168.101.228:2581 ERROR: TRYING TO SAVE 0200 OPERATION ! :(
+org.postgresql.util.PSQLException: Этот Sstatement был закрыт.
+	at org.postgresql.jdbc.PgStatement.checkClosed(PgStatement.java:694)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:293)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:270)
+	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:244)
+	at main.repo.OperationRepo.savePurchaseToDB(OperationRepo.java:112)
+	at main.repo.SaveOp.savePurchase(SaveOp.java:24)
+	at main.repo.SaveOp.saveOperationToDB(SaveOp.java:81)
+	at main.TermHandleThread.run(TermHandleThread.java:407)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-04-08 12:24:19.978 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2582
+2021-04-08 12:24:19.978 [INFO ] [T 192.168.101.228:2582   ] [                   main.util.Reader] - 192.168.101.228:2582 RECEIVING FROM TERMINAL ...
+2021-04-08 12:24:20.590 [INFO ] [T 192.168.101.228:2582   ] [                   main.util.Reader] - 192.168.101.228:2582 147 BYTES FROM TERMINAL RECEIVED
+2021-04-08 12:24:20.590 [INFO ] [T 192.168.101.228:2582   ] [               main.data.DataParser] - 192.168.101.228:2582 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-04-08 12:24:20.590 [INFO ] [T 192.168.101.228:2582   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0143
+								         [MTI]               = 0400
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000100
+								field 7  [DATE_TIME]         = 0408123206
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210408123143
+								field 22 [POS_ENTRY_MOE]     = 056
+								field 24 [FUNC_CODE]         = 400
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934111000216249=59036011287400000014
+								field 37 [RET_REF_NUM]       = 001191154618
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000012334
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-04-08 12:24:22.604 [ERROR] [T 192.168.101.228:2582   ] [  main.connections.ToHostConnection] - 192.168.101.228:2582 [TID] 60009296 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.TermHandleThread.run(TermHandleThread.java:343)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-04-08 12:24:45.379 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2583
+2021-04-08 12:24:45.381 [INFO ] [T 192.168.101.228:2583   ] [                   main.util.Reader] - 192.168.101.228:2583 RECEIVING FROM TERMINAL ...
+2021-04-08 12:24:46.007 [INFO ] [T 192.168.101.228:2583   ] [                   main.util.Reader] - 192.168.101.228:2583 147 BYTES FROM TERMINAL RECEIVED
+2021-04-08 12:24:46.008 [INFO ] [T 192.168.101.228:2583   ] [               main.data.DataParser] - 192.168.101.228:2583 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-04-08 12:24:46.008 [INFO ] [T 192.168.101.228:2583   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0143
+								         [MTI]               = 0400
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000100
+								field 7  [DATE_TIME]         = 0408123232
+								field 11 [STAN]              = 000010
+								field 12 [DATE_TIME_LOCAL]   = 210408123143
+								field 22 [POS_ENTRY_MOE]     = 056
+								field 24 [FUNC_CODE]         = 400
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934111000216249=59036011287400000014
+								field 37 [RET_REF_NUM]       = 001191154618
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000012334
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-04-08 12:24:46.773 [INFO ] [T 192.168.101.228:2583   ] [  main.connections.ToHostConnection] - 192.168.101.228:2583 [TID] 60009296 TO HOST CONNECTED
+2021-04-08 12:24:46.774 [INFO ] [T 192.168.101.228:2583   ] [                   main.util.Sender] - 192.168.101.228:2583 [TID] 60009296 0400 = 147 BYTES >>> TO HOST
+
+												30 31 34 33 30 34 30 30 32 30 05 80 28 C0 80 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												30 30 30 34 30 38 31 32 33 32 33 32 30 30 30 30 
+												31 30 32 31 30 34 30 38 31 32 33 31 34 33 30 35 
+												36 34 30 30 30 30 33 37 39 39 33 34 31 31 31 30 
+												30 30 32 31 36 32 34 39 3D 35 39 30 33 36 30 31 
+												31 32 38 37 34 30 30 30 30 30 30 31 34 30 30 31 
+												31 39 31 31 35 34 36 31 38 36 30 30 30 39 32 39 
+												36 30 30 30 30 30 30 30 30 30 30 31 32 33 33 34 
+												39 33 34
+												TO HOST OK ! 1.392 sec.
+
+2021-04-08 12:24:46.774 [INFO ] [T 192.168.101.228:2583   ] [                   main.util.Reader] - 192.168.101.228:2583 [TID] 60009296 RECEIVING FROM HOST ...
+2021-04-08 12:24:47.382 [INFO ] [T 192.168.101.228:2583   ] [                   main.util.Reader] - 192.168.101.228:2583 [TID] 60009296 112 BYTES FROM HOST RECEIVED
+2021-04-08 12:24:47.383 [INFO ] [T 192.168.101.228:2583   ] [               main.data.DataParser] - 192.168.101.228:2583 [TID] 60009296 DATA FROM HOST PARSED
+2021-04-08 12:24:47.383 [INFO ] [T 192.168.101.228:2583   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0108
+								         [MTI]               = 0410
+								field 2  [PAN]               = 9934111000216249
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000100
+								field 7  [DATE_TIME]         = 0408123241
+								field 11 [STAN]              = 000010
+								field 12 [DATE_TIME_LOCAL]   = 210408123143
+								field 37 [RET_REF_NUM]       = 001191154618
+								field 38 [APPROVAL_NUM]      = 154618
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60009296
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-04-08 12:24:47.384 [INFO ] [T 192.168.101.228:2583   ] [                   main.util.Sender] - 192.168.101.228:2583 [TID] 60009296 0410 = 112 BYTES >>> TO TERMINAL
+
+												30 31 30 38 30 34 31 30 72 30 00 00 0E 80 80 00 
+												31 36 39 39 33 34 31 31 31 30 30 30 32 31 36 32 
+												34 39 30 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 30 30 34 30 38 31 32 33 32 34 31 30 30 
+												30 30 31 30 32 31 30 34 30 38 31 32 33 31 34 33 
+												30 30 31 31 39 31 31 35 34 36 31 38 31 35 34 36 
+												31 38 30 30 30 36 30 30 30 39 32 39 36 39 33 34 
+												TO TERMINAL OK ! 2.003 sec.
+
+2021-04-08 12:24:47.448 [ERROR] [T 192.168.101.228:2583   ] [            main.repo.OperationRepo] - 192.168.101.228:2583 ERROR: UNABLE TO GET ORG_ID SOMETHING WRONG WITH DB ! :( 
+org.postgresql.util.PSQLException: ОШИБКА: отношение "terminals" не существует
+  Позиция: 75
+2021-04-08 12:24:47.449 [ERROR] [T 192.168.101.228:2583   ] [                   main.repo.SaveOp] - 192.168.101.228:2583 ERROR: TRYING TO SAVE 0400 OPERATION ! :(
+org.postgresql.util.PSQLException: Этот Sstatement был закрыт.
+	at org.postgresql.jdbc.PgStatement.checkClosed(PgStatement.java:694)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:303)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:293)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:270)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:266)
+	at main.repo.OperationRepo.saveCancelToDB(OperationRepo.java:142)
+	at main.repo.SaveOp.saveCancel(SaveOp.java:56)
+	at main.repo.SaveOp.saveOperationToDB(SaveOp.java:84)
+	at main.TermHandleThread.run(TermHandleThread.java:407)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

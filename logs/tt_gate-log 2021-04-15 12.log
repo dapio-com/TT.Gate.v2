@@ -1,0 +1,184 @@
+2021-04-15 12:14:38.387 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-04-15 12:14:38 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7775            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-04-15 12:23:22.942 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-04-15 12:23:22 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7775            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-04-15 12:26:01.978 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-04-15 12:26:01 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-04-15 12:31:17.805 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.190:54662
+2021-04-15 12:31:18.498 [INFO ] [T 192.168.101.190:54662  ] [                   main.util.Reader] - 192.168.101.190:54662 RECEIVING FROM TERMINAL ...
+2021-04-15 12:31:37.391 [INFO ] [T 192.168.101.190:54662  ] [                   main.util.Reader] - 192.168.101.190:54662 1 BYTES FROM TERMINAL RECEIVED
+2021-04-15 12:32:27.299 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.190:54712
+2021-04-15 12:32:27.302 [INFO ] [T 192.168.101.190:54712  ] [                   main.util.Reader] - 192.168.101.190:54712 RECEIVING FROM TERMINAL ...
+2021-04-15 12:32:30.327 [ERROR] [T 192.168.101.190:54712  ] [                   main.util.Reader] - 192.168.101.190:54712 ERROR: READ SOURCE ( TERMINAL ) HAS LINK DROP DOWN OR READ ERROR !
+2021-04-15 12:32:30.327 [ERROR] [T 192.168.101.190:54712  ] [                   main.util.Reader] - 192.168.101.190:54712 ERROR: CAN`T GET BYTES FROM TERMINAL !
+
+2021-04-15 12:32:30.328 [ERROR] [T 192.168.101.190:54712  ] [      main.services.TerminalService] - 192.168.101.190:54712 ERROR: READ BYTES FROM TERMINAL ERROR
+
+java.lang.Exception: RETURNED -1
+	at main.util.Reader.readFrom(Reader.java:46)
+	at main.services.TerminalService.readBytes(TerminalService.java:108)
+	at main.TermHandleThread.run(TermHandleThread.java:165)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-04-15 12:33:03.361 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2594
+2021-04-15 12:33:03.361 [INFO ] [T 192.168.101.228:2594   ] [                   main.util.Reader] - 192.168.101.228:2594 RECEIVING FROM TERMINAL ...
+2021-04-15 12:33:03.668 [INFO ] [T 192.168.101.228:2594   ] [                   main.util.Reader] - 192.168.101.228:2594 64 BYTES FROM TERMINAL RECEIVED
+2021-04-15 12:33:03.826 [INFO ] [T 192.168.101.228:2594   ] [               main.data.DataParser] - 192.168.101.228:2594 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-04-15 12:33:03.842 [INFO ] [T 192.168.101.228:2594   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0060
+								         [MTI]               = 0800
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0415124049
+								field 11 [STAN]              = 000008
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000001234
+								
+2021-04-15 12:33:05.026 [INFO ] [T 192.168.101.228:2594   ] [  main.connections.ToHostConnection] - 192.168.101.228:2594 [TID] 60009296 TO HOST CONNECTED
+2021-04-15 12:33:05.089 [INFO ] [T 192.168.101.228:2594   ] [                   main.util.Sender] - 192.168.101.228:2594 [TID] 60009296 0800 = 64 BYTES >>> TO HOST
+
+												30 30 36 30 30 38 30 30 22 20 01 00 00 C0 00 00 
+												39 39 30 30 30 30 30 34 31 35 31 32 34 30 34 39 
+												30 30 30 30 30 38 38 33 31 36 30 30 30 39 32 39 
+												36 30 30 30 30 30 30 30 30 30 30 30 31 32 33 34 
+												TO HOST OK ! 1.724 sec.
+
+2021-04-15 12:33:05.089 [INFO ] [T 192.168.101.228:2594   ] [                   main.util.Reader] - 192.168.101.228:2594 [TID] 60009296 RECEIVING FROM HOST ...
+2021-04-15 12:33:05.446 [INFO ] [T 192.168.101.228:2594   ] [                   main.util.Reader] - 192.168.101.228:2594 [TID] 60009296 61 BYTES FROM HOST RECEIVED
+2021-04-15 12:33:05.447 [INFO ] [T 192.168.101.228:2594   ] [               main.data.DataParser] - 192.168.101.228:2594 [TID] 60009296 DATA FROM HOST PARSED
+2021-04-15 12:33:05.448 [INFO ] [T 192.168.101.228:2594   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0057
+								         [MTI]               = 0810
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0415124101
+								field 11 [STAN]              = 000008
+								field 37 [RET_REF_NUM]       =             
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60009296
+								
+2021-04-15 12:33:05.449 [INFO ] [T 192.168.101.228:2594   ] [                   main.util.Sender] - 192.168.101.228:2594 [TID] 60009296 0810 = 61 BYTES >>> TO TERMINAL
+
+												30 30 35 37 30 38 31 30 22 20 00 00 0A 80 00 00 
+												39 39 30 30 30 30 30 34 31 35 31 32 34 31 30 31 
+												30 30 30 30 30 38 20 20 20 20 20 20 20 20 20 20 
+												20 20 30 30 30 36 30 30 30 39 32 39 36
+												TO TERMINAL OK ! 2.086 sec.
+
+2021-04-15 12:33:36.594 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2595
+2021-04-15 12:33:36.596 [INFO ] [T 192.168.101.228:2595   ] [                   main.util.Reader] - 192.168.101.228:2595 RECEIVING FROM TERMINAL ...
+2021-04-15 12:33:36.915 [INFO ] [T 192.168.101.228:2595   ] [                   main.util.Reader] - 192.168.101.228:2595 64 BYTES FROM TERMINAL RECEIVED
+2021-04-15 12:33:36.917 [INFO ] [T 192.168.101.228:2595   ] [               main.data.DataParser] - 192.168.101.228:2595 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-04-15 12:33:36.917 [INFO ] [T 192.168.101.228:2595   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0060
+								         [MTI]               = 0800
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0415124131
+								field 11 [STAN]              = 000009
+								field 24 [FUNC_CODE]         = 811
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000001234
+								
+2021-04-15 12:33:37.175 [INFO ] [T 192.168.101.228:2595   ] [  main.connections.ToHostConnection] - 192.168.101.228:2595 [TID] 60009296 TO HOST CONNECTED
+2021-04-15 12:33:37.175 [INFO ] [T 192.168.101.228:2595   ] [                   main.util.Sender] - 192.168.101.228:2595 [TID] 60009296 0800 = 64 BYTES >>> TO HOST
+
+												30 30 36 30 30 38 30 30 22 20 01 00 00 C0 00 00 
+												39 39 30 30 30 30 30 34 31 35 31 32 34 31 33 31 
+												30 30 30 30 30 39 38 31 31 36 30 30 30 39 32 39 
+												36 30 30 30 30 30 30 30 30 30 30 30 31 32 33 34 
+												TO HOST OK ! 0.579 sec.
+
+2021-04-15 12:33:37.176 [INFO ] [T 192.168.101.228:2595   ] [                   main.util.Reader] - 192.168.101.228:2595 [TID] 60009296 RECEIVING FROM HOST ...
+2021-04-15 12:33:37.714 [INFO ] [T 192.168.101.228:2595   ] [                   main.util.Reader] - 192.168.101.228:2595 [TID] 60009296 79 BYTES FROM HOST RECEIVED
+2021-04-15 12:33:37.715 [INFO ] [T 192.168.101.228:2595   ] [               main.data.DataParser] - 192.168.101.228:2595 [TID] 60009296 DATA FROM HOST PARSED
+2021-04-15 12:33:37.715 [INFO ] [T 192.168.101.228:2595   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0075
+								         [MTI]               = 0810
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0415124133
+								field 11 [STAN]              = 000009
+								field 37 [RET_REF_NUM]       =             
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60009296
+								field 53 [SECURITY INFO]     = 51 BD 86 0C F5 E1 EC 7B 2D EB E7 BF DA D6 3E EF
+								
+2021-04-15 12:33:37.715 [INFO ] [T 192.168.101.228:2595   ] [                   main.util.Sender] - 192.168.101.228:2595 [TID] 60009296 0810 = 79 BYTES >>> TO TERMINAL
+
+												30 30 37 35 30 38 31 30 22 20 00 00 0A 80 08 00 
+												39 39 30 30 30 30 30 34 31 35 31 32 34 31 33 33 
+												30 30 30 30 30 39 20 20 20 20 20 20 20 20 20 20 
+												20 20 30 30 30 36 30 30 30 39 32 39 36 31 36 51 
+												BD 86 0C F5 E1 EC 7B 2D EB E7 BF DA D6 3E EF
+												TO TERMINAL OK ! 1.119 sec.
+

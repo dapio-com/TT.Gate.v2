@@ -1,0 +1,367 @@
+2021-07-14 09:00:13.391 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:00:13 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 09:01:24.496 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:01:24 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 09:03:03.914 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:03:03 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 09:03:34.049 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:03:34 
+ 
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 09:04:03.779 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:04:03 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 09:05:01.246 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:05:01 
+ 
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 09:05:12.666 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:05:12 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 09:49:48.501 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:49:48 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 09:50:04.327 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:25665
+2021-07-14 09:50:04.333 [INFO ] [T 192.168.101.200:25665  ] [                   main.util.Reader] - 192.168.101.200:25665 RECEIVING FROM TERMINAL ...
+2021-07-14 09:50:04.369 [INFO ] [T 192.168.101.200:25665  ] [                   main.util.Reader] - 192.168.101.200:25665 82 BYTES FROM TERMINAL RECEIVED
+2021-07-14 09:50:04.381 [INFO ] [T 192.168.101.200:25665  ] [               main.data.DataParser] - 192.168.101.200:25665 [TID] 70000143 DATA FROM TERMINAL PARSED
+2021-07-14 09:50:04.383 [INFO ] [T 192.168.101.200:25665  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0078
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 990000
+								field 4  [AMOUNT]            = 000000000001
+								field 7  [DATE_TIME]         = 1111094200
+								field 11 [STAN]              = 000001
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 70000143
+								field 42 [MID]               = 000000000003336
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-07-14 09:50:06.396 [ERROR] [T 192.168.101.200:25665  ] [  main.connections.ToHostConnection] - 192.168.101.200:25665 [TID] 70000143 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.TermHandleThread.run(TermHandleThread.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-14 09:58:24.026 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:58:24 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 09:58:29.296 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:26121
+2021-07-14 09:58:29.301 [INFO ] [T 192.168.101.200:26121  ] [                   main.util.Reader] - 192.168.101.200:26121 RECEIVING FROM TERMINAL ...
+2021-07-14 09:58:29.331 [INFO ] [T 192.168.101.200:26121  ] [                   main.util.Reader] - 192.168.101.200:26121 64 BYTES FROM TERMINAL RECEIVED
+2021-07-14 09:58:29.339 [INFO ] [T 192.168.101.200:26121  ] [               main.data.DataParser] - 192.168.101.200:26121 [TID] 70000143 DATA FROM TERMINAL PARSED
+2021-07-14 09:58:29.340 [INFO ] [T 192.168.101.200:26121  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0060
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 1111094200
+								field 11 [STAN]              = 000001
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 70000143
+								field 42 [MID]               = 000000000003336
+								
+2021-07-14 09:58:36.429 [ERROR] [T 192.168.101.200:26121  ] [  main.connections.ToHostConnection] - 192.168.101.200:26121 [TID] 70000143 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:71)
+	at main.TermHandleThread.run(TermHandleThread.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-14 09:59:31.946 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 09:59:31 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+

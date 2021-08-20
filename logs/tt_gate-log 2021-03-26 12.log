@@ -1,0 +1,1374 @@
+2021-03-26 12:00:35.616 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4533
+2021-03-26 12:00:35.626 [INFO ] [T 192.168.101.228:4533   ] [                   main.util.Reader] - 192.168.101.228:4533 RECEIVING FROM TERMINAL ...
+2021-03-26 12:00:35.681 [INFO ] [T 192.168.101.228:4533   ] [                   main.util.Reader] - 192.168.101.228:4533 64 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:00:35.699 [INFO ] [T 192.168.101.228:4533   ] [               main.data.DataParser] - 192.168.101.228:4533 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:00:35.701 [INFO ] [T 192.168.101.228:4533   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0060
+								         [MTI]               = 0800
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0326120824
+								field 11 [STAN]              = 000002
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								
+2021-03-26 12:00:35.971 [INFO ] [T 192.168.101.228:4533   ] [  main.connections.ToHostConnection] - 192.168.101.228:4533 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:00:35.981 [INFO ] [T 192.168.101.228:4533   ] [                   main.util.Sender] - 192.168.101.228:4533 [TID] 60001666 0800 = 64 BYTES >>> TO HOST
+
+												30 30 36 30 30 38 30 30 22 20 01 00 00 C0 00 00 
+												39 39 30 30 30 30 30 33 32 36 31 32 30 38 32 34 
+												30 30 30 30 30 32 38 33 31 36 30 30 30 31 36 36 
+												36 30 30 30 30 30 30 30 30 30 30 30 37 37 36 37 
+												TO HOST OK ! 0.354 sec.
+
+2021-03-26 12:00:35.981 [INFO ] [T 192.168.101.228:4533   ] [                   main.util.Reader] - 192.168.101.228:4533 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:00:36.450 [INFO ] [T 192.168.101.228:4533   ] [                   main.util.Reader] - 192.168.101.228:4533 [TID] 60001666 61 BYTES FROM HOST RECEIVED
+2021-03-26 12:00:36.451 [INFO ] [T 192.168.101.228:4533   ] [               main.data.DataParser] - 192.168.101.228:4533 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:00:36.452 [INFO ] [T 192.168.101.228:4533   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0057
+								         [MTI]               = 0810
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0326120827
+								field 11 [STAN]              = 000002
+								field 37 [RET_REF_NUM]       =             
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								
+2021-03-26 12:00:36.453 [INFO ] [T 192.168.101.228:4533   ] [                   main.util.Sender] - 192.168.101.228:4533 [TID] 60001666 0810 = 61 BYTES >>> TO TERMINAL
+
+												30 30 35 37 30 38 31 30 22 20 00 00 0A 80 00 00 
+												39 39 30 30 30 30 30 33 32 36 31 32 30 38 32 37 
+												30 30 30 30 30 32 20 20 20 20 20 20 20 20 20 20 
+												20 20 30 30 30 36 30 30 30 31 36 36 36
+												TO TERMINAL OK ! 0.829 sec.
+
+2021-03-26 12:00:55.657 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4534
+2021-03-26 12:00:55.658 [INFO ] [T 192.168.101.228:4534   ] [                   main.util.Reader] - 192.168.101.228:4534 RECEIVING FROM TERMINAL ...
+2021-03-26 12:00:55.743 [INFO ] [T 192.168.101.228:4534   ] [                   main.util.Reader] - 192.168.101.228:4534 64 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:00:55.743 [INFO ] [T 192.168.101.228:4534   ] [               main.data.DataParser] - 192.168.101.228:4534 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:00:55.743 [INFO ] [T 192.168.101.228:4534   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0060
+								         [MTI]               = 0800
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0326120846
+								field 11 [STAN]              = 000003
+								field 24 [FUNC_CODE]         = 811
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								
+2021-03-26 12:00:56.739 [INFO ] [T 192.168.101.228:4534   ] [  main.connections.ToHostConnection] - 192.168.101.228:4534 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:00:56.740 [INFO ] [T 192.168.101.228:4534   ] [                   main.util.Sender] - 192.168.101.228:4534 [TID] 60001666 0800 = 64 BYTES >>> TO HOST
+
+												30 30 36 30 30 38 30 30 22 20 01 00 00 C0 00 00 
+												39 39 30 30 30 30 30 33 32 36 31 32 30 38 34 36 
+												30 30 30 30 30 33 38 31 31 36 30 30 30 31 36 36 
+												36 30 30 30 30 30 30 30 30 30 30 30 37 37 36 37 
+												TO HOST OK ! 1.083 sec.
+
+2021-03-26 12:00:56.740 [INFO ] [T 192.168.101.228:4534   ] [                   main.util.Reader] - 192.168.101.228:4534 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:00:57.169 [INFO ] [T 192.168.101.228:4534   ] [                   main.util.Reader] - 192.168.101.228:4534 [TID] 60001666 79 BYTES FROM HOST RECEIVED
+2021-03-26 12:00:57.169 [INFO ] [T 192.168.101.228:4534   ] [               main.data.DataParser] - 192.168.101.228:4534 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:00:57.170 [INFO ] [T 192.168.101.228:4534   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0075
+								         [MTI]               = 0810
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0326120847
+								field 11 [STAN]              = 000003
+								field 37 [RET_REF_NUM]       =             
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 53 [SECURITY INFO]     = F6 A4 0C 5C 49 E4 A9 66 18 F1 E9 A2 A6 BC E0 F4
+								
+2021-03-26 12:00:57.170 [INFO ] [T 192.168.101.228:4534   ] [                   main.util.Sender] - 192.168.101.228:4534 [TID] 60001666 0810 = 79 BYTES >>> TO TERMINAL
+
+												30 30 37 35 30 38 31 30 22 20 00 00 0A 80 08 00 
+												39 39 30 30 30 30 30 33 32 36 31 32 30 38 34 37 
+												30 30 30 30 30 33 20 20 20 20 20 20 20 20 20 20 
+												20 20 30 30 30 36 30 30 30 31 36 36 36 31 36 F6 
+												A4 0C 5C 49 E4 A9 66 18 F1 E9 A2 A6 BC E0 F4
+												TO TERMINAL OK ! 1.513 sec.
+
+2021-03-26 12:02:00.560 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4535
+2021-03-26 12:02:00.567 [INFO ] [T 192.168.101.228:4535   ] [                   main.util.Reader] - 192.168.101.228:4535 RECEIVING FROM TERMINAL ...
+2021-03-26 12:02:00.748 [INFO ] [T 192.168.101.228:4535   ] [                   main.util.Reader] - 192.168.101.228:4535 380 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:02:00.749 [INFO ] [T 192.168.101.228:4535   ] [               main.data.DataParser] - 192.168.101.228:4535 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:02:00.751 [INFO ] [T 192.168.101.228:4535   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0376
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000110
+								field 7  [DATE_TIME]         = 0326120904
+								field 11 [STAN]              = 000004
+								field 12 [DATE_TIME_LOCAL]   = 210326120904
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 48 [ADDITIONAL_DATA]   = 100 || RADAR_2015 || 15/AS 123456 || 789456 || 1 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = E6 65 6A 39 D8 88 20 B2
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 10 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 10 24 FD 65 0E DB A3 AB 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 16 9F 37 04 05 05 24 F4 9F 41 03 00 00 03 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:02:02.768 [ERROR] [T 192.168.101.228:4535   ] [  main.connections.ToHostConnection] - 192.168.101.228:4535 [TID] 60001666 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.TermHandleThread.run(TermHandleThread.java:328)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-26 12:02:02.778 [INFO ] [T 192.168.101.228:4535   ] [      main.builders.SendBackBuilder] - 192.168.101.228:4535 [TID] 60001666 SEND_BACK 0210 BUILD COMPLETED
+2021-03-26 12:02:02.779 [INFO ] [T 192.168.101.228:4535   ] [                   main.util.Sender] - 192.168.101.228:4535 [TID] 60001666 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 31 30 32 36 30 33 31 32 30 32 30 32 30 30 
+												30 30 30 34 32 31 32 36 30 33 31 32 30 32 30 32 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 30 30 36 
+												30 30 30 31 36 36 36 39 33 34
+												TO TERMINAL OK ! 2.217 sec.
+
+2021-03-26 12:03:41.653 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4536
+2021-03-26 12:03:41.656 [INFO ] [T 192.168.101.228:4536   ] [                   main.util.Reader] - 192.168.101.228:4536 RECEIVING FROM TERMINAL ...
+2021-03-26 12:03:41.833 [INFO ] [T 192.168.101.228:4536   ] [                   main.util.Reader] - 192.168.101.228:4536 380 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:03:41.834 [INFO ] [T 192.168.101.228:4536   ] [               main.data.DataParser] - 192.168.101.228:4536 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:03:41.835 [INFO ] [T 192.168.101.228:4536   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0376
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000110
+								field 7  [DATE_TIME]         = 0326121100
+								field 11 [STAN]              = 000005
+								field 12 [DATE_TIME_LOCAL]   = 210326121100
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 48 [ADDITIONAL_DATA]   = 100 || RADAR_2015 || 15/AS 123456 || 789456 || 1 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = E6 65 6A 39 D8 88 20 B2
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 10 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 BD E0 F8 3E 9D DD 85 CD 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 17 9F 37 04 07 36 4D 45 9F 41 03 00 00 04 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:03:43.847 [ERROR] [T 192.168.101.228:4536   ] [  main.connections.ToHostConnection] - 192.168.101.228:4536 [TID] 60001666 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.TermHandleThread.run(TermHandleThread.java:328)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-26 12:03:43.848 [INFO ] [T 192.168.101.228:4536   ] [      main.builders.SendBackBuilder] - 192.168.101.228:4536 [TID] 60001666 SEND_BACK 0210 BUILD COMPLETED
+2021-03-26 12:03:43.848 [INFO ] [T 192.168.101.228:4536   ] [                   main.util.Sender] - 192.168.101.228:4536 [TID] 60001666 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 31 30 32 36 30 33 31 32 30 33 34 33 30 30 
+												30 30 30 35 32 31 32 36 30 33 31 32 30 33 34 33 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 30 30 36 
+												30 30 30 31 36 36 36 39 33 34
+												TO TERMINAL OK ! 2.193 sec.
+
+2021-03-26 12:03:59.236 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4537
+2021-03-26 12:03:59.238 [INFO ] [T 192.168.101.228:4537   ] [                   main.util.Reader] - 192.168.101.228:4537 RECEIVING FROM TERMINAL ...
+2021-03-26 12:03:59.296 [INFO ] [T 192.168.101.228:4537   ] [                   main.util.Reader] - 192.168.101.228:4537 64 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:03:59.297 [INFO ] [T 192.168.101.228:4537   ] [               main.data.DataParser] - 192.168.101.228:4537 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:03:59.297 [INFO ] [T 192.168.101.228:4537   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0060
+								         [MTI]               = 0800
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0326121148
+								field 11 [STAN]              = 000006
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								
+2021-03-26 12:04:00.468 [INFO ] [T 192.168.101.228:4537   ] [  main.connections.ToHostConnection] - 192.168.101.228:4537 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:04:00.469 [INFO ] [T 192.168.101.228:4537   ] [                   main.util.Sender] - 192.168.101.228:4537 [TID] 60001666 0800 = 64 BYTES >>> TO HOST
+
+												30 30 36 30 30 38 30 30 22 20 01 00 00 C0 00 00 
+												39 39 30 30 30 30 30 33 32 36 31 32 31 31 34 38 
+												30 30 30 30 30 36 38 33 31 36 30 30 30 31 36 36 
+												36 30 30 30 30 30 30 30 30 30 30 30 37 37 36 37 
+												TO HOST OK ! 1.231 sec.
+
+2021-03-26 12:04:00.469 [INFO ] [T 192.168.101.228:4537   ] [                   main.util.Reader] - 192.168.101.228:4537 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:04:00.888 [INFO ] [T 192.168.101.228:4537   ] [                   main.util.Reader] - 192.168.101.228:4537 [TID] 60001666 61 BYTES FROM HOST RECEIVED
+2021-03-26 12:04:00.889 [INFO ] [T 192.168.101.228:4537   ] [               main.data.DataParser] - 192.168.101.228:4537 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:04:00.895 [INFO ] [T 192.168.101.228:4537   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0057
+								         [MTI]               = 0810
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0326121151
+								field 11 [STAN]              = 000006
+								field 37 [RET_REF_NUM]       =             
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								
+2021-03-26 12:04:00.896 [INFO ] [T 192.168.101.228:4537   ] [                   main.util.Sender] - 192.168.101.228:4537 [TID] 60001666 0810 = 61 BYTES >>> TO TERMINAL
+
+												30 30 35 37 30 38 31 30 22 20 00 00 0A 80 00 00 
+												39 39 30 30 30 30 30 33 32 36 31 32 31 31 35 31 
+												30 30 30 30 30 36 20 20 20 20 20 20 20 20 20 20 
+												20 20 30 30 30 36 30 30 30 31 36 36 36
+												TO TERMINAL OK ! 1.658 sec.
+
+2021-03-26 12:07:00.287 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-26 12:07:00 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7775            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.11     
+HOST_PORT               : 7777            
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-03-26 12:07:29.925 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-26 12:07:29 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7775            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.11     
+HOST_PORT               : 7777            
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-03-26 12:07:52.793 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4538
+2021-03-26 12:07:52.804 [INFO ] [T 192.168.101.228:4538   ] [                   main.util.Reader] - 192.168.101.228:4538 RECEIVING FROM TERMINAL ...
+2021-03-26 12:07:52.974 [INFO ] [T 192.168.101.228:4538   ] [                   main.util.Reader] - 192.168.101.228:4538 380 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:07:52.993 [INFO ] [T 192.168.101.228:4538   ] [               main.data.DataParser] - 192.168.101.228:4538 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:07:52.996 [INFO ] [T 192.168.101.228:4538   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0376
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000110
+								field 7  [DATE_TIME]         = 0326121521
+								field 11 [STAN]              = 000007
+								field 12 [DATE_TIME_LOCAL]   = 210326121521
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 48 [ADDITIONAL_DATA]   = 100 || RADAR_2015 || 15/AS 123456 || 456789 || 1 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = E6 65 6A 39 D8 88 20 B2
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 10 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 D8 80 39 C7 0F 62 55 68 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 18 9F 37 04 DD 7D C2 12 9F 41 03 00 00 06 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:07:53.766 [INFO ] [T 192.168.101.228:4538   ] [  main.connections.ToHostConnection] - 192.168.101.228:4538 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:07:55.692 [INFO ] [T 192.168.101.228:4538   ] [              main.builders.Builder] - 192.168.101.228:4538 [TID] 60001666 0200 BUILD COMPLETED
+2021-03-26 12:07:55.698 [INFO ] [T 192.168.101.228:4538   ] [                   main.util.Sender] - 192.168.101.228:4538 [TID] 60001666 0200 = 315 BYTES >>> TO HOST
+
+												30 33 31 31 30 32 30 30 32 30 05 80 20 C0 92 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												31 30 30 33 32 36 31 32 31 35 32 31 30 30 30 30 
+												30 37 32 31 30 33 32 36 31 32 31 35 32 31 30 35 
+												31 32 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 36 30 30 
+												30 31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 
+												37 37 36 37 39 33 34 E6 65 6A 39 D8 88 20 B2 01 
+												70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 
+												71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 
+												72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 
+												9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 10 
+												9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 
+												12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 
+												00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 
+												32 35 31 9F 26 08 D8 80 39 C7 0F 62 55 68 9F 27 
+												01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 
+												01 11 9F 36 02 03 18 9F 37 04 DD 7D C2 12 9F 41 
+												03 00 00 06 9F 6E 00 5F 34 01 01
+												TO HOST OK ! 2.898 sec.
+
+2021-03-26 12:07:55.699 [INFO ] [T 192.168.101.228:4538   ] [                   main.util.Reader] - 192.168.101.228:4538 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:07:56.556 [INFO ] [T 192.168.101.228:4538   ] [                   main.util.Reader] - 192.168.101.228:4538 [TID] 60001666 130 BYTES FROM HOST RECEIVED
+2021-03-26 12:07:56.557 [INFO ] [T 192.168.101.228:4538   ] [               main.data.DataParser] - 192.168.101.228:4538 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:07:56.557 [INFO ] [T 192.168.101.228:4538   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0126
+								         [MTI]               = 0210
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000110
+								field 7  [DATE_TIME]         = 0326121547
+								field 11 [STAN]              = 000007
+								field 12 [DATE_TIME_LOCAL]   = 210326121521
+								field 37 [RET_REF_NUM]       = 001173481101
+								field 38 [APPROVAL_NUM]      = 041029
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 16 91 0A FC 08 51 EA C3 51 3A 56 00 10 8A 02 30 30
+								
+2021-03-26 12:07:56.558 [INFO ] [T 192.168.101.228:4538   ] [              main.builders.Builder] - 192.168.101.228:4538 [TID] 60001666 0210 BUILD COMPLETED
+2021-03-26 12:07:56.558 [INFO ] [T 192.168.101.228:4538   ] [                   main.util.Sender] - 192.168.101.228:4538 [TID] 60001666 0210 = 130 BYTES >>> TO TERMINAL
+
+												30 31 32 36 30 32 31 30 72 30 00 00 0E 80 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 31 30 30 33 32 36 31 32 31 35 34 37 30 30 
+												30 30 30 37 32 31 30 33 32 36 31 32 31 35 32 31 
+												30 30 31 31 37 33 34 38 31 31 30 31 30 34 31 30 
+												32 39 30 30 30 36 30 30 30 31 36 36 36 39 33 34 
+												00 16 91 0A FC 08 51 EA C3 51 3A 56 00 10 8A 02 
+												30 30
+												TO TERMINAL OK ! 3.76 sec.
+
+2021-03-26 12:07:56.963 [INFO ] [T 192.168.101.228:4538   ] [            main.repo.OperationRepo] - 192.168.101.228:4538 [TID] 60001666 SAVING OPERATION 0200 001173481101 TO DATABASE SUCCESS
+
+2021-03-26 12:08:25.926 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4539
+2021-03-26 12:08:25.927 [INFO ] [T 192.168.101.228:4539   ] [                   main.util.Reader] - 192.168.101.228:4539 RECEIVING FROM TERMINAL ...
+2021-03-26 12:08:26.049 [INFO ] [T 192.168.101.228:4539   ] [                   main.util.Reader] - 192.168.101.228:4539 147 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:08:26.050 [INFO ] [T 192.168.101.228:4539   ] [               main.data.DataParser] - 192.168.101.228:4539 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:08:26.050 [INFO ] [T 192.168.101.228:4539   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0143
+								         [MTI]               = 0400
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000110
+								field 7  [DATE_TIME]         = 0326121609
+								field 11 [STAN]              = 000008
+								field 12 [DATE_TIME_LOCAL]   = 210326121521
+								field 22 [POS_ENTRY_MOE]     = 056
+								field 24 [FUNC_CODE]         = 400
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 37 [RET_REF_NUM]       = 001173481101
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-03-26 12:08:26.816 [INFO ] [T 192.168.101.228:4539   ] [  main.connections.ToHostConnection] - 192.168.101.228:4539 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:08:26.816 [INFO ] [T 192.168.101.228:4539   ] [              main.builders.Builder] - 192.168.101.228:4539 [TID] 60001666 0400 BUILD COMPLETED
+2021-03-26 12:08:26.817 [INFO ] [T 192.168.101.228:4539   ] [                   main.util.Sender] - 192.168.101.228:4539 [TID] 60001666 0400 = 147 BYTES >>> TO HOST
+
+												30 31 34 33 30 34 30 30 32 30 05 80 28 C0 80 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												31 30 30 33 32 36 31 32 31 36 30 39 30 30 30 30 
+												30 38 32 31 30 33 32 36 31 32 31 35 32 31 30 35 
+												36 34 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 30 30 31 
+												31 37 33 34 38 31 31 30 31 36 30 30 30 31 36 36 
+												36 30 30 30 30 30 30 30 30 30 30 30 37 37 36 37 
+												39 33 34
+												TO HOST OK ! 0.89 sec.
+
+2021-03-26 12:08:26.818 [INFO ] [T 192.168.101.228:4539   ] [                   main.util.Reader] - 192.168.101.228:4539 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:08:27.526 [INFO ] [T 192.168.101.228:4539   ] [                   main.util.Reader] - 192.168.101.228:4539 [TID] 60001666 112 BYTES FROM HOST RECEIVED
+2021-03-26 12:08:27.527 [INFO ] [T 192.168.101.228:4539   ] [               main.data.DataParser] - 192.168.101.228:4539 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:08:27.527 [INFO ] [T 192.168.101.228:4539   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0108
+								         [MTI]               = 0410
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000110
+								field 7  [DATE_TIME]         = 0326121618
+								field 11 [STAN]              = 000008
+								field 12 [DATE_TIME_LOCAL]   = 210326121521
+								field 37 [RET_REF_NUM]       = 001173481101
+								field 38 [APPROVAL_NUM]      = 041029
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-03-26 12:08:27.527 [INFO ] [T 192.168.101.228:4539   ] [              main.builders.Builder] - 192.168.101.228:4539 [TID] 60001666 0410 BUILD COMPLETED
+2021-03-26 12:08:27.527 [INFO ] [T 192.168.101.228:4539   ] [                   main.util.Sender] - 192.168.101.228:4539 [TID] 60001666 0410 = 112 BYTES >>> TO TERMINAL
+
+												30 31 30 38 30 34 31 30 72 30 00 00 0E 80 80 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 31 30 30 33 32 36 31 32 31 36 31 38 30 30 
+												30 30 30 38 32 31 30 33 32 36 31 32 31 35 32 31 
+												30 30 31 31 37 33 34 38 31 31 30 31 30 34 31 30 
+												32 39 30 30 30 36 30 30 30 31 36 36 36 39 33 34 
+												TO TERMINAL OK ! 1.6 sec.
+
+2021-03-26 12:08:27.596 [INFO ] [T 192.168.101.228:4539   ] [            main.repo.OperationRepo] - 192.168.101.228:4539 [TID] 60001666 SAVING OPERATION 0400 001173481101 TO DATABASE SUCCESS
+
+2021-03-26 12:08:29.602 [ERROR] [T 192.168.101.228:4539   ] [  main.connections.ToHostConnection] - 192.168.101.228:4539 [TID] 60001666 ERROR: CAN`T CONNECT TO DAYHAN_SERVICE
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.repo.SaveOp.saveCancel(SaveOp.java:59)
+	at main.repo.SaveOp.saveOperationToDB(SaveOp.java:84)
+	at main.TermHandleThread.run(TermHandleThread.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-26 12:08:29.643 [INFO ] [T 192.168.101.228:4539   ] [              main.builders.Builder] - 192.168.101.228:4539 [TID] 60001666 CNCL BUILD COMPLETED
+2021-03-26 12:08:29.645 [ERROR] [T 192.168.101.228:4539   ] [                   main.util.Sender] - 192.168.101.228:4539 [TID] 60001666 CNCL = 56 BYTES >>>
+
+												30 30 35 32 43 4E 43 4C 64 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 30 31 31 30 30 30 31 31 
+												37 33 34 38 31 31 30 31
+												CAN`T SEND TO DAYHAN_SERVICE !
+java.lang.NullPointerException
+	at main.util.Sender.sendTo(Sender.java:18)
+	at main.services.DayhanService.sendTo(DayhanService.java:84)
+	at main.repo.SaveOp.saveCancel(SaveOp.java:61)
+	at main.repo.SaveOp.saveOperationToDB(SaveOp.java:84)
+	at main.TermHandleThread.run(TermHandleThread.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-26 12:08:31.656 [ERROR] [T 192.168.101.228:4539   ] [  main.connections.ToHostConnection] - 192.168.101.228:4539 [TID] 60001666 ERROR: CAN`T CONNECT TO FUEL_SERVICE
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.repo.SaveOp.saveCancel(SaveOp.java:66)
+	at main.repo.SaveOp.saveOperationToDB(SaveOp.java:84)
+	at main.TermHandleThread.run(TermHandleThread.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-26 12:10:32.232 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-26 12:10:32 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : false           
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7775            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.11     
+HOST_PORT               : 7777            
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-03-26 12:36:54.213 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-26 12:36:54 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : false           
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7775            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.11     
+HOST_PORT               : 7777            
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-03-26 12:37:22.765 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4540
+2021-03-26 12:37:22.769 [INFO ] [T 192.168.101.228:4540   ] [                   main.util.Reader] - 192.168.101.228:4540 RECEIVING FROM TERMINAL ...
+2021-03-26 12:37:22.942 [INFO ] [T 192.168.101.228:4540   ] [                   main.util.Reader] - 192.168.101.228:4540 380 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:37:22.956 [INFO ] [T 192.168.101.228:4540   ] [               main.data.DataParser] - 192.168.101.228:4540 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:37:22.959 [INFO ] [T 192.168.101.228:4540   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0376
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326124445
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210326124445
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 48 [ADDITIONAL_DATA]   = 100 || RADAR_2015 || 15/AS 123456 || 789456 || 1 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = E6 65 6A 39 D8 88 20 B2
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 01 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 25 3E E7 A8 1A B9 04 1E 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 1B 9F 37 04 95 68 7E DD 9F 41 03 00 00 08 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:37:24.079 [INFO ] [T 192.168.101.228:4540   ] [  main.connections.ToHostConnection] - 192.168.101.228:4540 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:37:24.083 [INFO ] [T 192.168.101.228:4540   ] [              main.builders.Builder] - 192.168.101.228:4540 [TID] 60001666 0200 BUILD COMPLETED
+2021-03-26 12:37:24.087 [INFO ] [T 192.168.101.228:4540   ] [                   main.util.Sender] - 192.168.101.228:4540 [TID] 60001666 0200 = 315 BYTES >>> TO HOST
+
+												30 33 31 31 30 32 30 30 32 30 05 80 20 C0 92 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												30 31 30 33 32 36 31 32 34 34 34 35 30 30 30 30 
+												30 39 32 31 30 33 32 36 31 32 34 34 34 35 30 35 
+												31 32 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 36 30 30 
+												30 31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 
+												37 37 36 37 39 33 34 E6 65 6A 39 D8 88 20 B2 01 
+												70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 
+												71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 
+												72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 
+												9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 01 
+												9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 
+												12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 
+												00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 
+												32 35 31 9F 26 08 25 3E E7 A8 1A B9 04 1E 9F 27 
+												01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 
+												01 11 9F 36 02 03 1B 9F 37 04 95 68 7E DD 9F 41 
+												03 00 00 08 9F 6E 00 5F 34 01 01
+												TO HOST OK ! 1.318 sec.
+
+2021-03-26 12:37:24.087 [INFO ] [T 192.168.101.228:4540   ] [                   main.util.Reader] - 192.168.101.228:4540 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:37:25.259 [INFO ] [T 192.168.101.228:4540   ] [                   main.util.Reader] - 192.168.101.228:4540 [TID] 60001666 167 BYTES FROM HOST RECEIVED
+2021-03-26 12:37:25.259 [INFO ] [T 192.168.101.228:4540   ] [               main.data.DataParser] - 192.168.101.228:4540 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:37:25.260 [INFO ] [T 192.168.101.228:4540   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0163
+								         [MTI]               = 0210
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326124515
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210326124445
+								field 37 [RET_REF_NUM]       = 001173517298
+								field 38 [APPROVAL_NUM]      = 042867
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 46 null = 00934D0000010061000000D00000100934
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 16 91 0A 04 2E 22 77 E9 BD 4B F7 00 10 8A 02 30 30
+								
+2021-03-26 12:37:25.260 [INFO ] [T 192.168.101.228:4540   ] [              main.builders.Builder] - 192.168.101.228:4540 [TID] 60001666 0210 BUILD COMPLETED
+2021-03-26 12:37:25.261 [INFO ] [T 192.168.101.228:4540   ] [                   main.util.Sender] - 192.168.101.228:4540 [TID] 60001666 0210 = 164 BYTES >>> TO TERMINAL
+
+												30 31 36 30 30 32 31 30 72 30 00 00 0E 84 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 31 30 33 32 36 31 32 34 35 31 35 30 30 
+												30 30 30 39 32 31 30 33 32 36 31 32 34 34 34 35 
+												30 30 31 31 37 33 35 31 37 32 39 38 30 34 32 38 
+												36 37 30 30 30 36 30 30 30 31 36 36 36 30 30 39 
+												33 34 44 30 30 30 30 30 31 30 30 36 31 30 30 30 
+												30 30 30 44 30 30 30 30 30 31 30 30 39 33 34 39 
+												33 34 00 16 91 0A 04 2E 22 77 E9 BD 4B F7 00 10 
+												8A 02 30 30
+												TO TERMINAL OK ! 2.493 sec.
+
+2021-03-26 12:37:25.480 [INFO ] [T 192.168.101.228:4540   ] [            main.repo.OperationRepo] - 192.168.101.228:4540 [TID] 60001666 SAVING OPERATION 0200 001173517298 TO DATABASE SUCCESS
+
+2021-03-26 12:37:28.894 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4541
+2021-03-26 12:37:28.895 [INFO ] [T 192.168.101.228:4541   ] [                   main.util.Reader] - 192.168.101.228:4541 RECEIVING FROM TERMINAL ...
+2021-03-26 12:37:28.943 [INFO ] [T 192.168.101.228:4541   ] [                   main.util.Reader] - 192.168.101.228:4541 307 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:37:28.944 [INFO ] [T 192.168.101.228:4541   ] [               main.data.DataParser] - 192.168.101.228:4541 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:37:28.945 [INFO ] [T 192.168.101.228:4541   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0303
+								         [MTI]               = 0400
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326124445
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210326124445
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 400
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 01 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 25 3E E7 A8 1A B9 04 1E 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 1B 9F 37 04 95 68 7E DD 9F 41 03 00 00 08 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:37:29.139 [INFO ] [T 192.168.101.228:4541   ] [  main.connections.ToHostConnection] - 192.168.101.228:4541 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:37:29.139 [INFO ] [T 192.168.101.228:4541   ] [              main.builders.Builder] - 192.168.101.228:4541 [TID] 60001666 0400 BUILD COMPLETED
+2021-03-26 12:37:29.140 [INFO ] [T 192.168.101.228:4541   ] [                   main.util.Sender] - 192.168.101.228:4541 [TID] 60001666 0400 = 307 BYTES >>> TO HOST
+
+												30 33 30 33 30 34 30 30 32 30 05 80 20 C0 82 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												30 31 30 33 32 36 31 32 34 34 34 35 30 30 30 30 
+												30 39 32 31 30 33 32 36 31 32 34 34 34 35 30 35 
+												31 34 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 36 30 30 
+												30 31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 
+												37 37 36 37 39 33 34 01 70 4F 08 43 42 54 20 43 
+												61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 
+												84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 
+												04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 
+												02 06 00 00 00 00 01 01 9F 03 06 00 00 00 00 00 
+												00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 
+												00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 
+												9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 25 3E 
+												E7 A8 1A B9 04 1E 9F 27 01 80 9F 33 03 E0 40 C8 
+												9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 1B 9F 
+												37 04 95 68 7E DD 9F 41 03 00 00 08 9F 6E 00 5F 
+												34 01 01
+												TO HOST OK ! 0.244 sec.
+
+2021-03-26 12:37:29.140 [INFO ] [T 192.168.101.228:4541   ] [                   main.util.Reader] - 192.168.101.228:4541 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:37:31.088 [INFO ] [T 192.168.101.228:4541   ] [                   main.util.Reader] - 192.168.101.228:4541 [TID] 60001666 123 BYTES FROM HOST RECEIVED
+2021-03-26 12:37:31.089 [INFO ] [T 192.168.101.228:4541   ] [               main.data.DataParser] - 192.168.101.228:4541 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:37:31.089 [INFO ] [T 192.168.101.228:4541   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0119
+								         [MTI]               = 0410
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326124520
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210326124445
+								field 37 [RET_REF_NUM]       = 001173517298
+								field 38 [APPROVAL_NUM]      = 042867
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 09 9F 36 02 03 1B 8A 02 30 30
+								
+2021-03-26 12:37:31.090 [INFO ] [T 192.168.101.228:4541   ] [              main.builders.Builder] - 192.168.101.228:4541 [TID] 60001666 0410 BUILD COMPLETED
+2021-03-26 12:37:31.090 [INFO ] [T 192.168.101.228:4541   ] [                   main.util.Sender] - 192.168.101.228:4541 [TID] 60001666 0410 = 123 BYTES >>> TO TERMINAL
+
+												30 31 31 39 30 34 31 30 72 30 00 00 0E 80 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 31 30 33 32 36 31 32 34 35 32 30 30 30 
+												30 30 30 39 32 31 30 33 32 36 31 32 34 34 34 35 
+												30 30 31 31 37 33 35 31 37 32 39 38 30 34 32 38 
+												36 37 30 30 30 36 30 30 30 31 36 36 36 39 33 34 
+												00 09 9F 36 02 03 1B 8A 02 30 30
+												TO TERMINAL OK ! 2.195 sec.
+
+2021-03-26 12:37:31.161 [INFO ] [T 192.168.101.228:4541   ] [            main.repo.OperationRepo] - 192.168.101.228:4541 [TID] 60001666 SAVING OPERATION 0400 001173517298 TO DATABASE SUCCESS
+
+2021-03-26 12:39:58.961 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4542
+2021-03-26 12:39:58.963 [INFO ] [T 192.168.101.228:4542   ] [                   main.util.Reader] - 192.168.101.228:4542 RECEIVING FROM TERMINAL ...
+2021-03-26 12:39:59.156 [INFO ] [T 192.168.101.228:4542   ] [                   main.util.Reader] - 192.168.101.228:4542 380 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:39:59.157 [INFO ] [T 192.168.101.228:4542   ] [               main.data.DataParser] - 192.168.101.228:4542 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:39:59.158 [INFO ] [T 192.168.101.228:4542   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0376
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326124730
+								field 11 [STAN]              = 000010
+								field 12 [DATE_TIME_LOCAL]   = 210326124730
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 48 [ADDITIONAL_DATA]   = 100 || RADAR_2015 || 15/AS 123456 || 789456 || 1 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = E6 65 6A 39 D8 88 20 B2
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 01 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 2F EA 8B B7 EB 3A 79 EC 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 1C 9F 37 04 43 34 F0 C8 9F 41 03 00 00 09 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:40:00.407 [INFO ] [T 192.168.101.228:4542   ] [  main.connections.ToHostConnection] - 192.168.101.228:4542 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:40:00.408 [INFO ] [T 192.168.101.228:4542   ] [              main.builders.Builder] - 192.168.101.228:4542 [TID] 60001666 0200 BUILD COMPLETED
+2021-03-26 12:40:00.409 [INFO ] [T 192.168.101.228:4542   ] [                   main.util.Sender] - 192.168.101.228:4542 [TID] 60001666 0200 = 315 BYTES >>> TO HOST
+
+												30 33 31 31 30 32 30 30 32 30 05 80 20 C0 92 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												30 31 30 33 32 36 31 32 34 37 33 30 30 30 30 30 
+												31 30 32 31 30 33 32 36 31 32 34 37 33 30 30 35 
+												31 32 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 36 30 30 
+												30 31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 
+												37 37 36 37 39 33 34 E6 65 6A 39 D8 88 20 B2 01 
+												70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 
+												71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 
+												72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 
+												9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 01 
+												9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 
+												12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 
+												00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 
+												32 35 31 9F 26 08 2F EA 8B B7 EB 3A 79 EC 9F 27 
+												01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 
+												01 11 9F 36 02 03 1C 9F 37 04 43 34 F0 C8 9F 41 
+												03 00 00 09 9F 6E 00 5F 34 01 01
+												TO HOST OK ! 1.447 sec.
+
+2021-03-26 12:40:00.410 [INFO ] [T 192.168.101.228:4542   ] [                   main.util.Reader] - 192.168.101.228:4542 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:40:01.478 [INFO ] [T 192.168.101.228:4542   ] [                   main.util.Reader] - 192.168.101.228:4542 [TID] 60001666 167 BYTES FROM HOST RECEIVED
+2021-03-26 12:40:01.478 [INFO ] [T 192.168.101.228:4542   ] [               main.data.DataParser] - 192.168.101.228:4542 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:40:01.478 [INFO ] [T 192.168.101.228:4542   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0163
+								         [MTI]               = 0210
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326124751
+								field 11 [STAN]              = 000010
+								field 12 [DATE_TIME_LOCAL]   = 210326124730
+								field 37 [RET_REF_NUM]       = 001173520333
+								field 38 [APPROVAL_NUM]      = 043057
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 46 null = 00934D0000010061000000D00000100934
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 16 91 0A 0B BF ED 7D 23 7E AC BB 00 10 8A 02 30 30
+								
+2021-03-26 12:40:01.478 [INFO ] [T 192.168.101.228:4542   ] [              main.builders.Builder] - 192.168.101.228:4542 [TID] 60001666 0210 BUILD COMPLETED
+2021-03-26 12:40:01.479 [INFO ] [T 192.168.101.228:4542   ] [                   main.util.Sender] - 192.168.101.228:4542 [TID] 60001666 0210 = 164 BYTES >>> TO TERMINAL
+
+												30 31 36 30 30 32 31 30 72 30 00 00 0E 84 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 31 30 33 32 36 31 32 34 37 35 31 30 30 
+												30 30 31 30 32 31 30 33 32 36 31 32 34 37 33 30 
+												30 30 31 31 37 33 35 32 30 33 33 33 30 34 33 30 
+												35 37 30 30 30 36 30 30 30 31 36 36 36 30 30 39 
+												33 34 44 30 30 30 30 30 31 30 30 36 31 30 30 30 
+												30 30 30 44 30 30 30 30 30 31 30 30 39 33 34 39 
+												33 34 00 16 91 0A 0B BF ED 7D 23 7E AC BB 00 10 
+												8A 02 30 30
+												TO TERMINAL OK ! 2.516 sec.
+
+2021-03-26 12:40:01.550 [INFO ] [T 192.168.101.228:4542   ] [            main.repo.OperationRepo] - 192.168.101.228:4542 [TID] 60001666 SAVING OPERATION 0200 001173520333 TO DATABASE SUCCESS
+
+2021-03-26 12:40:05.087 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4543
+2021-03-26 12:40:05.088 [INFO ] [T 192.168.101.228:4543   ] [                   main.util.Reader] - 192.168.101.228:4543 RECEIVING FROM TERMINAL ...
+2021-03-26 12:40:05.136 [INFO ] [T 192.168.101.228:4543   ] [                   main.util.Reader] - 192.168.101.228:4543 307 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:40:05.136 [INFO ] [T 192.168.101.228:4543   ] [               main.data.DataParser] - 192.168.101.228:4543 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:40:05.137 [INFO ] [T 192.168.101.228:4543   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0303
+								         [MTI]               = 0400
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326124730
+								field 11 [STAN]              = 000010
+								field 12 [DATE_TIME_LOCAL]   = 210326124730
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 400
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 01 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 2F EA 8B B7 EB 3A 79 EC 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 1C 9F 37 04 43 34 F0 C8 9F 41 03 00 00 09 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:40:05.597 [INFO ] [T 192.168.101.228:4543   ] [  main.connections.ToHostConnection] - 192.168.101.228:4543 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:40:05.597 [INFO ] [T 192.168.101.228:4543   ] [              main.builders.Builder] - 192.168.101.228:4543 [TID] 60001666 0400 BUILD COMPLETED
+2021-03-26 12:40:05.598 [INFO ] [T 192.168.101.228:4543   ] [                   main.util.Sender] - 192.168.101.228:4543 [TID] 60001666 0400 = 307 BYTES >>> TO HOST
+
+												30 33 30 33 30 34 30 30 32 30 05 80 20 C0 82 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												30 31 30 33 32 36 31 32 34 37 33 30 30 30 30 30 
+												31 30 32 31 30 33 32 36 31 32 34 37 33 30 30 35 
+												31 34 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 36 30 30 
+												30 31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 
+												37 37 36 37 39 33 34 01 70 4F 08 43 42 54 20 43 
+												61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 
+												84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 
+												04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 
+												02 06 00 00 00 00 01 01 9F 03 06 00 00 00 00 00 
+												00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 
+												00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 
+												9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 2F EA 
+												8B B7 EB 3A 79 EC 9F 27 01 80 9F 33 03 E0 40 C8 
+												9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 1C 9F 
+												37 04 43 34 F0 C8 9F 41 03 00 00 09 9F 6E 00 5F 
+												34 01 01
+												TO HOST OK ! 0.51 sec.
+
+2021-03-26 12:40:05.598 [INFO ] [T 192.168.101.228:4543   ] [                   main.util.Reader] - 192.168.101.228:4543 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:40:07.598 [INFO ] [T 192.168.101.228:4543   ] [                   main.util.Reader] - 192.168.101.228:4543 [TID] 60001666 123 BYTES FROM HOST RECEIVED
+2021-03-26 12:40:07.598 [INFO ] [T 192.168.101.228:4543   ] [               main.data.DataParser] - 192.168.101.228:4543 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:40:07.598 [INFO ] [T 192.168.101.228:4543   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0119
+								         [MTI]               = 0410
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326124757
+								field 11 [STAN]              = 000010
+								field 12 [DATE_TIME_LOCAL]   = 210326124730
+								field 37 [RET_REF_NUM]       = 001173520333
+								field 38 [APPROVAL_NUM]      = 043057
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 09 9F 36 02 03 1C 8A 02 30 30
+								
+2021-03-26 12:40:07.599 [INFO ] [T 192.168.101.228:4543   ] [              main.builders.Builder] - 192.168.101.228:4543 [TID] 60001666 0410 BUILD COMPLETED
+2021-03-26 12:40:07.599 [INFO ] [T 192.168.101.228:4543   ] [                   main.util.Sender] - 192.168.101.228:4543 [TID] 60001666 0410 = 123 BYTES >>> TO TERMINAL
+
+												30 31 31 39 30 34 31 30 72 30 00 00 0E 80 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 31 30 33 32 36 31 32 34 37 35 37 30 30 
+												30 30 31 30 32 31 30 33 32 36 31 32 34 37 33 30 
+												30 30 31 31 37 33 35 32 30 33 33 33 30 34 33 30 
+												35 37 30 30 30 36 30 30 30 31 36 36 36 39 33 34 
+												00 09 9F 36 02 03 1C 8A 02 30 30
+												TO TERMINAL OK ! 2.51 sec.
+
+2021-03-26 12:40:07.669 [INFO ] [T 192.168.101.228:4543   ] [            main.repo.OperationRepo] - 192.168.101.228:4543 [TID] 60001666 SAVING OPERATION 0400 001173520333 TO DATABASE SUCCESS
+
+2021-03-26 12:40:21.509 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-26 12:40:21 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : false           
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7775            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.11     
+HOST_PORT               : 7777            
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-03-26 12:48:10.679 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4544
+2021-03-26 12:48:10.690 [INFO ] [T 192.168.101.228:4544   ] [                   main.util.Reader] - 192.168.101.228:4544 RECEIVING FROM TERMINAL ...
+2021-03-26 12:48:10.857 [INFO ] [T 192.168.101.228:4544   ] [                   main.util.Reader] - 192.168.101.228:4544 380 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:48:10.874 [INFO ] [T 192.168.101.228:4544   ] [               main.data.DataParser] - 192.168.101.228:4544 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:48:10.878 [INFO ] [T 192.168.101.228:4544   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0376
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326125535
+								field 11 [STAN]              = 000011
+								field 12 [DATE_TIME_LOCAL]   = 210326125535
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 48 [ADDITIONAL_DATA]   = 100 || RADAR_2015 || 15/AS 123123 || 456456 || 2 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = E6 65 6A 39 D8 88 20 B2
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 01 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 63 46 79 0A CD 81 2F 0F 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 1D 9F 37 04 67 B5 DF 0C 9F 41 03 00 00 10 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:48:11.554 [INFO ] [T 192.168.101.228:4544   ] [  main.connections.ToHostConnection] - 192.168.101.228:4544 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:48:11.557 [INFO ] [T 192.168.101.228:4544   ] [              main.builders.Builder] - 192.168.101.228:4544 [TID] 60001666 0200 BUILD COMPLETED
+2021-03-26 12:48:11.562 [INFO ] [T 192.168.101.228:4544   ] [                   main.util.Sender] - 192.168.101.228:4544 [TID] 60001666 0200 = 315 BYTES >>> TO HOST
+
+												30 33 31 31 30 32 30 30 32 30 05 80 20 C0 92 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												30 31 30 33 32 36 31 32 35 35 33 35 30 30 30 30 
+												31 31 32 31 30 33 32 36 31 32 35 35 33 35 30 35 
+												31 32 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 36 30 30 
+												30 31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 
+												37 37 36 37 39 33 34 E6 65 6A 39 D8 88 20 B2 01 
+												70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 
+												71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 
+												72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 
+												9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 01 
+												9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 
+												12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 
+												00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 
+												32 35 31 9F 26 08 63 46 79 0A CD 81 2F 0F 9F 27 
+												01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 
+												01 11 9F 36 02 03 1D 9F 37 04 67 B5 DF 0C 9F 41 
+												03 00 00 10 9F 6E 00 5F 34 01 01
+												TO HOST OK ! 0.875 sec.
+
+2021-03-26 12:48:11.562 [INFO ] [T 192.168.101.228:4544   ] [                   main.util.Reader] - 192.168.101.228:4544 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:48:12.435 [INFO ] [T 192.168.101.228:4544   ] [                   main.util.Reader] - 192.168.101.228:4544 [TID] 60001666 167 BYTES FROM HOST RECEIVED
+2021-03-26 12:48:12.436 [INFO ] [T 192.168.101.228:4544   ] [               main.data.DataParser] - 192.168.101.228:4544 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:48:12.437 [INFO ] [T 192.168.101.228:4544   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0163
+								         [MTI]               = 0210
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326125603
+								field 11 [STAN]              = 000011
+								field 12 [DATE_TIME_LOCAL]   = 210326125535
+								field 37 [RET_REF_NUM]       = 001173529180
+								field 38 [APPROVAL_NUM]      = 043574
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 46 [FEES]              = 00934D0000010061000000D00000100934
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 16 91 0A 1D DD 7B 12 1D 4A A2 D0 00 10 8A 02 30 30
+								
+2021-03-26 12:48:12.438 [INFO ] [T 192.168.101.228:4544   ] [              main.builders.Builder] - 192.168.101.228:4544 [TID] 60001666 0210 BUILD COMPLETED
+2021-03-26 12:48:12.439 [INFO ] [T 192.168.101.228:4544   ] [                   main.util.Sender] - 192.168.101.228:4544 [TID] 60001666 0210 = 164 BYTES >>> TO TERMINAL
+
+												30 31 36 30 30 32 31 30 72 30 00 00 0E 84 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 31 30 33 32 36 31 32 35 36 30 33 30 30 
+												30 30 31 31 32 31 30 33 32 36 31 32 35 35 33 35 
+												30 30 31 31 37 33 35 32 39 31 38 30 30 34 33 35 
+												37 34 30 30 30 36 30 30 30 31 36 36 36 30 30 39 
+												33 34 44 30 30 30 30 30 31 30 30 36 31 30 30 30 
+												30 30 30 44 30 30 30 30 30 31 30 30 39 33 34 39 
+												33 34 00 16 91 0A 1D DD 7B 12 1D 4A A2 D0 00 10 
+												8A 02 30 30
+												TO TERMINAL OK ! 1.753 sec.
+
+2021-03-26 12:48:12.664 [INFO ] [T 192.168.101.228:4544   ] [            main.repo.OperationRepo] - 192.168.101.228:4544 [TID] 60001666 SAVING OPERATION 0200 001173529180 TO DATABASE SUCCESS
+
+2021-03-26 12:48:16.048 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4545
+2021-03-26 12:48:16.049 [INFO ] [T 192.168.101.228:4545   ] [                   main.util.Reader] - 192.168.101.228:4545 RECEIVING FROM TERMINAL ...
+2021-03-26 12:48:16.097 [INFO ] [T 192.168.101.228:4545   ] [                   main.util.Reader] - 192.168.101.228:4545 307 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:48:16.098 [INFO ] [T 192.168.101.228:4545   ] [               main.data.DataParser] - 192.168.101.228:4545 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:48:16.098 [INFO ] [T 192.168.101.228:4545   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0303
+								         [MTI]               = 0400
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326125535
+								field 11 [STAN]              = 000011
+								field 12 [DATE_TIME_LOCAL]   = 210326125535
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 400
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 01 01 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 63 46 79 0A CD 81 2F 0F 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 1D 9F 37 04 67 B5 DF 0C 9F 41 03 00 00 10 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:48:16.573 [INFO ] [T 192.168.101.228:4545   ] [  main.connections.ToHostConnection] - 192.168.101.228:4545 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:48:16.573 [INFO ] [T 192.168.101.228:4545   ] [              main.builders.Builder] - 192.168.101.228:4545 [TID] 60001666 0400 BUILD COMPLETED
+2021-03-26 12:48:16.575 [INFO ] [T 192.168.101.228:4545   ] [                   main.util.Sender] - 192.168.101.228:4545 [TID] 60001666 0400 = 307 BYTES >>> TO HOST
+
+												30 33 30 33 30 34 30 30 32 30 05 80 20 C0 82 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												30 31 30 33 32 36 31 32 35 35 33 35 30 30 30 30 
+												31 31 32 31 30 33 32 36 31 32 35 35 33 35 30 35 
+												31 34 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 36 30 30 
+												30 31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 
+												37 37 36 37 39 33 34 01 70 4F 08 43 42 54 20 43 
+												61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 
+												84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 
+												04 80 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 
+												02 06 00 00 00 00 01 01 9F 03 06 00 00 00 00 00 
+												00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 
+												00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 
+												9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 63 46 
+												79 0A CD 81 2F 0F 9F 27 01 80 9F 33 03 E0 40 C8 
+												9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 1D 9F 
+												37 04 67 B5 DF 0C 9F 41 03 00 00 10 9F 6E 00 5F 
+												34 01 01
+												TO HOST OK ! 0.526 sec.
+
+2021-03-26 12:48:16.575 [INFO ] [T 192.168.101.228:4545   ] [                   main.util.Reader] - 192.168.101.228:4545 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:48:17.543 [INFO ] [T 192.168.101.228:4545   ] [                   main.util.Reader] - 192.168.101.228:4545 [TID] 60001666 123 BYTES FROM HOST RECEIVED
+2021-03-26 12:48:17.543 [INFO ] [T 192.168.101.228:4545   ] [               main.data.DataParser] - 192.168.101.228:4545 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:48:17.544 [INFO ] [T 192.168.101.228:4545   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0119
+								         [MTI]               = 0410
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000101
+								field 7  [DATE_TIME]         = 0326125608
+								field 11 [STAN]              = 000011
+								field 12 [DATE_TIME_LOCAL]   = 210326125535
+								field 37 [RET_REF_NUM]       = 001173529180
+								field 38 [APPROVAL_NUM]      = 043574
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 09 9F 36 02 03 1D 8A 02 30 30
+								
+2021-03-26 12:48:17.544 [INFO ] [T 192.168.101.228:4545   ] [              main.builders.Builder] - 192.168.101.228:4545 [TID] 60001666 0410 BUILD COMPLETED
+2021-03-26 12:48:17.544 [INFO ] [T 192.168.101.228:4545   ] [                   main.util.Sender] - 192.168.101.228:4545 [TID] 60001666 0410 = 123 BYTES >>> TO TERMINAL
+
+												30 31 31 39 30 34 31 30 72 30 00 00 0E 80 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 31 30 33 32 36 31 32 35 36 30 38 30 30 
+												30 30 31 31 32 31 30 33 32 36 31 32 35 35 33 35 
+												30 30 31 31 37 33 35 32 39 31 38 30 30 34 33 35 
+												37 34 30 30 30 36 30 30 30 31 36 36 36 39 33 34 
+												00 09 9F 36 02 03 1D 8A 02 30 30
+												TO TERMINAL OK ! 1.495 sec.
+
+2021-03-26 12:48:17.612 [INFO ] [T 192.168.101.228:4545   ] [            main.repo.OperationRepo] - 192.168.101.228:4545 [TID] 60001666 SAVING OPERATION 0400 001173529180 TO DATABASE SUCCESS
+
+2021-03-26 12:55:03.213 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4546
+2021-03-26 12:55:03.216 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Reader] - 192.168.101.228:4546 RECEIVING FROM TERMINAL ...
+2021-03-26 12:55:03.338 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Reader] - 192.168.101.228:4546 67 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:55:03.339 [INFO ] [T 192.168.101.228:4546   ] [               main.data.DataParser] - 192.168.101.228:4546 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:55:03.340 [INFO ] [T 192.168.101.228:4546   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0063
+								         [MTI]               = 0520
+								field 5  [AMOUNT_SETTL]      = D000000000000
+								field 11 [STAN]              = 000012
+								field 15 [DATE_SETTL]        = 210326
+								field 24 [FUNC_CODE]         = 504
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								
+2021-03-26 12:55:03.909 [INFO ] [T 192.168.101.228:4546   ] [  main.connections.ToHostConnection] - 192.168.101.228:4546 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:55:03.910 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Sender] - 192.168.101.228:4546 [TID] 60001666 0520 = 67 BYTES >>> TO HOST
+
+												30 30 36 33 30 35 32 30 08 22 01 00 00 C0 00 00 
+												44 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 32 32 31 30 33 32 36 35 30 34 36 30 30 30 
+												31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 37 
+												37 36 37
+												TO HOST OK ! 0.695 sec.
+
+2021-03-26 12:55:03.911 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Reader] - 192.168.101.228:4546 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:55:04.369 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Reader] - 192.168.101.228:4546 [TID] 60001666 86 BYTES FROM HOST RECEIVED
+2021-03-26 12:55:04.370 [INFO ] [T 192.168.101.228:4546   ] [               main.data.DataParser] - 192.168.101.228:4546 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:55:04.371 [INFO ] [T 192.168.101.228:4546   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0082
+								         [MTI]               = 0530
+								field 5  [AMOUNT_SETTL]      = C-00000000000
+								field 11 [STAN]              = 000012
+								field 15 [DATE_SETTL]        = 210326
+								field 30 [AMOUNT_ORIG_SETTL] = C000000024200
+								field 37 [RET_REF_NUM]       = 001173536612
+								field 39 [RESP_CODE]         = 095
+								field 41 [TID]               = 60001666
+								field 44 [ADD_RESP_DATA]     = INVALID
+								
+2021-03-26 12:55:04.371 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Sender] - 192.168.101.228:4546 [TID] 60001666 0530 = 86 BYTES >>> TO TERMINAL
+
+												30 30 38 32 30 35 33 30 08 22 00 04 0A 90 00 00 
+												43 2D 30 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 32 32 31 30 33 32 36 43 30 30 30 30 30 30 
+												30 32 34 32 30 30 30 30 31 31 37 33 35 33 36 36 
+												31 32 30 39 35 36 30 30 30 31 36 36 36 30 37 49 
+												4E 56 41 4C 49 44
+												TO TERMINAL OK ! 1.156 sec.
+
+2021-03-26 12:55:04.372 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Reader] - 192.168.101.228:4546 [TID] 60001666 RECEIVING FROM TERMINAL 2nd ...
+2021-03-26 12:55:04.426 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Reader] - 192.168.101.228:4546 [TID] 60001666 83 BYTES FROM TERMINAL 2nd RECEIVED
+2021-03-26 12:55:04.426 [INFO ] [T 192.168.101.228:4546   ] [               main.data.DataParser] - 192.168.101.228:4546 [TID] 60001666 DATA FROM TERMINAL 2nd PARSED
+2021-03-26 12:55:04.426 [INFO ] [T 192.168.101.228:4546   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0079
+								         [MTI]               = 0800
+								field 3  [PROC_CODE]         = 990000
+								field 5  [AMOUNT_SETTL]      = D000000000000
+								field 7  [DATE_TIME]         = 0326130254
+								field 11 [STAN]              = 000013
+								field 15 [DATE_SETTL]        = 210326
+								field 24 [FUNC_CODE]         = 821
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								
+2021-03-26 12:55:04.427 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Sender] - 192.168.101.228:4546 [TID] 60001666 0800 = 83 BYTES >>> TO HOST
+
+												30 30 37 39 30 38 30 30 2A 22 01 00 00 C0 00 00 
+												39 39 30 30 30 30 44 30 30 30 30 30 30 30 30 30 
+												30 30 30 30 33 32 36 31 33 30 32 35 34 30 30 30 
+												30 31 33 32 31 30 33 32 36 38 32 31 36 30 30 30 
+												31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 37 
+												37 36 37
+												TO HOST OK ! 1.211 sec.
+
+2021-03-26 12:55:04.427 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Reader] - 192.168.101.228:4546 [TID] 60001666 RECEIVING FROM HOST 2nd ...
+2021-03-26 12:55:04.789 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Reader] - 192.168.101.228:4546 [TID] 60001666 61 BYTES FROM HOST 2nd RECEIVED
+2021-03-26 12:55:04.790 [INFO ] [T 192.168.101.228:4546   ] [               main.data.DataParser] - 192.168.101.228:4546 [TID] 60001666 DATA FROM HOST 2nd PARSED
+2021-03-26 12:55:04.790 [INFO ] [T 192.168.101.228:4546   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0057
+								         [MTI]               = 0810
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 0326130255
+								field 11 [STAN]              = 000013
+								field 37 [RET_REF_NUM]       =             
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								
+2021-03-26 12:55:04.791 [INFO ] [T 192.168.101.228:4546   ] [                   main.util.Sender] - 192.168.101.228:4546 [TID] 60001666 0810 = 61 BYTES >>> TO TERMINAL
+
+												30 30 35 37 30 38 31 30 22 20 00 00 0A 80 00 00 
+												39 39 30 30 30 30 30 33 32 36 31 33 30 32 35 35 
+												30 30 30 30 31 33 20 20 20 20 20 20 20 20 20 20 
+												20 20 30 30 30 36 30 30 30 31 36 36 36
+												TO TERMINAL OK ! 1.575 sec.
+
+2021-03-26 12:56:20.178 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4548
+2021-03-26 12:56:20.181 [INFO ] [T 192.168.101.228:4548   ] [                   main.util.Reader] - 192.168.101.228:4548 RECEIVING FROM TERMINAL ...
+2021-03-26 12:56:20.366 [INFO ] [T 192.168.101.228:4548   ] [                   main.util.Reader] - 192.168.101.228:4548 380 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:56:20.367 [INFO ] [T 192.168.101.228:4548   ] [               main.data.DataParser] - 192.168.101.228:4548 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:56:20.368 [INFO ] [T 192.168.101.228:4548   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0376
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000001
+								field 7  [DATE_TIME]         = 0326130343
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210326130343
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 48 [ADDITIONAL_DATA]   = 100 || RADAR_2015 || 15/AS 123123 || 456456 || 3 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = E6 65 6A 39 D8 88 20 B2
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 00 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 00 01 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 F1 EC 63 6E 1E F7 8D B4 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 21 9F 36 02 03 1E 9F 37 04 93 84 44 27 9F 41 03 00 00 08 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:56:21.378 [INFO ] [T 192.168.101.228:4548   ] [  main.connections.ToHostConnection] - 192.168.101.228:4548 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:56:21.378 [INFO ] [T 192.168.101.228:4548   ] [              main.builders.Builder] - 192.168.101.228:4548 [TID] 60001666 0200 BUILD COMPLETED
+2021-03-26 12:56:21.380 [INFO ] [T 192.168.101.228:4548   ] [                   main.util.Sender] - 192.168.101.228:4548 [TID] 60001666 0200 = 315 BYTES >>> TO HOST
+
+												30 33 31 31 30 32 30 30 32 30 05 80 20 C0 92 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 33 32 36 31 33 30 33 34 33 30 30 30 30 
+												30 39 32 31 30 33 32 36 31 33 30 33 34 33 30 35 
+												31 32 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 36 30 30 
+												30 31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 
+												37 37 36 37 39 33 34 E6 65 6A 39 D8 88 20 B2 01 
+												70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 
+												71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 
+												72 64 91 00 95 05 08 00 04 00 00 9A 03 21 03 26 
+												9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 00 01 
+												9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 
+												12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 
+												00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 
+												32 35 31 9F 26 08 F1 EC 63 6E 1E F7 8D B4 9F 27 
+												01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 
+												01 21 9F 36 02 03 1E 9F 37 04 93 84 44 27 9F 41 
+												03 00 00 08 9F 6E 00 5F 34 01 01
+												TO HOST OK ! 1.2 sec.
+
+2021-03-26 12:56:21.380 [INFO ] [T 192.168.101.228:4548   ] [                   main.util.Reader] - 192.168.101.228:4548 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:56:22.758 [INFO ] [T 192.168.101.228:4548   ] [                   main.util.Reader] - 192.168.101.228:4548 [TID] 60001666 167 BYTES FROM HOST RECEIVED
+2021-03-26 12:56:22.759 [INFO ] [T 192.168.101.228:4548   ] [               main.data.DataParser] - 192.168.101.228:4548 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:56:22.759 [INFO ] [T 192.168.101.228:4548   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0163
+								         [MTI]               = 0210
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000001
+								field 7  [DATE_TIME]         = 0326130413
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210326130343
+								field 37 [RET_REF_NUM]       = 001173537969
+								field 38 [APPROVAL_NUM]      = 044014
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 46 [FEES]              = 00934D0000010061000000D00000100934
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 16 91 0A 35 5F FA 0A D1 A1 8E 78 00 10 8A 02 30 30
+								
+2021-03-26 12:56:22.759 [INFO ] [T 192.168.101.228:4548   ] [              main.builders.Builder] - 192.168.101.228:4548 [TID] 60001666 0210 BUILD COMPLETED
+2021-03-26 12:56:22.760 [INFO ] [T 192.168.101.228:4548   ] [                   main.util.Sender] - 192.168.101.228:4548 [TID] 60001666 0210 = 164 BYTES >>> TO TERMINAL
+
+												30 31 36 30 30 32 31 30 72 30 00 00 0E 84 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 30 30 31 30 33 32 36 31 33 30 34 31 33 30 30 
+												30 30 30 39 32 31 30 33 32 36 31 33 30 33 34 33 
+												30 30 31 31 37 33 35 33 37 39 36 39 30 34 34 30 
+												31 34 30 30 30 36 30 30 30 31 36 36 36 30 30 39 
+												33 34 44 30 30 30 30 30 31 30 30 36 31 30 30 30 
+												30 30 30 44 30 30 30 30 30 31 30 30 39 33 34 39 
+												33 34 00 16 91 0A 35 5F FA 0A D1 A1 8E 78 00 10 
+												8A 02 30 30
+												TO TERMINAL OK ! 2.579 sec.
+
+2021-03-26 12:56:22.833 [INFO ] [T 192.168.101.228:4548   ] [            main.repo.OperationRepo] - 192.168.101.228:4548 [TID] 60001666 SAVING OPERATION 0200 001173537969 TO DATABASE SUCCESS
+
+2021-03-26 12:56:26.387 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4549
+2021-03-26 12:56:26.388 [INFO ] [T 192.168.101.228:4549   ] [                   main.util.Reader] - 192.168.101.228:4549 RECEIVING FROM TERMINAL ...
+2021-03-26 12:56:26.437 [INFO ] [T 192.168.101.228:4549   ] [                   main.util.Reader] - 192.168.101.228:4549 307 BYTES FROM TERMINAL RECEIVED
+2021-03-26 12:56:26.438 [INFO ] [T 192.168.101.228:4549   ] [               main.data.DataParser] - 192.168.101.228:4549 [TID] 60001666 DATA FROM TERMINAL PARSED
+2021-03-26 12:56:26.438 [INFO ] [T 192.168.101.228:4549   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0303
+								         [MTI]               = 0400
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000001
+								field 7  [DATE_TIME]         = 0326130343
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210326130343
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 400
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60001666
+								field 42 [MID]               = 000000000007767
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 00 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 00 01 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 F1 EC 63 6E 1E F7 8D B4 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 21 9F 36 02 03 1E 9F 37 04 93 84 44 27 9F 41 03 00 00 08 9F 6E 00 5F 34 01 01
+								
+2021-03-26 12:56:26.848 [INFO ] [T 192.168.101.228:4549   ] [  main.connections.ToHostConnection] - 192.168.101.228:4549 [TID] 60001666 TO HOST CONNECTED
+2021-03-26 12:56:26.849 [INFO ] [T 192.168.101.228:4549   ] [              main.builders.Builder] - 192.168.101.228:4549 [TID] 60001666 0400 BUILD COMPLETED
+2021-03-26 12:56:26.850 [INFO ] [T 192.168.101.228:4549   ] [                   main.util.Sender] - 192.168.101.228:4549 [TID] 60001666 0400 = 307 BYTES >>> TO HOST
+
+												30 33 30 33 30 34 30 30 32 30 05 80 20 C0 82 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 31 30 33 32 36 31 33 30 33 34 33 30 30 30 30 
+												30 39 32 31 30 33 32 36 31 33 30 33 34 33 30 35 
+												31 34 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 36 30 30 
+												30 31 36 36 36 30 30 30 30 30 30 30 30 30 30 30 
+												37 37 36 37 39 33 34 01 70 4F 08 43 42 54 20 43 
+												61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 
+												84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 
+												04 00 00 9A 03 21 03 26 9B 02 E8 00 9C 01 00 9F 
+												02 06 00 00 00 00 00 01 9F 03 06 00 00 00 00 00 
+												00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 
+												00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 
+												9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 F1 EC 
+												63 6E 1E F7 8D B4 9F 27 01 80 9F 33 03 E0 40 C8 
+												9F 34 03 42 03 00 9F 35 01 21 9F 36 02 03 1E 9F 
+												37 04 93 84 44 27 9F 41 03 00 00 08 9F 6E 00 5F 
+												34 01 01
+												TO HOST OK ! 0.462 sec.
+
+2021-03-26 12:56:26.851 [INFO ] [T 192.168.101.228:4549   ] [                   main.util.Reader] - 192.168.101.228:4549 [TID] 60001666 RECEIVING FROM HOST ...
+2021-03-26 12:56:27.997 [INFO ] [T 192.168.101.228:4549   ] [                   main.util.Reader] - 192.168.101.228:4549 [TID] 60001666 123 BYTES FROM HOST RECEIVED
+2021-03-26 12:56:27.998 [INFO ] [T 192.168.101.228:4549   ] [               main.data.DataParser] - 192.168.101.228:4549 [TID] 60001666 DATA FROM HOST PARSED
+2021-03-26 12:56:27.998 [INFO ] [T 192.168.101.228:4549   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0119
+								         [MTI]               = 0410
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000000001
+								field 7  [DATE_TIME]         = 0326130418
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210326130343
+								field 37 [RET_REF_NUM]       = 001173537969
+								field 38 [APPROVAL_NUM]      = 044014
+								field 39 [RESP_CODE]         = 000
+								field 41 [TID]               = 60001666
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 09 9F 36 02 03 1E 8A 02 30 30
+								
+2021-03-26 12:56:27.998 [INFO ] [T 192.168.101.228:4549   ] [              main.builders.Builder] - 192.168.101.228:4549 [TID] 60001666 0410 BUILD COMPLETED
+2021-03-26 12:56:27.999 [INFO ] [T 192.168.101.228:4549   ] [                   main.util.Sender] - 192.168.101.228:4549 [TID] 60001666 0410 = 123 BYTES >>> TO TERMINAL
+
+												30 31 31 39 30 34 31 30 72 30 00 00 0E 80 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 30 30 31 30 33 32 36 31 33 30 34 31 38 30 30 
+												30 30 30 39 32 31 30 33 32 36 31 33 30 33 34 33 
+												30 30 31 31 37 33 35 33 37 39 36 39 30 34 34 30 
+												31 34 30 30 30 36 30 30 30 31 36 36 36 39 33 34 
+												00 09 9F 36 02 03 1E 8A 02 30 30
+												TO TERMINAL OK ! 1.611 sec.
+
+2021-03-26 12:56:28.070 [INFO ] [T 192.168.101.228:4549   ] [            main.repo.OperationRepo] - 192.168.101.228:4549 [TID] 60001666 SAVING OPERATION 0400 001173537969 TO DATABASE SUCCESS
+

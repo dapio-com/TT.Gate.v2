@@ -1,0 +1,31 @@
+2021-03-26 11:59:54.894 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-26 11:59:54 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7775            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.11     
+HOST_PORT               : 7777            
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+

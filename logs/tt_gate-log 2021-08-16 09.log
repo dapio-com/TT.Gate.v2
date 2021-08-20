@@ -1,0 +1,40 @@
+2021-08-16 09:58:26.080 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-08-16 09:58:26 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate2         
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+

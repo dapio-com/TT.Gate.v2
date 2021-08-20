@@ -1,0 +1,522 @@
+2021-05-04 14:17:04.525 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-05-04 14:17:04 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.123    
+HOST_PORT               : 10011           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-05-04 14:18:28.693 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-05-04 14:18:28 
+ 
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.123    
+HOST_PORT               : 10011           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-05-04 14:19:58.344 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:2258
+2021-05-04 14:19:58.474 [INFO ] [T 192.168.101.200:2258   ] [                   main.util.Reader] - 192.168.101.200:2258 RECEIVING FROM TERMINAL ...
+2021-05-04 14:19:58.474 [INFO ] [T 192.168.101.200:2258   ] [                   main.util.Reader] - 192.168.101.200:2258 190 BYTES FROM TERMINAL RECEIVED
+2021-05-04 14:19:59.348 [INFO ] [T 192.168.101.200:2258   ] [               main.data.DataParser] - 192.168.101.200:2258 [TID] 40015424 DATA FROM TERMINAL PARSED
+2021-05-04 14:19:59.364 [INFO ] [T 192.168.101.200:2258   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0186
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001500
+								field 7  [DATE_TIME]         = 0405141958
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210405141958
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934431000999111=59036011230700000444
+								field 41 [TID]               = 40015424
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || HASAL_OTLARA_GARSY || 18 || 
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-05-04 14:20:01.458 [ERROR] [T 192.168.101.200:2258   ] [  main.connections.ToHostConnection] - 192.168.101.200:2258 [TID] 40015424 ERROR: CAN`T CONNECT TO DAYHAN_SERVICE
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.services.ServiceHandler.serviceTask(ServiceHandler.java:32)
+	at main.TermHandleThread.run(TermHandleThread.java:257)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-04 14:20:01.498 [INFO ] [T 192.168.101.200:2258   ] [      main.builders.SendBackBuilder] - 192.168.101.200:2258 [TID] 40015424 SEND_BACK 0210 (720) BUILD COMPLETED
+2021-05-04 14:20:01.511 [INFO ] [T 192.168.101.200:2258   ] [                   main.util.Sender] - 192.168.101.200:2258 [TID] 40015424 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 34 33 31 30 30 30 39 39 39 31 
+												31 31 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 35 30 30 30 34 30 35 31 34 32 30 30 31 30 30 
+												30 30 30 31 32 31 30 34 30 35 31 34 32 30 30 31 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 30 34 
+												30 30 31 35 34 32 34 39 33 34
+												TO TERMINAL OK ! 3.072 sec.
+
+2021-05-04 14:21:20.627 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:2274
+2021-05-04 14:21:20.628 [INFO ] [T 192.168.101.200:2274   ] [                   main.util.Reader] - 192.168.101.200:2274 RECEIVING FROM TERMINAL ...
+2021-05-04 14:21:20.679 [INFO ] [T 192.168.101.200:2274   ] [                   main.util.Reader] - 192.168.101.200:2274 190 BYTES FROM TERMINAL RECEIVED
+2021-05-04 14:21:20.680 [INFO ] [T 192.168.101.200:2274   ] [               main.data.DataParser] - 192.168.101.200:2274 [TID] 40015424 DATA FROM TERMINAL PARSED
+2021-05-04 14:21:20.680 [INFO ] [T 192.168.101.200:2274   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0186
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001500
+								field 7  [DATE_TIME]         = 0405142120
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210405142120
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934431000999111=59036011230700000444
+								field 41 [TID]               = 40015424
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || HASAL_OTLARA_GARSY || 18 || 
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-05-04 14:21:22.685 [ERROR] [T 192.168.101.200:2274   ] [  main.connections.ToHostConnection] - 192.168.101.200:2274 [TID] 40015424 ERROR: CAN`T CONNECT TO DAYHAN_SERVICE
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.services.ServiceHandler.serviceTask(ServiceHandler.java:32)
+	at main.TermHandleThread.run(TermHandleThread.java:257)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-04 14:21:22.686 [INFO ] [T 192.168.101.200:2274   ] [      main.builders.SendBackBuilder] - 192.168.101.200:2274 [TID] 40015424 SEND_BACK 0210 (720) BUILD COMPLETED
+2021-05-04 14:21:22.687 [INFO ] [T 192.168.101.200:2274   ] [                   main.util.Sender] - 192.168.101.200:2274 [TID] 40015424 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 34 33 31 30 30 30 39 39 39 31 
+												31 31 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 35 30 30 30 34 30 35 31 34 32 31 32 32 30 30 
+												30 30 30 31 32 31 30 34 30 35 31 34 32 31 32 32 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 30 34 
+												30 30 31 35 34 32 34 39 33 34
+												TO TERMINAL OK ! 2.059 sec.
+
+2021-05-04 14:26:31.072 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:2322
+2021-05-04 14:26:31.073 [INFO ] [T 192.168.101.200:2322   ] [                   main.util.Reader] - 192.168.101.200:2322 RECEIVING FROM TERMINAL ...
+2021-05-04 14:26:31.127 [INFO ] [T 192.168.101.200:2322   ] [                   main.util.Reader] - 192.168.101.200:2322 190 BYTES FROM TERMINAL RECEIVED
+2021-05-04 14:26:31.127 [INFO ] [T 192.168.101.200:2322   ] [               main.data.DataParser] - 192.168.101.200:2322 [TID] 40015424 DATA FROM TERMINAL PARSED
+2021-05-04 14:26:31.128 [INFO ] [T 192.168.101.200:2322   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0186
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001500
+								field 7  [DATE_TIME]         = 0405142631
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210405142631
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934431000999111=59036011230700000444
+								field 41 [TID]               = 40015424
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || HASAL_OTLARA_GARSY || 18 || 
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-05-04 14:26:33.143 [ERROR] [T 192.168.101.200:2322   ] [  main.connections.ToHostConnection] - 192.168.101.200:2322 [TID] 40015424 ERROR: CAN`T CONNECT TO DAYHAN_SERVICE
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:68)
+	at main.services.ServiceHandler.serviceTask(ServiceHandler.java:32)
+	at main.TermHandleThread.run(TermHandleThread.java:257)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-04 14:26:33.144 [INFO ] [T 192.168.101.200:2322   ] [      main.builders.SendBackBuilder] - 192.168.101.200:2322 [TID] 40015424 SEND_BACK 0210 (720) BUILD COMPLETED
+2021-05-04 14:26:33.145 [INFO ] [T 192.168.101.200:2322   ] [                   main.util.Sender] - 192.168.101.200:2322 [TID] 40015424 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 34 33 31 30 30 30 39 39 39 31 
+												31 31 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 35 30 30 30 34 30 35 31 34 32 36 33 33 30 30 
+												30 30 30 31 32 31 30 34 30 35 31 34 32 36 33 33 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 30 34 
+												30 30 31 35 34 32 34 39 33 34
+												TO TERMINAL OK ! 2.072 sec.
+
+2021-05-04 14:26:56.999 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-05-04 14:26:56 
+ 
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.123    
+HOST_PORT               : 10011           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-05-04 14:27:01.628 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:2336
+2021-05-04 14:27:01.633 [INFO ] [T 192.168.101.200:2336   ] [                   main.util.Reader] - 192.168.101.200:2336 RECEIVING FROM TERMINAL ...
+2021-05-04 14:27:01.678 [INFO ] [T 192.168.101.200:2336   ] [                   main.util.Reader] - 192.168.101.200:2336 190 BYTES FROM TERMINAL RECEIVED
+2021-05-04 14:27:01.686 [INFO ] [T 192.168.101.200:2336   ] [               main.data.DataParser] - 192.168.101.200:2336 [TID] 40015424 DATA FROM TERMINAL PARSED
+2021-05-04 14:27:01.687 [INFO ] [T 192.168.101.200:2336   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0186
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001500
+								field 7  [DATE_TIME]         = 0405142701
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210405142701
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934431000999111=59036011230700000444
+								field 41 [TID]               = 40015424
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || HASAL_OTLARA_GARSY || 18 || 
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-05-04 14:27:01.692 [INFO ] [T 192.168.101.200:2336   ] [  main.connections.ToHostConnection] - 192.168.101.200:2336 [TID] 40015424 TO DAYHAN_SERVICE CONNECTED
+2021-05-04 14:27:01.772 [INFO ] [T 192.168.101.200:2336   ] [              main.builders.Builder] - 192.168.101.200:2336 [TID] 40015424 VERF BUILD COMPLETED
+2021-05-04 14:27:01.776 [INFO ] [T 192.168.101.200:2336   ] [                   main.util.Sender] - 192.168.101.200:2336 [TID] 40015424 VERF = 76 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 37 32 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 34 33 31 30 30 30 39 39 39 31 31 31 
+												30 30 30 30 30 30 30 30 31 35 30 30 31 38 48 41 
+												53 41 4C 5F 4F 54 4C 41 52 41 5F 47 41 52 53 59 
+												30 32 31 38 34 30 30 31 35 34 32 34
+												TO DAYHAN_SERVICE OK ! 0.144 sec.
+
+2021-05-04 14:27:01.776 [INFO ] [T 192.168.101.200:2336   ] [                   main.util.Reader] - 192.168.101.200:2336 [TID] 40015424 RECEIVING FROM DAYHAN_SERVICE ...
+2021-05-04 14:27:01.777 [INFO ] [T 192.168.101.200:2336   ] [                   main.util.Reader] - 192.168.101.200:2336 [TID] 40015424 3 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-05-04 14:27:01.778 [INFO ] [T 192.168.101.200:2336   ] [       main.services.ServiceHandler] - 192.168.101.200:2336 [TID] 40015424 DAYHAN_SERVICE RESPONSE : 727. CAN`T PAY. VERIFY NOT PASS
+2021-05-04 14:27:01.779 [INFO ] [T 192.168.101.200:2336   ] [      main.builders.SendBackBuilder] - 192.168.101.200:2336 [TID] 40015424 SEND_BACK 0210 (727) BUILD COMPLETED
+2021-05-04 14:27:01.780 [INFO ] [T 192.168.101.200:2336   ] [                   main.util.Sender] - 192.168.101.200:2336 [TID] 40015424 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 34 33 31 30 30 30 39 39 39 31 
+												31 31 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 35 30 30 30 34 30 35 31 34 32 37 30 31 30 30 
+												30 30 30 31 32 31 30 34 30 35 31 34 32 37 30 31 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 37 34 
+												30 30 31 35 34 32 34 39 33 34
+												TO TERMINAL OK ! 0.15 sec.
+
+2021-05-04 14:29:21.953 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:2360
+2021-05-04 14:29:21.954 [INFO ] [T 192.168.101.200:2360   ] [                   main.util.Reader] - 192.168.101.200:2360 RECEIVING FROM TERMINAL ...
+2021-05-04 14:29:22.004 [INFO ] [T 192.168.101.200:2360   ] [                   main.util.Reader] - 192.168.101.200:2360 190 BYTES FROM TERMINAL RECEIVED
+2021-05-04 14:29:22.005 [INFO ] [T 192.168.101.200:2360   ] [               main.data.DataParser] - 192.168.101.200:2360 [TID] 40015424 DATA FROM TERMINAL PARSED
+2021-05-04 14:29:22.005 [INFO ] [T 192.168.101.200:2360   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0186
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001500
+								field 7  [DATE_TIME]         = 0405142922
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210405142922
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934433000999111=59036011230700000444
+								field 41 [TID]               = 40015424
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || HASAL_OTLARA_GARSY || 18 || 
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-05-04 14:29:22.006 [INFO ] [T 192.168.101.200:2360   ] [  main.connections.ToHostConnection] - 192.168.101.200:2360 [TID] 40015424 TO DAYHAN_SERVICE CONNECTED
+2021-05-04 14:29:22.006 [INFO ] [T 192.168.101.200:2360   ] [              main.builders.Builder] - 192.168.101.200:2360 [TID] 40015424 VERF BUILD COMPLETED
+2021-05-04 14:29:22.006 [INFO ] [T 192.168.101.200:2360   ] [                   main.util.Sender] - 192.168.101.200:2360 [TID] 40015424 VERF = 76 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 37 32 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 34 33 33 30 30 30 39 39 39 31 31 31 
+												30 30 30 30 30 30 30 30 31 35 30 30 31 38 48 41 
+												53 41 4C 5F 4F 54 4C 41 52 41 5F 47 41 52 53 59 
+												30 32 31 38 34 30 30 31 35 34 32 34
+												TO DAYHAN_SERVICE OK ! 0.052 sec.
+
+2021-05-04 14:29:22.007 [INFO ] [T 192.168.101.200:2360   ] [                   main.util.Reader] - 192.168.101.200:2360 [TID] 40015424 RECEIVING FROM DAYHAN_SERVICE ...
+2021-05-04 14:29:22.008 [INFO ] [T 192.168.101.200:2360   ] [                   main.util.Reader] - 192.168.101.200:2360 [TID] 40015424 3 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-05-04 14:29:22.008 [INFO ] [T 192.168.101.200:2360   ] [       main.services.ServiceHandler] - 192.168.101.200:2360 [TID] 40015424 DAYHAN_SERVICE RESPONSE : 727. CAN`T PAY. VERIFY NOT PASS
+2021-05-04 14:29:22.008 [INFO ] [T 192.168.101.200:2360   ] [      main.builders.SendBackBuilder] - 192.168.101.200:2360 [TID] 40015424 SEND_BACK 0210 (727) BUILD COMPLETED
+2021-05-04 14:29:22.009 [INFO ] [T 192.168.101.200:2360   ] [                   main.util.Sender] - 192.168.101.200:2360 [TID] 40015424 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 34 33 33 30 30 30 39 39 39 31 
+												31 31 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 35 30 30 30 34 30 35 31 34 32 39 32 32 30 30 
+												30 30 30 31 32 31 30 34 30 35 31 34 32 39 32 32 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 37 34 
+												30 30 31 35 34 32 34 39 33 34
+												TO TERMINAL OK ! 0.055 sec.
+
+2021-05-04 14:31:21.458 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:2382
+2021-05-04 14:31:21.459 [INFO ] [T 192.168.101.200:2382   ] [                   main.util.Reader] - 192.168.101.200:2382 RECEIVING FROM TERMINAL ...
+2021-05-04 14:31:21.513 [INFO ] [T 192.168.101.200:2382   ] [                   main.util.Reader] - 192.168.101.200:2382 190 BYTES FROM TERMINAL RECEIVED
+2021-05-04 14:31:21.513 [INFO ] [T 192.168.101.200:2382   ] [               main.data.DataParser] - 192.168.101.200:2382 [TID] 40015424 DATA FROM TERMINAL PARSED
+2021-05-04 14:31:21.514 [INFO ] [T 192.168.101.200:2382   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0186
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001500
+								field 7  [DATE_TIME]         = 0405143121
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210405143121
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934433000999111=59036011230700000444
+								field 41 [TID]               = 40015424
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || HASAL_OTLARA_GARSY || 18 || 
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-05-04 14:31:21.514 [INFO ] [T 192.168.101.200:2382   ] [  main.connections.ToHostConnection] - 192.168.101.200:2382 [TID] 40015424 TO DAYHAN_SERVICE CONNECTED
+2021-05-04 14:31:21.515 [INFO ] [T 192.168.101.200:2382   ] [              main.builders.Builder] - 192.168.101.200:2382 [TID] 40015424 VERF BUILD COMPLETED
+2021-05-04 14:31:21.516 [INFO ] [T 192.168.101.200:2382   ] [                   main.util.Sender] - 192.168.101.200:2382 [TID] 40015424 VERF = 76 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 37 32 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 34 33 33 30 30 30 39 39 39 31 31 31 
+												30 30 30 30 30 30 30 30 31 35 30 30 31 38 48 41 
+												53 41 4C 5F 4F 54 4C 41 52 41 5F 47 41 52 53 59 
+												30 32 31 38 34 30 30 31 35 34 32 34
+												TO DAYHAN_SERVICE OK ! 0.056 sec.
+
+2021-05-04 14:31:21.516 [INFO ] [T 192.168.101.200:2382   ] [                   main.util.Reader] - 192.168.101.200:2382 [TID] 40015424 RECEIVING FROM DAYHAN_SERVICE ...
+2021-05-04 14:31:21.526 [INFO ] [T 192.168.101.200:2382   ] [                   main.util.Reader] - 192.168.101.200:2382 [TID] 40015424 3 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-05-04 14:31:21.527 [INFO ] [T 192.168.101.200:2382   ] [       main.services.ServiceHandler] - 192.168.101.200:2382 [TID] 40015424 DAYHAN_SERVICE RESPONSE : 727. CAN`T PAY. VERIFY NOT PASS
+2021-05-04 14:31:21.528 [INFO ] [T 192.168.101.200:2382   ] [      main.builders.SendBackBuilder] - 192.168.101.200:2382 [TID] 40015424 SEND_BACK 0210 (727) BUILD COMPLETED
+2021-05-04 14:31:21.528 [INFO ] [T 192.168.101.200:2382   ] [                   main.util.Sender] - 192.168.101.200:2382 [TID] 40015424 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 34 33 33 30 30 30 39 39 39 31 
+												31 31 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 35 30 30 30 34 30 35 31 34 33 31 32 31 30 30 
+												30 30 30 31 32 31 30 34 30 35 31 34 33 31 32 31 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 37 34 
+												30 30 31 35 34 32 34 39 33 34
+												TO TERMINAL OK ! 0.069 sec.
+
+2021-05-04 14:35:19.282 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:2402
+2021-05-04 14:35:19.283 [INFO ] [T 192.168.101.200:2402   ] [                   main.util.Reader] - 192.168.101.200:2402 RECEIVING FROM TERMINAL ...
+2021-05-04 14:35:19.335 [INFO ] [T 192.168.101.200:2402   ] [                   main.util.Reader] - 192.168.101.200:2402 190 BYTES FROM TERMINAL RECEIVED
+2021-05-04 14:35:19.336 [INFO ] [T 192.168.101.200:2402   ] [               main.data.DataParser] - 192.168.101.200:2402 [TID] 40015424 DATA FROM TERMINAL PARSED
+2021-05-04 14:35:19.336 [INFO ] [T 192.168.101.200:2402   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0186
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001500
+								field 7  [DATE_TIME]         = 0405143519
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210405143519
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934431000999111=59036011230700000444
+								field 41 [TID]               = 40015424
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || HASAL_OTLARA_GARSY || 18 || 
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-05-04 14:35:19.337 [INFO ] [T 192.168.101.200:2402   ] [  main.connections.ToHostConnection] - 192.168.101.200:2402 [TID] 40015424 TO DAYHAN_SERVICE CONNECTED
+2021-05-04 14:35:19.337 [INFO ] [T 192.168.101.200:2402   ] [              main.builders.Builder] - 192.168.101.200:2402 [TID] 40015424 VERF BUILD COMPLETED
+2021-05-04 14:35:19.338 [INFO ] [T 192.168.101.200:2402   ] [                   main.util.Sender] - 192.168.101.200:2402 [TID] 40015424 VERF = 76 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 37 32 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 34 33 31 30 30 30 39 39 39 31 31 31 
+												30 30 30 30 30 30 30 30 31 35 30 30 31 38 48 41 
+												53 41 4C 5F 4F 54 4C 41 52 41 5F 47 41 52 53 59 
+												30 32 31 38 34 30 30 31 35 34 32 34
+												TO DAYHAN_SERVICE OK ! 0.054 sec.
+
+2021-05-04 14:35:19.338 [INFO ] [T 192.168.101.200:2402   ] [                   main.util.Reader] - 192.168.101.200:2402 [TID] 40015424 RECEIVING FROM DAYHAN_SERVICE ...
+2021-05-04 14:35:19.340 [INFO ] [T 192.168.101.200:2402   ] [                   main.util.Reader] - 192.168.101.200:2402 [TID] 40015424 3 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-05-04 14:35:19.340 [INFO ] [T 192.168.101.200:2402   ] [       main.services.ServiceHandler] - 192.168.101.200:2402 [TID] 40015424 DAYHAN_SERVICE RESPONSE : 727. CAN`T PAY. VERIFY NOT PASS
+2021-05-04 14:35:19.340 [INFO ] [T 192.168.101.200:2402   ] [      main.builders.SendBackBuilder] - 192.168.101.200:2402 [TID] 40015424 SEND_BACK 0210 (727) BUILD COMPLETED
+2021-05-04 14:35:19.341 [INFO ] [T 192.168.101.200:2402   ] [                   main.util.Sender] - 192.168.101.200:2402 [TID] 40015424 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 34 33 31 30 30 30 39 39 39 31 
+												31 31 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 35 30 30 30 34 30 35 31 34 33 35 31 39 30 30 
+												30 30 30 31 32 31 30 34 30 35 31 34 33 35 31 39 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 37 34 
+												30 30 31 35 34 32 34 39 33 34
+												TO TERMINAL OK ! 0.058 sec.
+
+2021-05-04 14:35:41.789 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:2415
+2021-05-04 14:35:41.790 [INFO ] [T 192.168.101.200:2415   ] [                   main.util.Reader] - 192.168.101.200:2415 RECEIVING FROM TERMINAL ...
+2021-05-04 14:35:41.838 [INFO ] [T 192.168.101.200:2415   ] [                   main.util.Reader] - 192.168.101.200:2415 190 BYTES FROM TERMINAL RECEIVED
+2021-05-04 14:35:41.839 [INFO ] [T 192.168.101.200:2415   ] [               main.data.DataParser] - 192.168.101.200:2415 [TID] 40015424 DATA FROM TERMINAL PARSED
+2021-05-04 14:35:41.839 [INFO ] [T 192.168.101.200:2415   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0186
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001500
+								field 7  [DATE_TIME]         = 0405143541
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210405143541
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934431000999111=59036011230700000444
+								field 41 [TID]               = 40015424
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || HASAL_OTLARA_GARSY || 18 || 
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-05-04 14:35:41.840 [INFO ] [T 192.168.101.200:2415   ] [  main.connections.ToHostConnection] - 192.168.101.200:2415 [TID] 40015424 TO DAYHAN_SERVICE CONNECTED
+2021-05-04 14:35:41.840 [INFO ] [T 192.168.101.200:2415   ] [              main.builders.Builder] - 192.168.101.200:2415 [TID] 40015424 VERF BUILD COMPLETED
+2021-05-04 14:35:41.841 [INFO ] [T 192.168.101.200:2415   ] [                   main.util.Sender] - 192.168.101.200:2415 [TID] 40015424 VERF = 76 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 37 32 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 34 33 31 30 30 30 39 39 39 31 31 31 
+												30 30 30 30 30 30 30 30 31 35 30 30 31 38 48 41 
+												53 41 4C 5F 4F 54 4C 41 52 41 5F 47 41 52 53 59 
+												30 32 31 38 34 30 30 31 35 34 32 34
+												TO DAYHAN_SERVICE OK ! 0.052 sec.
+
+2021-05-04 14:35:41.841 [INFO ] [T 192.168.101.200:2415   ] [                   main.util.Reader] - 192.168.101.200:2415 [TID] 40015424 RECEIVING FROM DAYHAN_SERVICE ...
+2021-05-04 14:35:41.851 [INFO ] [T 192.168.101.200:2415   ] [                   main.util.Reader] - 192.168.101.200:2415 [TID] 40015424 3 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-05-04 14:35:41.851 [INFO ] [T 192.168.101.200:2415   ] [       main.services.ServiceHandler] - 192.168.101.200:2415 [TID] 40015424 DAYHAN_SERVICE RESPONSE : 728. CAN`T PAY. VERIFY NOT PASS
+2021-05-04 14:35:41.852 [INFO ] [T 192.168.101.200:2415   ] [      main.builders.SendBackBuilder] - 192.168.101.200:2415 [TID] 40015424 SEND_BACK 0210 (728) BUILD COMPLETED
+2021-05-04 14:35:41.853 [INFO ] [T 192.168.101.200:2415   ] [                   main.util.Sender] - 192.168.101.200:2415 [TID] 40015424 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 34 33 31 30 30 30 39 39 39 31 
+												31 31 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 35 30 30 30 34 30 35 31 34 33 35 34 31 30 30 
+												30 30 30 31 32 31 30 34 30 35 31 34 33 35 34 31 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 38 34 
+												30 30 31 35 34 32 34 39 33 34
+												TO TERMINAL OK ! 0.064 sec.
+
+2021-05-04 14:40:22.517 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:2484
+2021-05-04 14:40:22.519 [INFO ] [T 192.168.101.200:2484   ] [                   main.util.Reader] - 192.168.101.200:2484 RECEIVING FROM TERMINAL ...
+2021-05-04 14:40:22.586 [INFO ] [T 192.168.101.200:2484   ] [                   main.util.Reader] - 192.168.101.200:2484 190 BYTES FROM TERMINAL RECEIVED
+2021-05-04 14:40:22.587 [INFO ] [T 192.168.101.200:2484   ] [               main.data.DataParser] - 192.168.101.200:2484 [TID] 40015424 DATA FROM TERMINAL PARSED
+2021-05-04 14:40:22.587 [INFO ] [T 192.168.101.200:2484   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0186
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001500
+								field 7  [DATE_TIME]         = 0405144022
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210405144022
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934431000999111=59036011230700000444
+								field 41 [TID]               = 40015424
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || HASAL_OTLARA_GARSY || 18 || 
+								field 49 [CURRENCY_CODE]     = 934
+								
+2021-05-04 14:40:22.588 [INFO ] [T 192.168.101.200:2484   ] [  main.connections.ToHostConnection] - 192.168.101.200:2484 [TID] 40015424 TO DAYHAN_SERVICE CONNECTED
+2021-05-04 14:40:22.588 [INFO ] [T 192.168.101.200:2484   ] [              main.builders.Builder] - 192.168.101.200:2484 [TID] 40015424 VERF BUILD COMPLETED
+2021-05-04 14:40:22.589 [INFO ] [T 192.168.101.200:2484   ] [                   main.util.Sender] - 192.168.101.200:2484 [TID] 40015424 VERF = 76 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 37 32 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 34 33 31 30 30 30 39 39 39 31 31 31 
+												30 30 30 30 30 30 30 30 31 35 30 30 31 38 48 41 
+												53 41 4C 5F 4F 54 4C 41 52 41 5F 47 41 52 53 59 
+												30 32 31 38 34 30 30 31 35 34 32 34
+												TO DAYHAN_SERVICE OK ! 0.071 sec.
+
+2021-05-04 14:40:22.589 [INFO ] [T 192.168.101.200:2484   ] [                   main.util.Reader] - 192.168.101.200:2484 [TID] 40015424 RECEIVING FROM DAYHAN_SERVICE ...
+2021-05-04 14:40:22.603 [INFO ] [T 192.168.101.200:2484   ] [                   main.util.Reader] - 192.168.101.200:2484 [TID] 40015424 3 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-05-04 14:40:22.604 [INFO ] [T 192.168.101.200:2484   ] [       main.services.ServiceHandler] - 192.168.101.200:2484 [TID] 40015424 DAYHAN_SERVICE RESPONSE : 728. CAN`T PAY. VERIFY NOT PASS
+2021-05-04 14:40:22.605 [INFO ] [T 192.168.101.200:2484   ] [      main.builders.SendBackBuilder] - 192.168.101.200:2484 [TID] 40015424 SEND_BACK 0210 (728) BUILD COMPLETED
+2021-05-04 14:40:22.605 [INFO ] [T 192.168.101.200:2484   ] [                   main.util.Sender] - 192.168.101.200:2484 [TID] 40015424 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 34 33 31 30 30 30 39 39 39 31 
+												31 31 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 35 30 30 30 34 30 35 31 34 34 30 32 32 30 30 
+												30 30 30 31 32 31 30 34 30 35 31 34 34 30 32 32 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 38 34 
+												30 30 31 35 34 32 34 39 33 34
+												TO TERMINAL OK ! 0.087 sec.
+

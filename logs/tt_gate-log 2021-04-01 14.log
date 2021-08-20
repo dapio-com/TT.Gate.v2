@@ -1,0 +1,523 @@
+2021-04-01 14:12:42.108 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4594
+2021-04-01 14:12:42.128 [INFO ] [T 192.168.101.228:4594   ] [                   main.util.Reader] - 192.168.101.228:4594 RECEIVING FROM TERMINAL ...
+2021-04-01 14:12:42.280 [INFO ] [T 192.168.101.228:4594   ] [                   main.util.Reader] - 192.168.101.228:4594 362 BYTES FROM TERMINAL RECEIVED
+2021-04-01 14:12:42.282 [INFO ] [T 192.168.101.228:4594   ] [               main.data.DataParser] - 192.168.101.228:4594 [TID] 40014151 DATA FROM TERMINAL PARSED
+2021-04-01 14:12:42.283 [INFO ] [T 192.168.101.228:4594   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0358
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000005400
+								field 7  [DATE_TIME]         = 0104141224
+								field 11 [STAN]              = 000002
+								field 12 [DATE_TIME_LOCAL]   = 210104141224
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 40014151
+								field 42 [MID]               = 40000007411    
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || SUW_HYZMAT || 15 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = 09 E0 52 13 0D FC 9D 36
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 54 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 6B 10 51 F2 11 24 73 BD 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 49 9F 37 04 C6 32 6D 48 9F 41 03 00 00 05 9F 6E 00 5F 34 01 01
+								
+2021-04-01 14:12:42.285 [INFO ] [T 192.168.101.228:4594   ] [  main.connections.ToHostConnection] - 192.168.101.228:4594 [TID] 40014151 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:12:42.286 [INFO ] [T 192.168.101.228:4594   ] [              main.builders.Builder] - 192.168.101.228:4594 [TID] 40014151 VERF BUILD COMPLETED
+2021-04-01 14:12:42.286 [INFO ] [T 192.168.101.228:4594   ] [                   main.util.Sender] - 192.168.101.228:4594 [TID] 40014151 VERF = 68 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 36 34 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 35 34 30 30 31 30 53 55 
+												57 5F 48 59 5A 4D 41 54 30 32 31 35 34 30 30 31 
+												34 31 35 31
+												TO DAYHAN_SERVICE OK ! 0.158 sec.
+
+2021-04-01 14:12:42.287 [INFO ] [T 192.168.101.228:4594   ] [                   main.util.Reader] - 192.168.101.228:4594 [TID] 40014151 RECEIVING FROM DAYHAN_SERVICE ...
+2021-04-01 14:12:42.324 [INFO ] [T 192.168.101.228:4594   ] [                   main.util.Reader] - 192.168.101.228:4594 [TID] 40014151 3 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-04-01 14:12:42.325 [INFO ] [T 192.168.101.228:4594   ] [       main.services.ServiceHandler] - 192.168.101.228:4594 [TID] 40014151 DAYHAN_SERVICE RESPONSE : 727. CAN`T PAY. VERIFY NOT PASS
+2021-04-01 14:12:42.325 [INFO ] [T 192.168.101.228:4594   ] [      main.builders.SendBackBuilder] - 192.168.101.228:4594 [TID] 40014151 SEND_BACK 0210 BUILD COMPLETED
+2021-04-01 14:12:42.326 [INFO ] [T 192.168.101.228:4594   ] [                   main.util.Sender] - 192.168.101.228:4594 [TID] 40014151 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												35 34 30 30 30 31 30 34 31 34 31 32 34 32 30 30 
+												30 30 30 32 32 31 30 31 30 34 31 34 31 32 34 32 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 37 34 
+												30 30 31 34 31 35 31 39 33 34
+												TO TERMINAL OK ! 0.198 sec.
+
+2021-04-01 14:13:18.089 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4595
+2021-04-01 14:13:18.090 [INFO ] [T 192.168.101.228:4595   ] [                   main.util.Reader] - 192.168.101.228:4595 RECEIVING FROM TERMINAL ...
+2021-04-01 14:13:18.268 [INFO ] [T 192.168.101.228:4595   ] [                   main.util.Reader] - 192.168.101.228:4595 362 BYTES FROM TERMINAL RECEIVED
+2021-04-01 14:13:18.269 [INFO ] [T 192.168.101.228:4595   ] [               main.data.DataParser] - 192.168.101.228:4595 [TID] 40014154 DATA FROM TERMINAL PARSED
+2021-04-01 14:13:18.269 [INFO ] [T 192.168.101.228:4595   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0358
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000004500
+								field 7  [DATE_TIME]         = 0104141255
+								field 11 [STAN]              = 000006
+								field 12 [DATE_TIME_LOCAL]   = 210104141255
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 40014154
+								field 42 [MID]               = 40000005339    
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || TEH_HYZMAT || 15 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = C8 C8 E8 AB A4 B6 31 73
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 45 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 C5 8E 69 DD E4 9B 10 A7 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 4A 9F 37 04 37 56 E3 B3 9F 41 03 00 00 02 9F 6E 00 5F 34 01 01
+								
+2021-04-01 14:13:18.274 [INFO ] [T 192.168.101.228:4595   ] [  main.connections.ToHostConnection] - 192.168.101.228:4595 [TID] 40014154 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:13:18.274 [INFO ] [T 192.168.101.228:4595   ] [              main.builders.Builder] - 192.168.101.228:4595 [TID] 40014154 VERF BUILD COMPLETED
+2021-04-01 14:13:18.274 [INFO ] [T 192.168.101.228:4595   ] [                   main.util.Sender] - 192.168.101.228:4595 [TID] 40014154 VERF = 68 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 36 34 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 34 35 30 30 31 30 54 45 
+												48 5F 48 59 5A 4D 41 54 30 32 31 35 34 30 30 31 
+												34 31 35 34
+												TO DAYHAN_SERVICE OK ! 0.184 sec.
+
+2021-04-01 14:13:18.274 [INFO ] [T 192.168.101.228:4595   ] [                   main.util.Reader] - 192.168.101.228:4595 [TID] 40014154 RECEIVING FROM DAYHAN_SERVICE ...
+2021-04-01 14:13:18.360 [INFO ] [T 192.168.101.228:4595   ] [                   main.util.Reader] - 192.168.101.228:4595 [TID] 40014154 2 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-04-01 14:13:18.360 [INFO ] [T 192.168.101.228:4595   ] [       main.services.ServiceHandler] - 192.168.101.228:4595 [TID] 40014154 DAYHAN_SERVICE RESPONSE : OK RECEIVED
+2021-04-01 14:13:20.369 [INFO ] [T 192.168.101.228:4595   ] [  main.connections.ToHostConnection] - 192.168.101.228:4595 [TID] 40014154 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:13:20.370 [INFO ] [T 192.168.101.228:4595   ] [              main.builders.Builder] - 192.168.101.228:4595 [TID] 40014154 PAID BUILD COMPLETED
+2021-04-01 14:13:20.370 [INFO ] [T 192.168.101.228:4595   ] [                   main.util.Sender] - 192.168.101.228:4595 [TID] 40014154 PAID = 52 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 34 38 50 41 49 44 3A 00 00 00 00 00 00 00 
+												30 30 30 30 30 30 30 30 34 35 30 30 31 30 54 45 
+												48 5F 48 59 5A 4D 41 54 30 32 31 35 34 30 30 31 
+												34 31 35 34
+												TO DAYHAN_SERVICE OK ! 2.28 sec.
+
+2021-04-01 14:13:23.998 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4596
+2021-04-01 14:13:23.999 [INFO ] [T 192.168.101.228:4596   ] [                   main.util.Reader] - 192.168.101.228:4596 RECEIVING FROM TERMINAL ...
+2021-04-01 14:13:24.049 [INFO ] [T 192.168.101.228:4596   ] [                   main.util.Reader] - 192.168.101.228:4596 307 BYTES FROM TERMINAL RECEIVED
+2021-04-01 14:13:24.049 [INFO ] [T 192.168.101.228:4596   ] [               main.data.DataParser] - 192.168.101.228:4596 [TID] 40014154 DATA FROM TERMINAL PARSED
+2021-04-01 14:13:24.049 [INFO ] [T 192.168.101.228:4596   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0303
+								         [MTI]               = 0400
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000004500
+								field 7  [DATE_TIME]         = 0104141255
+								field 11 [STAN]              = 000006
+								field 12 [DATE_TIME_LOCAL]   = 210104141255
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 400
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 40014154
+								field 42 [MID]               = 40000005339    
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 45 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 C5 8E 69 DD E4 9B 10 A7 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 4A 9F 37 04 37 56 E3 B3 9F 41 03 00 00 02 9F 6E 00 5F 34 01 01
+								
+2021-04-01 14:13:24.985 [INFO ] [T 192.168.101.228:4596   ] [  main.connections.ToHostConnection] - 192.168.101.228:4596 [TID] 40014154 TO HOST CONNECTED
+2021-04-01 14:13:25.019 [INFO ] [T 192.168.101.228:4596   ] [              main.builders.Builder] - 192.168.101.228:4596 [TID] 40014154 0400 BUILD COMPLETED
+2021-04-01 14:13:25.020 [INFO ] [T 192.168.101.228:4596   ] [                   main.util.Sender] - 192.168.101.228:4596 [TID] 40014154 0400 = 307 BYTES >>> TO HOST
+
+												30 33 30 33 30 34 30 30 32 30 05 80 20 C0 82 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 34 35 
+												30 30 30 31 30 34 31 34 31 32 35 35 30 30 30 30 
+												30 36 32 31 30 31 30 34 31 34 31 32 35 35 30 35 
+												31 34 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 34 30 30 
+												31 34 31 35 34 34 30 30 30 30 30 30 35 33 33 39 
+												20 20 20 20 39 33 34 01 70 4F 08 43 42 54 20 43 
+												61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 
+												84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 
+												04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 
+												02 06 00 00 00 00 45 00 9F 03 06 00 00 00 00 00 
+												00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 
+												00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 
+												9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 C5 8E 
+												69 DD E4 9B 10 A7 9F 27 01 80 9F 33 03 E0 40 C8 
+												9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 4A 9F 
+												37 04 37 56 E3 B3 9F 41 03 00 00 02 9F 6E 00 5F 
+												34 01 01
+												TO HOST OK ! 1.021 sec.
+
+2021-04-01 14:13:25.020 [INFO ] [T 192.168.101.228:4596   ] [                   main.util.Reader] - 192.168.101.228:4596 [TID] 40014154 RECEIVING FROM HOST ...
+2021-04-01 14:13:25.696 [INFO ] [T 192.168.101.228:4596   ] [                   main.util.Reader] - 192.168.101.228:4596 [TID] 40014154 117 BYTES FROM HOST RECEIVED
+2021-04-01 14:13:25.696 [INFO ] [T 192.168.101.228:4596   ] [               main.data.DataParser] - 192.168.101.228:4596 [TID] 40014154 DATA FROM HOST PARSED
+2021-04-01 14:13:25.697 [INFO ] [T 192.168.101.228:4596   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0113
+								         [MTI]               = 0410
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000004500
+								field 7  [DATE_TIME]         = 0401142118
+								field 11 [STAN]              = 000006
+								field 12 [DATE_TIME_LOCAL]   = 210104141255
+								field 37 [RET_REF_NUM]       = 001178692155
+								field 39 [RESP_CODE]         = 914
+								field 41 [TID]               = 40014154
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 09 9F 36 02 03 4A 8A 02 39 36
+								
+2021-04-01 14:13:25.697 [INFO ] [T 192.168.101.228:4596   ] [              main.builders.Builder] - 192.168.101.228:4596 [TID] 40014154 0410 BUILD COMPLETED
+2021-04-01 14:13:25.698 [INFO ] [T 192.168.101.228:4596   ] [                   main.util.Sender] - 192.168.101.228:4596 [TID] 40014154 0410 = 117 BYTES >>> TO TERMINAL
+
+												30 31 31 33 30 34 31 30 72 30 00 00 0A 80 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												34 35 30 30 30 34 30 31 31 34 32 31 31 38 30 30 
+												30 30 30 36 32 31 30 31 30 34 31 34 31 32 35 35 
+												30 30 31 31 37 38 36 39 32 31 35 35 39 31 34 34 
+												30 30 31 34 31 35 34 39 33 34 00 09 9F 36 02 03 
+												4A 8A 02 39 36
+												TO TERMINAL OK ! 1.698 sec.
+
+2021-04-01 14:31:48.756 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4597
+2021-04-01 14:31:48.758 [INFO ] [T 192.168.101.228:4597   ] [                   main.util.Reader] - 192.168.101.228:4597 RECEIVING FROM TERMINAL ...
+2021-04-01 14:31:48.944 [INFO ] [T 192.168.101.228:4597   ] [                   main.util.Reader] - 192.168.101.228:4597 362 BYTES FROM TERMINAL RECEIVED
+2021-04-01 14:31:48.944 [INFO ] [T 192.168.101.228:4597   ] [               main.data.DataParser] - 192.168.101.228:4597 [TID] 40014154 DATA FROM TERMINAL PARSED
+2021-04-01 14:31:48.945 [INFO ] [T 192.168.101.228:4597   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0358
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000004600
+								field 7  [DATE_TIME]         = 0104143146
+								field 11 [STAN]              = 000007
+								field 12 [DATE_TIME_LOCAL]   = 210104143146
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 40014154
+								field 42 [MID]               = 40000005339    
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || TEH_HYZMAT || 14 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = C8 C8 E8 AB A4 B6 31 73
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 46 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 8F 96 3C DA FF 6C 97 40 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 4B 9F 37 04 80 36 EE 45 9F 41 03 00 00 06 9F 6E 00 5F 34 01 01
+								
+2021-04-01 14:31:48.945 [INFO ] [T 192.168.101.228:4597   ] [  main.connections.ToHostConnection] - 192.168.101.228:4597 [TID] 40014154 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:31:48.946 [INFO ] [T 192.168.101.228:4597   ] [              main.builders.Builder] - 192.168.101.228:4597 [TID] 40014154 VERF BUILD COMPLETED
+2021-04-01 14:31:48.946 [INFO ] [T 192.168.101.228:4597   ] [                   main.util.Sender] - 192.168.101.228:4597 [TID] 40014154 VERF = 68 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 36 34 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 34 36 30 30 31 30 54 45 
+												48 5F 48 59 5A 4D 41 54 30 32 31 34 34 30 30 31 
+												34 31 35 34
+												TO DAYHAN_SERVICE OK ! 0.188 sec.
+
+2021-04-01 14:31:48.946 [INFO ] [T 192.168.101.228:4597   ] [                   main.util.Reader] - 192.168.101.228:4597 [TID] 40014154 RECEIVING FROM DAYHAN_SERVICE ...
+2021-04-01 14:31:49.034 [INFO ] [T 192.168.101.228:4597   ] [                   main.util.Reader] - 192.168.101.228:4597 [TID] 40014154 2 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-04-01 14:31:49.034 [INFO ] [T 192.168.101.228:4597   ] [       main.services.ServiceHandler] - 192.168.101.228:4597 [TID] 40014154 DAYHAN_SERVICE RESPONSE : OK RECEIVED
+2021-04-01 14:31:51.036 [INFO ] [T 192.168.101.228:4597   ] [  main.connections.ToHostConnection] - 192.168.101.228:4597 [TID] 40014154 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:31:51.036 [INFO ] [T 192.168.101.228:4597   ] [              main.builders.Builder] - 192.168.101.228:4597 [TID] 40014154 PAID BUILD COMPLETED
+2021-04-01 14:31:51.037 [INFO ] [T 192.168.101.228:4597   ] [                   main.util.Sender] - 192.168.101.228:4597 [TID] 40014154 PAID = 52 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 34 38 50 41 49 44 3A 00 00 00 00 00 00 00 
+												30 30 30 30 30 30 30 30 34 36 30 30 31 30 54 45 
+												48 5F 48 59 5A 4D 41 54 30 32 31 34 34 30 30 31 
+												34 31 35 34
+												TO DAYHAN_SERVICE OK ! 2.278 sec.
+
+2021-04-01 14:34:33.156 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4598
+2021-04-01 14:34:33.158 [INFO ] [T 192.168.101.228:4598   ] [                   main.util.Reader] - 192.168.101.228:4598 RECEIVING FROM TERMINAL ...
+2021-04-01 14:34:33.349 [INFO ] [T 192.168.101.228:4598   ] [                   main.util.Reader] - 192.168.101.228:4598 362 BYTES FROM TERMINAL RECEIVED
+2021-04-01 14:34:33.349 [INFO ] [T 192.168.101.228:4598   ] [               main.data.DataParser] - 192.168.101.228:4598 [TID] 40014154 DATA FROM TERMINAL PARSED
+2021-04-01 14:34:33.350 [INFO ] [T 192.168.101.228:4598   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0358
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000004000
+								field 7  [DATE_TIME]         = 0104143430
+								field 11 [STAN]              = 000008
+								field 12 [DATE_TIME_LOCAL]   = 210104143430
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 40014154
+								field 42 [MID]               = 40000005339    
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || TEH_HYZMAT || 16 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = C8 C8 E8 AB A4 B6 31 73
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 40 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 34 3D B8 8D 2D 4D D9 0E 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 4C 9F 37 04 EE 86 0D B3 9F 41 03 00 00 07 9F 6E 00 5F 34 01 01
+								
+2021-04-01 14:34:33.350 [INFO ] [T 192.168.101.228:4598   ] [  main.connections.ToHostConnection] - 192.168.101.228:4598 [TID] 40014154 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:34:33.350 [INFO ] [T 192.168.101.228:4598   ] [              main.builders.Builder] - 192.168.101.228:4598 [TID] 40014154 VERF BUILD COMPLETED
+2021-04-01 14:34:33.351 [INFO ] [T 192.168.101.228:4598   ] [                   main.util.Sender] - 192.168.101.228:4598 [TID] 40014154 VERF = 68 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 36 34 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 34 30 30 30 31 30 54 45 
+												48 5F 48 59 5A 4D 41 54 30 32 31 36 34 30 30 31 
+												34 31 35 34
+												TO DAYHAN_SERVICE OK ! 0.193 sec.
+
+2021-04-01 14:34:33.351 [INFO ] [T 192.168.101.228:4598   ] [                   main.util.Reader] - 192.168.101.228:4598 [TID] 40014154 RECEIVING FROM DAYHAN_SERVICE ...
+2021-04-01 14:34:33.438 [INFO ] [T 192.168.101.228:4598   ] [                   main.util.Reader] - 192.168.101.228:4598 [TID] 40014154 2 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-04-01 14:34:33.438 [INFO ] [T 192.168.101.228:4598   ] [       main.services.ServiceHandler] - 192.168.101.228:4598 [TID] 40014154 DAYHAN_SERVICE RESPONSE : OK RECEIVED
+2021-04-01 14:34:35.445 [INFO ] [T 192.168.101.228:4598   ] [  main.connections.ToHostConnection] - 192.168.101.228:4598 [TID] 40014154 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:34:35.445 [INFO ] [T 192.168.101.228:4598   ] [              main.builders.Builder] - 192.168.101.228:4598 [TID] 40014154 PAID BUILD COMPLETED
+2021-04-01 14:34:35.445 [INFO ] [T 192.168.101.228:4598   ] [                   main.util.Sender] - 192.168.101.228:4598 [TID] 40014154 PAID = 52 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 34 38 50 41 49 44 3A 00 00 00 00 00 00 00 
+												30 30 30 30 30 30 30 30 34 30 30 30 31 30 54 45 
+												48 5F 48 59 5A 4D 41 54 30 32 31 36 34 30 30 31 
+												34 31 35 34
+												TO DAYHAN_SERVICE OK ! 2.288 sec.
+
+2021-04-01 14:37:45.162 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-04-01 14:37:45 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : false           
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7775            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.11     
+HOST_PORT               : 7777            
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-04-01 14:39:04.741 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4599
+2021-04-01 14:39:04.748 [INFO ] [T 192.168.101.228:4599   ] [                   main.util.Reader] - 192.168.101.228:4599 RECEIVING FROM TERMINAL ...
+2021-04-01 14:39:04.930 [INFO ] [T 192.168.101.228:4599   ] [                   main.util.Reader] - 192.168.101.228:4599 362 BYTES FROM TERMINAL RECEIVED
+2021-04-01 14:39:04.938 [INFO ] [T 192.168.101.228:4599   ] [               main.data.DataParser] - 192.168.101.228:4599 [TID] 40014154 DATA FROM TERMINAL PARSED
+2021-04-01 14:39:04.941 [INFO ] [T 192.168.101.228:4599   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0358
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000003500
+								field 7  [DATE_TIME]         = 0104143902
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210104143902
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 40014154
+								field 42 [MID]               = 40000005339    
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || TEH_HYZMAT || 12 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = C8 C8 E8 AB A4 B6 31 73
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 35 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 06 B4 BE 56 8E 86 72 3E 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 4E 9F 37 04 5E 88 1D 07 9F 41 03 00 00 08 9F 6E 00 5F 34 01 01
+								
+2021-04-01 14:39:04.946 [INFO ] [T 192.168.101.228:4599   ] [  main.connections.ToHostConnection] - 192.168.101.228:4599 [TID] 40014154 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:39:04.949 [INFO ] [T 192.168.101.228:4599   ] [              main.builders.Builder] - 192.168.101.228:4599 [TID] 40014154 VERF BUILD COMPLETED
+2021-04-01 14:39:04.953 [INFO ] [T 192.168.101.228:4599   ] [                   main.util.Sender] - 192.168.101.228:4599 [TID] 40014154 VERF = 68 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 36 34 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 33 35 30 30 31 30 54 45 
+												48 5F 48 59 5A 4D 41 54 30 32 31 32 34 30 30 31 
+												34 31 35 34
+												TO DAYHAN_SERVICE OK ! 0.206 sec.
+
+2021-04-01 14:39:04.953 [INFO ] [T 192.168.101.228:4599   ] [                   main.util.Reader] - 192.168.101.228:4599 [TID] 40014154 RECEIVING FROM DAYHAN_SERVICE ...
+2021-04-01 14:39:05.017 [INFO ] [T 192.168.101.228:4599   ] [                   main.util.Reader] - 192.168.101.228:4599 [TID] 40014154 2 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-04-01 14:39:05.018 [INFO ] [T 192.168.101.228:4599   ] [       main.services.ServiceHandler] - 192.168.101.228:4599 [TID] 40014154 DAYHAN_SERVICE RESPONSE : OK RECEIVED
+2021-04-01 14:39:07.027 [INFO ] [T 192.168.101.228:4599   ] [  main.connections.ToHostConnection] - 192.168.101.228:4599 [TID] 40014154 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:39:07.028 [INFO ] [T 192.168.101.228:4599   ] [              main.builders.Builder] - 192.168.101.228:4599 [TID] 40014154 PAID BUILD COMPLETED
+2021-04-01 14:39:07.028 [INFO ] [T 192.168.101.228:4599   ] [                   main.util.Sender] - 192.168.101.228:4599 [TID] 40014154 PAID = 68 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 36 34 50 41 49 44 7A 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 33 35 30 30 31 30 54 45 
+												48 5F 48 59 5A 4D 41 54 30 32 31 32 34 30 30 31 
+												34 31 35 34
+												TO DAYHAN_SERVICE OK ! 2.284 sec.
+
+2021-04-01 14:39:07.710 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4600
+2021-04-01 14:39:07.711 [INFO ] [T 192.168.101.228:4600   ] [                   main.util.Reader] - 192.168.101.228:4600 RECEIVING FROM TERMINAL ...
+2021-04-01 14:39:07.763 [INFO ] [T 192.168.101.228:4600   ] [                   main.util.Reader] - 192.168.101.228:4600 307 BYTES FROM TERMINAL RECEIVED
+2021-04-01 14:39:07.763 [INFO ] [T 192.168.101.228:4600   ] [               main.data.DataParser] - 192.168.101.228:4600 [TID] 40014154 DATA FROM TERMINAL PARSED
+2021-04-01 14:39:07.764 [INFO ] [T 192.168.101.228:4600   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0303
+								         [MTI]               = 0400
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000003500
+								field 7  [DATE_TIME]         = 0104143902
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210104143902
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 400
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 40014154
+								field 42 [MID]               = 40000005339    
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 35 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 06 B4 BE 56 8E 86 72 3E 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 4E 9F 37 04 5E 88 1D 07 9F 41 03 00 00 08 9F 6E 00 5F 34 01 01
+								
+2021-04-01 14:39:08.763 [INFO ] [T 192.168.101.228:4600   ] [  main.connections.ToHostConnection] - 192.168.101.228:4600 [TID] 40014154 TO HOST CONNECTED
+2021-04-01 14:39:08.765 [INFO ] [T 192.168.101.228:4600   ] [              main.builders.Builder] - 192.168.101.228:4600 [TID] 40014154 0400 BUILD COMPLETED
+2021-04-01 14:39:08.766 [INFO ] [T 192.168.101.228:4600   ] [                   main.util.Sender] - 192.168.101.228:4600 [TID] 40014154 0400 = 307 BYTES >>> TO HOST
+
+												30 33 30 33 30 34 30 30 32 30 05 80 20 C0 82 00 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 33 35 
+												30 30 30 31 30 34 31 34 33 39 30 32 30 30 30 30 
+												30 39 32 31 30 31 30 34 31 34 33 39 30 32 30 35 
+												31 34 30 30 30 30 33 37 39 39 33 34 37 30 31 39 
+												33 35 32 37 34 35 34 33 3D 32 35 30 35 36 30 31 
+												31 36 34 38 36 30 30 30 30 30 31 39 32 34 30 30 
+												31 34 31 35 34 34 30 30 30 30 30 30 35 33 33 39 
+												20 20 20 20 39 33 34 01 70 4F 08 43 42 54 20 43 
+												61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 
+												84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 
+												04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 
+												02 06 00 00 00 00 35 00 9F 03 06 00 00 00 00 00 
+												00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 
+												00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 
+												9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 06 B4 
+												BE 56 8E 86 72 3E 9F 27 01 80 9F 33 03 E0 40 C8 
+												9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 4E 9F 
+												37 04 5E 88 1D 07 9F 41 03 00 00 08 9F 6E 00 5F 
+												34 01 01
+												TO HOST OK ! 1.055 sec.
+
+2021-04-01 14:39:08.766 [INFO ] [T 192.168.101.228:4600   ] [                   main.util.Reader] - 192.168.101.228:4600 [TID] 40014154 RECEIVING FROM HOST ...
+2021-04-01 14:39:09.422 [INFO ] [T 192.168.101.228:4600   ] [                   main.util.Reader] - 192.168.101.228:4600 [TID] 40014154 117 BYTES FROM HOST RECEIVED
+2021-04-01 14:39:09.422 [INFO ] [T 192.168.101.228:4600   ] [               main.data.DataParser] - 192.168.101.228:4600 [TID] 40014154 DATA FROM HOST PARSED
+2021-04-01 14:39:09.422 [INFO ] [T 192.168.101.228:4600   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0113
+								         [MTI]               = 0410
+								field 2  [PAN]               = 9934701935274543
+								field 3  [PROC_CODE]         = 000000
+								field 4  [AMOUNT]            = 000000003500
+								field 7  [DATE_TIME]         = 0401144702
+								field 11 [STAN]              = 000009
+								field 12 [DATE_TIME_LOCAL]   = 210104143902
+								field 37 [RET_REF_NUM]       = 001178715797
+								field 39 [RESP_CODE]         = 914
+								field 41 [TID]               = 40014154
+								field 49 [CURRENCY_CODE]     = 934
+								field 55 [EMV_DATA]          = 00 09 9F 36 02 03 4E 8A 02 39 36
+								
+2021-04-01 14:39:09.423 [INFO ] [T 192.168.101.228:4600   ] [              main.builders.Builder] - 192.168.101.228:4600 [TID] 40014154 0410 BUILD COMPLETED
+2021-04-01 14:39:09.423 [INFO ] [T 192.168.101.228:4600   ] [                   main.util.Sender] - 192.168.101.228:4600 [TID] 40014154 0410 = 117 BYTES >>> TO TERMINAL
+
+												30 31 31 33 30 34 31 30 72 30 00 00 0A 80 82 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												33 35 30 30 30 34 30 31 31 34 34 37 30 32 30 30 
+												30 30 30 39 32 31 30 31 30 34 31 34 33 39 30 32 
+												30 30 31 31 37 38 37 31 35 37 39 37 39 31 34 34 
+												30 30 31 34 31 35 34 39 33 34 00 09 9F 36 02 03 
+												4E 8A 02 39 36
+												TO TERMINAL OK ! 1.712 sec.
+
+2021-04-01 14:40:13.029 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4601
+2021-04-01 14:40:13.032 [INFO ] [T 192.168.101.228:4601   ] [                   main.util.Reader] - 192.168.101.228:4601 RECEIVING FROM TERMINAL ...
+2021-04-01 14:40:13.217 [INFO ] [T 192.168.101.228:4601   ] [                   main.util.Reader] - 192.168.101.228:4601 362 BYTES FROM TERMINAL RECEIVED
+2021-04-01 14:40:13.218 [INFO ] [T 192.168.101.228:4601   ] [               main.data.DataParser] - 192.168.101.228:4601 [TID] 40014155 DATA FROM TERMINAL PARSED
+2021-04-01 14:40:13.218 [INFO ] [T 192.168.101.228:4601   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0358
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000001400
+								field 7  [DATE_TIME]         = 0104143950
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210104143950
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 40014155
+								field 42 [MID]               = 40000005339    
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || SUW_HYZMAT || 26 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = 2B 2B A4 34 40 1C 7C 96
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 14 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 02 56 79 D7 C5 65 FC EC 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 4F 9F 37 04 4B 03 34 87 9F 41 03 00 00 09 9F 6E 00 5F 34 01 01
+								
+2021-04-01 14:40:13.219 [INFO ] [T 192.168.101.228:4601   ] [  main.connections.ToHostConnection] - 192.168.101.228:4601 [TID] 40014155 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:40:13.219 [INFO ] [T 192.168.101.228:4601   ] [              main.builders.Builder] - 192.168.101.228:4601 [TID] 40014155 VERF BUILD COMPLETED
+2021-04-01 14:40:13.219 [INFO ] [T 192.168.101.228:4601   ] [                   main.util.Sender] - 192.168.101.228:4601 [TID] 40014155 VERF = 68 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 36 34 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 31 34 30 30 31 30 53 55 
+												57 5F 48 59 5A 4D 41 54 30 32 32 36 34 30 30 31 
+												34 31 35 35
+												TO DAYHAN_SERVICE OK ! 0.188 sec.
+
+2021-04-01 14:40:13.219 [INFO ] [T 192.168.101.228:4601   ] [                   main.util.Reader] - 192.168.101.228:4601 [TID] 40014155 RECEIVING FROM DAYHAN_SERVICE ...
+2021-04-01 14:40:13.281 [INFO ] [T 192.168.101.228:4601   ] [                   main.util.Reader] - 192.168.101.228:4601 [TID] 40014155 3 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-04-01 14:40:13.282 [INFO ] [T 192.168.101.228:4601   ] [       main.services.ServiceHandler] - 192.168.101.228:4601 [TID] 40014155 DAYHAN_SERVICE RESPONSE : 725. CAN`T PAY. VERIFY NOT PASS
+2021-04-01 14:40:13.283 [INFO ] [T 192.168.101.228:4601   ] [      main.builders.SendBackBuilder] - 192.168.101.228:4601 [TID] 40014155 SEND_BACK 0210 BUILD COMPLETED
+2021-04-01 14:40:13.284 [INFO ] [T 192.168.101.228:4601   ] [                   main.util.Sender] - 192.168.101.228:4601 [TID] 40014155 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												31 34 30 30 30 31 30 34 31 34 34 30 31 33 30 30 
+												30 30 30 31 32 31 30 31 30 34 31 34 34 30 31 33 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 35 34 
+												30 30 31 34 31 35 35 39 33 34
+												TO TERMINAL OK ! 0.252 sec.
+
+2021-04-01 14:41:17.926 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:4602
+2021-04-01 14:41:17.927 [INFO ] [T 192.168.101.228:4602   ] [                   main.util.Reader] - 192.168.101.228:4602 RECEIVING FROM TERMINAL ...
+2021-04-01 14:41:18.105 [INFO ] [T 192.168.101.228:4602   ] [                   main.util.Reader] - 192.168.101.228:4602 362 BYTES FROM TERMINAL RECEIVED
+2021-04-01 14:41:18.106 [INFO ] [T 192.168.101.228:4602   ] [               main.data.DataParser] - 192.168.101.228:4602 [TID] 40014154 DATA FROM TERMINAL PARSED
+2021-04-01 14:41:18.107 [INFO ] [T 192.168.101.228:4602   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0358
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000800
+								field 7  [DATE_TIME]         = 0104144116
+								field 11 [STAN]              = 000010
+								field 12 [DATE_TIME_LOCAL]   = 210104144116
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 40014154
+								field 42 [MID]               = 40000005339    
+								field 48 [ADDITIONAL_DATA]   = DAYHAN_SERVICE || TEH_HYZMAT || 12 || 
+								field 49 [CURRENCY_CODE]     = 934
+								field 52 [PIN]               = C8 C8 E8 AB A4 B6 31 73
+								field 55 [EMV_DATA]          = 01 70 4F 08 43 42 54 20 43 61 72 64 5F 2A 02 09 34 71 00 72 00 82 02 38 00 84 08 43 42 54 20 43 61 72 64 91 00 95 05 08 00 04 80 00 9A 03 21 01 04 9B 02 E8 00 9C 01 00 9F 02 06 00 00 00 00 08 00 9F 03 06 00 00 00 00 00 00 9F 09 02 00 02 9F 10 12 01 11 A0 00 03 22 00 00 00 00 00 00 00 00 00 00 00 FF 9F 1A 02 07 95 9F 1E 08 39 30 31 38 30 32 35 31 9F 26 08 C9 96 12 E3 0F BB 24 09 9F 27 01 80 9F 33 03 E0 40 C8 9F 34 03 42 03 00 9F 35 01 11 9F 36 02 03 50 9F 37 04 6A CB 6F D0 9F 41 03 00 00 01 9F 6E 00 5F 34 01 01
+								
+2021-04-01 14:41:18.108 [INFO ] [T 192.168.101.228:4602   ] [  main.connections.ToHostConnection] - 192.168.101.228:4602 [TID] 40014154 TO DAYHAN_SERVICE CONNECTED
+2021-04-01 14:41:18.109 [INFO ] [T 192.168.101.228:4602   ] [              main.builders.Builder] - 192.168.101.228:4602 [TID] 40014154 VERF BUILD COMPLETED
+2021-04-01 14:41:18.110 [INFO ] [T 192.168.101.228:4602   ] [                   main.util.Sender] - 192.168.101.228:4602 [TID] 40014154 VERF = 68 BYTES >>> TO DAYHAN_SERVICE
+
+												30 30 36 34 56 45 52 46 7A 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 30 38 30 30 31 30 54 45 
+												48 5F 48 59 5A 4D 41 54 30 32 31 32 34 30 30 31 
+												34 31 35 34
+												TO DAYHAN_SERVICE OK ! 0.182 sec.
+
+2021-04-01 14:41:18.110 [INFO ] [T 192.168.101.228:4602   ] [                   main.util.Reader] - 192.168.101.228:4602 [TID] 40014154 RECEIVING FROM DAYHAN_SERVICE ...
+2021-04-01 14:41:18.182 [INFO ] [T 192.168.101.228:4602   ] [                   main.util.Reader] - 192.168.101.228:4602 [TID] 40014154 3 BYTES FROM DAYHAN_SERVICE RECEIVED
+2021-04-01 14:41:18.182 [INFO ] [T 192.168.101.228:4602   ] [       main.services.ServiceHandler] - 192.168.101.228:4602 [TID] 40014154 DAYHAN_SERVICE RESPONSE : 724. CAN`T PAY. VERIFY NOT PASS
+2021-04-01 14:41:18.182 [INFO ] [T 192.168.101.228:4602   ] [      main.builders.SendBackBuilder] - 192.168.101.228:4602 [TID] 40014154 SEND_BACK 0210 BUILD COMPLETED
+2021-04-01 14:41:18.183 [INFO ] [T 192.168.101.228:4602   ] [                   main.util.Sender] - 192.168.101.228:4602 [TID] 40014154 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 38 30 30 30 31 30 34 31 34 34 31 31 38 30 30 
+												30 30 31 30 32 31 30 31 30 34 31 34 34 31 31 38 
+												30 30 30 30 30 30 30 30 30 30 30 30 37 32 34 34 
+												30 30 31 34 31 35 34 39 33 34
+												TO TERMINAL OK ! 0.255 sec.
+

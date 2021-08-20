@@ -1,0 +1,200 @@
+2021-03-02 11:36:38.508 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-02 11:36:38 
+ 
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : true            
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-03-02 11:38:24.048 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.172:7102
+2021-03-02 11:38:24.048 [ERROR] [main                     ] [                        main.TTGate] - 192.168.101.172:7102 THREAD START ERROR 
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at main.TermHandleThread.<init>(TermHandleThread.java:96)
+	at main.TTGate.main(TTGate.java:163)
+2021-03-02 11:42:12.317 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-02 11:42:12 
+ 
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : true            
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-03-02 11:42:21.468 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.172:7328
+2021-03-02 11:42:21.468 [ERROR] [main                     ] [                        main.TTGate] - 192.168.101.172:7328 THREAD START ERROR 
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at main.TermHandleThread.<init>(TermHandleThread.java:96)
+	at main.TTGate.main(TTGate.java:163)
+2021-03-02 11:44:18.247 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-02 11:44:18 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : true            
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-03-02 11:44:22.567 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.172:7576
+2021-03-02 11:44:22.567 [INFO ] [T 192.168.101.172:7576   ] [                   main.util.Reader] - 192.168.101.172:7576 RECEIVING FROM TERMINAL ...
+2021-03-02 11:44:22.598 [INFO ] [T 192.168.101.172:7576   ] [                   main.util.Reader] - 192.168.101.172:7576 177 BYTES FROM TERMINAL RECEIVED
+2021-03-02 11:44:24.588 [INFO ] [T 192.168.101.172:7576   ] [               main.data.DataParser] - 192.168.101.172:7576 [TID] 11002281 DATA FROM TERMINAL PARSED
+2021-03-02 11:47:29.537 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.172:7737
+2021-03-02 11:47:29.537 [INFO ] [T 192.168.101.172:7737   ] [                   main.util.Reader] - 192.168.101.172:7737 RECEIVING FROM TERMINAL ...
+2021-03-02 11:47:29.567 [INFO ] [T 192.168.101.172:7737   ] [                   main.util.Reader] - 192.168.101.172:7737 177 BYTES FROM TERMINAL RECEIVED
+2021-03-02 11:47:29.567 [INFO ] [T 192.168.101.172:7737   ] [               main.data.DataParser] - 192.168.101.172:7737 [TID] 11002281 DATA FROM TERMINAL PARSED
+2021-03-02 11:47:29.567 [INFO ] [T 192.168.101.172:7737   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0173
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000001
+								field 7  [DATE_TIME]         = 0203114729
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210203114729
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934111000217010=59036011230700000444
+								field 41 [TID]               = 11002281
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = FUEL_SERVICE || FUEL_ORG_CREDIT || 
+								field 49 [CURRENCY_CODE]     = 700
+								
+2021-03-02 11:47:31.607 [INFO ] [T 192.168.101.172:7737   ] [             main.repo.TerminalRepo] - 192.168.101.172:7737 [TID] 11002281 STATUS IS NOT ACTIVE. ABORTING.
+2021-03-02 11:48:47.807 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-03-02 11:48:47 
+ 
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.172 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 192.168.101.172 
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 192.168.101.172 
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.172 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.12     
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-03-02 11:48:50.817 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.172:7819
+2021-03-02 11:48:50.817 [INFO ] [T 192.168.101.172:7819   ] [                   main.util.Reader] - 192.168.101.172:7819 RECEIVING FROM TERMINAL ...
+2021-03-02 11:48:50.847 [INFO ] [T 192.168.101.172:7819   ] [                   main.util.Reader] - 192.168.101.172:7819 177 BYTES FROM TERMINAL RECEIVED
+2021-03-02 11:48:50.851 [INFO ] [T 192.168.101.172:7819   ] [               main.data.DataParser] - 192.168.101.172:7819 [TID] 11002281 DATA FROM TERMINAL PARSED
+2021-03-02 11:48:50.851 [INFO ] [T 192.168.101.172:7819   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0173
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000001
+								field 7  [DATE_TIME]         = 0203114850
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210203114850
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934111000217010=59036011230700000444
+								field 41 [TID]               = 11002281
+								field 42 [MID]               = 17380100-000969
+								field 48 [ADDITIONAL_DATA]   = FUEL_SERVICE || FUEL_ORG_CREDIT || 
+								field 49 [CURRENCY_CODE]     = 700
+								
+2021-03-02 11:48:50.851 [INFO ] [T 192.168.101.172:7819   ] [  main.connections.ToHostConnection] - 192.168.101.172:7819 [TID] 11002281 TO FUEL_SERVICE CONNECTED
+2021-03-02 11:48:50.857 [INFO ] [T 192.168.101.172:7819   ] [              main.builders.Builder] - 192.168.101.172:7819 [TID] 11002281 FOCR BUILD COMPLETED
+2021-03-02 11:48:50.857 [INFO ] [T 192.168.101.172:7819   ] [                   main.util.Sender] - 192.168.101.172:7819 [TID] 11002281 FOCR = 61 BYTES >>> TO FUEL_SERVICE
+
+												30 30 35 37 46 4F 43 52 78 00 00 00 00 00 00 00 
+												39 39 33 34 31 31 31 30 30 30 32 31 37 30 31 30 
+												30 30 30 30 30 30 30 30 30 30 30 31 31 32 46 55 
+												45 4C 5F 53 45 52 56 49 43 45 37 30 30
+												TO FUEL_SERVICE OK ! 0.039 sec.
+
+2021-03-02 11:48:50.857 [INFO ] [T 192.168.101.172:7819   ] [                   main.util.Reader] - 192.168.101.172:7819 [TID] 11002281 RECEIVING FROM FUEL_SERVICE ...
+2021-03-02 11:48:50.907 [INFO ] [T 192.168.101.172:7819   ] [                   main.util.Reader] - 192.168.101.172:7819 [TID] 11002281 14 BYTES FROM FUEL_SERVICE RECEIVED
+2021-03-02 11:48:50.907 [INFO ] [T 192.168.101.172:7819   ] [              main.TermHandleThread] - 192.168.101.172:7819 [TID] 11002281 FUEL_SERVICE RESPONSE : OK210302114850 RECEIVED
+2021-03-02 11:48:50.907 [INFO ] [T 192.168.101.172:7819   ] [      main.builders.SendBackBuilder] - 192.168.101.172:7819 [TID] 11002281 SEND_BACK 0210 BUILD COMPLETED
+2021-03-02 11:48:50.907 [INFO ] [T 192.168.101.172:7819   ] [                   main.util.Sender] - 192.168.101.172:7819 [TID] 11002281 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 31 31 31 30 30 30 32 31 37 30 
+												31 30 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 30 30 31 30 32 30 33 31 31 34 38 35 30 30 30 
+												30 30 30 31 32 31 30 32 30 33 31 31 34 38 35 30 
+												30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 
+												31 30 30 32 32 38 31 37 30 30
+												TO TERMINAL OK ! 0.094 sec.
+

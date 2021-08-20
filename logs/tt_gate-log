@@ -1,0 +1,72 @@
+2021-08-17 11:22:21.936 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-08-17 11:22:21 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate2         
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-08-17 11:22:29.570 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:13145
+2021-08-17 11:22:29.644 [INFO ] [T 192.168.101.200:13145  ] [                   main.util.Reader] - 192.168.101.200:13145 RECEIVING FROM TERMINAL ...
+2021-08-17 11:22:29.665 [INFO ] [T 192.168.101.200:13145  ] [                   main.util.Reader] - 192.168.101.200:13145 64 BYTES FROM TERMINAL RECEIVED
+2021-08-17 11:22:29.823 [INFO ] [T 192.168.101.200:13145  ] [               main.data.DataParser] - 192.168.101.200:13145 [TID] 60006561 DATA FROM TERMINAL PARSED
+2021-08-17 11:22:29.825 [INFO ] [T 192.168.101.200:13145  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0060
+								         [MTI]               = 0800
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 1708112229
+								field 11 [STAN]              = 000001
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 60006561
+								field 42 [MID]               = 000000000003336
+								
+2021-08-17 11:22:31.868 [ERROR] [T 192.168.101.200:13145  ] [  main.connections.ToHostConnection] - 192.168.101.200:13145 [TID] 60006561 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:73)
+	at main.TermHandleThread.run(TermHandleThread.java:383)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

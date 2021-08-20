@@ -1,0 +1,172 @@
+2021-05-03 10:08:33.732 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-05-03 10:08:33 
+ 
+DAYHAN_SERVICE_ENABLED  : false           
+DAYHAN_SERVICE_IP       : 127.0.0.1       
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate          
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.123    
+HOST_PORT               : 10011           
+HOST_READ_TIMEOUT       : 10000           
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-05-03 10:09:10.794 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2644
+2021-05-03 10:09:10.913 [INFO ] [T 192.168.101.228:2644   ] [                   main.util.Reader] - 192.168.101.228:2644 RECEIVING FROM TERMINAL ...
+2021-05-03 10:09:11.408 [INFO ] [T 192.168.101.228:2644   ] [                   main.util.Reader] - 192.168.101.228:2644 185 BYTES FROM TERMINAL RECEIVED
+2021-05-03 10:09:11.568 [INFO ] [T 192.168.101.228:2644   ] [               main.data.DataParser] - 192.168.101.228:2644 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-05-03 10:09:11.583 [INFO ] [T 192.168.101.228:2644   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0181
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000011
+								field 7  [DATE_TIME]         = 0503101635
+								field 11 [STAN]              = 000001
+								field 12 [DATE_TIME_LOCAL]   = 210503101635
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934701935274543=25056011648600000192
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000001234
+								field 48 [ADDITIONAL_DATA]   = FUEL_SERVICE || FUEL_ORG_CREDIT || 
+								field 49 [CURRENCY_CODE]     = 700
+								field 52 [PIN]               = FB 5D 73 74 5A 1A 4C 82
+								
+2021-05-03 10:09:11.690 [INFO ] [T 192.168.101.228:2644   ] [  main.connections.ToHostConnection] - 192.168.101.228:2644 [TID] 60009296 TO FUEL_SERVICE CONNECTED
+2021-05-03 10:09:11.838 [INFO ] [T 192.168.101.228:2644   ] [              main.builders.Builder] - 192.168.101.228:2644 [TID] 60009296 FOCR BUILD COMPLETED
+2021-05-03 10:09:11.861 [INFO ] [T 192.168.101.228:2644   ] [                   main.util.Sender] - 192.168.101.228:2644 [TID] 60009296 FOCR = 72 BYTES >>> TO FUEL_SERVICE
+
+												30 30 36 38 46 4F 43 52 7A 00 00 00 00 00 00 00 
+												39 39 33 34 37 30 31 39 33 35 32 37 34 35 34 33 
+												30 30 30 30 30 30 30 30 30 30 31 31 31 35 46 55 
+												45 4C 5F 4F 52 47 5F 43 52 45 44 49 54 37 30 30 
+												36 30 30 30 39 32 39 36
+												TO FUEL_SERVICE OK ! 1.035 sec.
+
+2021-05-03 10:09:11.862 [INFO ] [T 192.168.101.228:2644   ] [                   main.util.Reader] - 192.168.101.228:2644 [TID] 60009296 RECEIVING FROM FUEL_SERVICE ...
+2021-05-03 10:09:12.008 [INFO ] [T 192.168.101.228:2644   ] [                   main.util.Reader] - 192.168.101.228:2644 [TID] 60009296 14 BYTES FROM FUEL_SERVICE RECEIVED
+2021-05-03 10:09:12.008 [INFO ] [T 192.168.101.228:2644   ] [       main.services.ServiceHandler] - 192.168.101.228:2644 [TID] 60009296 FUEL_SERVICE RESPONSE : OK210503100911 RECEIVED
+2021-05-03 10:09:12.029 [INFO ] [T 192.168.101.228:2644   ] [      main.builders.SendBackBuilder] - 192.168.101.228:2644 [TID] 60009296 SEND_BACK 0210 (000) BUILD COMPLETED
+2021-05-03 10:09:12.029 [INFO ] [T 192.168.101.228:2644   ] [                   main.util.Sender] - 192.168.101.228:2644 [TID] 60009296 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 37 30 31 39 33 35 32 37 34 35 
+												34 33 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 30 31 31 30 33 30 35 31 30 30 39 31 32 30 30 
+												30 30 30 31 32 31 30 33 30 35 31 30 30 39 31 32 
+												32 31 30 35 30 33 31 30 30 39 31 31 30 30 30 36 
+												30 30 30 39 32 39 36 37 30 30
+												TO TERMINAL OK ! 1.205 sec.
+
+2021-05-03 10:09:53.646 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2645
+2021-05-03 10:09:53.648 [INFO ] [T 192.168.101.228:2645   ] [                   main.util.Reader] - 192.168.101.228:2645 RECEIVING FROM TERMINAL ...
+2021-05-03 10:09:54.254 [INFO ] [T 192.168.101.228:2645   ] [                   main.util.Reader] - 192.168.101.228:2645 185 BYTES FROM TERMINAL RECEIVED
+2021-05-03 10:09:54.254 [INFO ] [T 192.168.101.228:2645   ] [               main.data.DataParser] - 192.168.101.228:2645 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-05-03 10:09:54.254 [INFO ] [T 192.168.101.228:2645   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0181
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000015
+								field 7  [DATE_TIME]         = 0305100941
+								field 11 [STAN]              = 000002
+								field 12 [DATE_TIME_LOCAL]   = 210305100941
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 6711910014378688=24056261093200000653
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000001234
+								field 48 [ADDITIONAL_DATA]   = FUEL_SERVICE || FUEL_ORG_CREDIT || 
+								field 49 [CURRENCY_CODE]     = 700
+								field 52 [PIN]               = 56 4E EC 76 8C 03 3D 8B
+								
+2021-05-03 10:09:54.255 [INFO ] [T 192.168.101.228:2645   ] [  main.connections.ToHostConnection] - 192.168.101.228:2645 [TID] 60009296 TO FUEL_SERVICE CONNECTED
+2021-05-03 10:09:54.255 [INFO ] [T 192.168.101.228:2645   ] [              main.builders.Builder] - 192.168.101.228:2645 [TID] 60009296 FOCR BUILD COMPLETED
+2021-05-03 10:09:54.256 [INFO ] [T 192.168.101.228:2645   ] [                   main.util.Sender] - 192.168.101.228:2645 [TID] 60009296 FOCR = 72 BYTES >>> TO FUEL_SERVICE
+
+												30 30 36 38 46 4F 43 52 7A 00 00 00 00 00 00 00 
+												36 37 31 31 39 31 30 30 31 34 33 37 38 36 38 38 
+												30 30 30 30 30 30 30 30 30 30 31 35 31 35 46 55 
+												45 4C 5F 4F 52 47 5F 43 52 45 44 49 54 37 30 30 
+												36 30 30 30 39 32 39 36
+												TO FUEL_SERVICE OK ! 0.609 sec.
+
+2021-05-03 10:09:54.256 [INFO ] [T 192.168.101.228:2645   ] [                   main.util.Reader] - 192.168.101.228:2645 [TID] 60009296 RECEIVING FROM FUEL_SERVICE ...
+2021-05-03 10:09:54.328 [INFO ] [T 192.168.101.228:2645   ] [                   main.util.Reader] - 192.168.101.228:2645 [TID] 60009296 14 BYTES FROM FUEL_SERVICE RECEIVED
+2021-05-03 10:09:54.328 [INFO ] [T 192.168.101.228:2645   ] [       main.services.ServiceHandler] - 192.168.101.228:2645 [TID] 60009296 FUEL_SERVICE RESPONSE : OK210503100954 RECEIVED
+2021-05-03 10:09:54.329 [INFO ] [T 192.168.101.228:2645   ] [      main.builders.SendBackBuilder] - 192.168.101.228:2645 [TID] 60009296 SEND_BACK 0210 (000) BUILD COMPLETED
+2021-05-03 10:09:54.329 [INFO ] [T 192.168.101.228:2645   ] [                   main.util.Sender] - 192.168.101.228:2645 [TID] 60009296 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 36 37 31 31 39 31 30 30 31 34 33 37 38 36 
+												38 38 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 30 31 35 30 33 30 35 31 30 30 39 35 34 30 30 
+												30 30 30 32 32 31 30 33 30 35 31 30 30 39 35 34 
+												32 31 30 35 30 33 31 30 30 39 35 34 30 30 30 36 
+												30 30 30 39 32 39 36 37 30 30
+												TO TERMINAL OK ! 0.682 sec.
+
+2021-05-03 10:10:46.241 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.228:2646
+2021-05-03 10:10:46.243 [INFO ] [T 192.168.101.228:2646   ] [                   main.util.Reader] - 192.168.101.228:2646 RECEIVING FROM TERMINAL ...
+2021-05-03 10:10:46.845 [INFO ] [T 192.168.101.228:2646   ] [                   main.util.Reader] - 192.168.101.228:2646 185 BYTES FROM TERMINAL RECEIVED
+2021-05-03 10:10:46.846 [INFO ] [T 192.168.101.228:2646   ] [               main.data.DataParser] - 192.168.101.228:2646 [TID] 60009296 DATA FROM TERMINAL PARSED
+2021-05-03 10:10:46.847 [INFO ] [T 192.168.101.228:2646   ] [               main.data.DataParser] -
+								         [LENGTH]            = 0181
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 500000
+								field 4  [AMOUNT]            = 000000000011
+								field 7  [DATE_TIME]         = 0305101034
+								field 11 [STAN]              = 000003
+								field 12 [DATE_TIME_LOCAL]   = 210305101034
+								field 22 [POS_ENTRY_MOE]     = 051
+								field 24 [FUNC_CODE]         = 200
+								field 25 [POS_COND_CODE]     = 00
+								field 35 [TRACK_2]           = 9934111000119815=57116011142900000754
+								field 41 [TID]               = 60009296
+								field 42 [MID]               = 000000000001234
+								field 48 [ADDITIONAL_DATA]   = FUEL_SERVICE || FUEL_ORG_CREDIT || 
+								field 49 [CURRENCY_CODE]     = 700
+								field 52 [PIN]               = 77 38 E9 C5 A4 30 EB F6
+								
+2021-05-03 10:10:46.848 [INFO ] [T 192.168.101.228:2646   ] [  main.connections.ToHostConnection] - 192.168.101.228:2646 [TID] 60009296 TO FUEL_SERVICE CONNECTED
+2021-05-03 10:10:46.849 [INFO ] [T 192.168.101.228:2646   ] [              main.builders.Builder] - 192.168.101.228:2646 [TID] 60009296 FOCR BUILD COMPLETED
+2021-05-03 10:10:46.850 [INFO ] [T 192.168.101.228:2646   ] [                   main.util.Sender] - 192.168.101.228:2646 [TID] 60009296 FOCR = 72 BYTES >>> TO FUEL_SERVICE
+
+												30 30 36 38 46 4F 43 52 7A 00 00 00 00 00 00 00 
+												39 39 33 34 31 31 31 30 30 30 31 31 39 38 31 35 
+												30 30 30 30 30 30 30 30 30 30 31 31 31 35 46 55 
+												45 4C 5F 4F 52 47 5F 43 52 45 44 49 54 37 30 30 
+												36 30 30 30 39 32 39 36
+												TO FUEL_SERVICE OK ! 0.607 sec.
+
+2021-05-03 10:10:46.850 [INFO ] [T 192.168.101.228:2646   ] [                   main.util.Reader] - 192.168.101.228:2646 [TID] 60009296 RECEIVING FROM FUEL_SERVICE ...
+2021-05-03 10:10:46.922 [INFO ] [T 192.168.101.228:2646   ] [                   main.util.Reader] - 192.168.101.228:2646 [TID] 60009296 14 BYTES FROM FUEL_SERVICE RECEIVED
+2021-05-03 10:10:46.922 [INFO ] [T 192.168.101.228:2646   ] [       main.services.ServiceHandler] - 192.168.101.228:2646 [TID] 60009296 FUEL_SERVICE RESPONSE : OK210503101046 RECEIVED
+2021-05-03 10:10:46.922 [INFO ] [T 192.168.101.228:2646   ] [      main.builders.SendBackBuilder] - 192.168.101.228:2646 [TID] 60009296 SEND_BACK 0210 (000) BUILD COMPLETED
+2021-05-03 10:10:46.923 [INFO ] [T 192.168.101.228:2646   ] [                   main.util.Sender] - 192.168.101.228:2646 [TID] 60009296 0210 = 106 BYTES >>> TO TERMINAL
+
+												30 31 30 32 30 32 31 30 72 30 00 00 0A 80 80 00 
+												31 36 39 39 33 34 31 31 31 30 30 30 31 31 39 38 
+												31 35 35 30 30 30 30 30 30 30 30 30 30 30 30 30 
+												30 30 31 31 30 33 30 35 31 30 31 30 34 36 30 30 
+												30 30 30 33 32 31 30 33 30 35 31 30 31 30 34 36 
+												32 31 30 35 30 33 31 30 31 30 34 36 30 30 30 36 
+												30 30 30 39 32 39 36 37 30 30
+												TO TERMINAL OK ! 0.68 sec.
+

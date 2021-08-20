@@ -1,0 +1,504 @@
+2021-07-14 10:00:06.415 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 10:00:06 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 10:00:09.718 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:26187
+2021-07-14 10:00:09.723 [INFO ] [T 192.168.101.200:26187  ] [                   main.util.Reader] - 192.168.101.200:26187 RECEIVING FROM TERMINAL ...
+2021-07-14 10:00:09.753 [INFO ] [T 192.168.101.200:26187  ] [                   main.util.Reader] - 192.168.101.200:26187 64 BYTES FROM TERMINAL RECEIVED
+2021-07-14 10:00:09.762 [INFO ] [T 192.168.101.200:26187  ] [               main.data.DataParser] - 192.168.101.200:26187 [TID] 70000143 DATA FROM TERMINAL PARSED
+2021-07-14 10:00:09.763 [INFO ] [T 192.168.101.200:26187  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0060
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 1111094200
+								field 11 [STAN]              = 000001
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 70000143
+								field 42 [MID]               = 000000000003336
+								
+2021-07-14 10:00:15.209 [ERROR] [T 192.168.101.200:26187  ] [  main.connections.ToHostConnection] - 192.168.101.200:26187 [TID] 70000143 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:72)
+	at main.TermHandleThread.run(TermHandleThread.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-14 10:01:11.494 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 10:01:11 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 10:01:20.513 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:26329
+2021-07-14 10:01:20.518 [INFO ] [T 192.168.101.200:26329  ] [                   main.util.Reader] - 192.168.101.200:26329 RECEIVING FROM TERMINAL ...
+2021-07-14 10:01:20.554 [INFO ] [T 192.168.101.200:26329  ] [                   main.util.Reader] - 192.168.101.200:26329 64 BYTES FROM TERMINAL RECEIVED
+2021-07-14 10:01:20.562 [INFO ] [T 192.168.101.200:26329  ] [               main.data.DataParser] - 192.168.101.200:26329 [TID] 70000143 DATA FROM TERMINAL PARSED
+2021-07-14 10:01:20.563 [INFO ] [T 192.168.101.200:26329  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0060
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 1111094200
+								field 11 [STAN]              = 000001
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 70000143
+								field 42 [MID]               = 000000000003336
+								
+2021-07-14 10:01:26.583 [ERROR] [T 192.168.101.200:26329  ] [  main.connections.ToHostConnection] - 192.168.101.200:26329 [TID] 70000143 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:72)
+	at main.TermHandleThread.run(TermHandleThread.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-14 10:03:07.151 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 10:03:07 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 10:03:14.535 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:26362
+2021-07-14 10:03:14.540 [INFO ] [T 192.168.101.200:26362  ] [                   main.util.Reader] - 192.168.101.200:26362 RECEIVING FROM TERMINAL ...
+2021-07-14 10:03:14.571 [INFO ] [T 192.168.101.200:26362  ] [                   main.util.Reader] - 192.168.101.200:26362 64 BYTES FROM TERMINAL RECEIVED
+2021-07-14 10:03:14.579 [INFO ] [T 192.168.101.200:26362  ] [               main.data.DataParser] - 192.168.101.200:26362 [TID] 70000143 DATA FROM TERMINAL PARSED
+2021-07-14 10:03:14.580 [INFO ] [T 192.168.101.200:26362  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0060
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 1111094200
+								field 11 [STAN]              = 000001
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 70000143
+								field 42 [MID]               = 000000000003336
+								
+2021-07-14 10:03:19.639 [ERROR] [T 192.168.101.200:26362  ] [  main.connections.ToHostConnection] - 192.168.101.200:26362 [TID] 70000143 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:72)
+	at main.TermHandleThread.run(TermHandleThread.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-14 10:06:33.698 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 10:06:33 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 10:06:36.999 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:26396
+2021-07-14 10:06:37.005 [INFO ] [T 192.168.101.200:26396  ] [                   main.util.Reader] - 192.168.101.200:26396 RECEIVING FROM TERMINAL ...
+2021-07-14 10:06:37.037 [INFO ] [T 192.168.101.200:26396  ] [                   main.util.Reader] - 192.168.101.200:26396 64 BYTES FROM TERMINAL RECEIVED
+2021-07-14 10:06:37.046 [INFO ] [T 192.168.101.200:26396  ] [               main.data.DataParser] - 192.168.101.200:26396 [TID] 70000143 DATA FROM TERMINAL PARSED
+2021-07-14 10:06:37.047 [INFO ] [T 192.168.101.200:26396  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0060
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 1111094200
+								field 11 [STAN]              = 000001
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 70000143
+								field 42 [MID]               = 000000000003336
+								
+2021-07-14 10:06:42.134 [ERROR] [T 192.168.101.200:26396  ] [  main.connections.ToHostConnection] - 192.168.101.200:26396 [TID] 70000143 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:72)
+	at main.TermHandleThread.run(TermHandleThread.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-14 10:07:52.099 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 10:07:52 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 10:07:56.982 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:26425
+2021-07-14 10:07:56.987 [INFO ] [T 192.168.101.200:26425  ] [                   main.util.Reader] - 192.168.101.200:26425 RECEIVING FROM TERMINAL ...
+2021-07-14 10:07:57.021 [INFO ] [T 192.168.101.200:26425  ] [                   main.util.Reader] - 192.168.101.200:26425 64 BYTES FROM TERMINAL RECEIVED
+2021-07-14 10:07:57.028 [INFO ] [T 192.168.101.200:26425  ] [               main.data.DataParser] - 192.168.101.200:26425 [TID] 70000143 DATA FROM TERMINAL PARSED
+2021-07-14 10:07:57.030 [INFO ] [T 192.168.101.200:26425  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0060
+								         [MTI]               = 0200
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 1111094200
+								field 11 [STAN]              = 000001
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 70000143
+								field 42 [MID]               = 000000000003336
+								
+2021-07-14 10:08:02.090 [ERROR] [T 192.168.101.200:26425  ] [  main.connections.ToHostConnection] - 192.168.101.200:26425 [TID] 70000143 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:72)
+	at main.TermHandleThread.run(TermHandleThread.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-14 10:40:27.375 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 10:40:27 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 10:40:31.089 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:27131
+2021-07-14 10:40:31.094 [INFO ] [T 192.168.101.200:27131  ] [                   main.util.Reader] - 192.168.101.200:27131 RECEIVING FROM TERMINAL ...
+2021-07-14 10:40:31.126 [INFO ] [T 192.168.101.200:27131  ] [                   main.util.Reader] - 192.168.101.200:27131 64 BYTES FROM TERMINAL RECEIVED
+2021-07-14 10:40:31.134 [INFO ] [T 192.168.101.200:27131  ] [               main.data.DataParser] - 192.168.101.200:27131 [TID] 70000143 DATA FROM TERMINAL PARSED
+2021-07-14 10:40:31.135 [INFO ] [T 192.168.101.200:27131  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0060
+								         [MTI]               = 0800
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 1111094200
+								field 11 [STAN]              = 000001
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 70000143
+								field 42 [MID]               = 000000000003336
+								
+2021-07-14 10:40:36.153 [ERROR] [T 192.168.101.200:27131  ] [  main.connections.ToHostConnection] - 192.168.101.200:27131 [TID] 70000143 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:72)
+	at main.TermHandleThread.run(TermHandleThread.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2021-07-14 10:42:05.757 [INFO ] [main                     ] [                        main.TTGate] - 
+
+====================================================== 
+TT.Gate v 2.0.0 (ISO 8583) 
+ 
+STARTED AT 2021-07-14 10:42:05 
+ 
+AA_SERVICE_ENABLED      : false           
+AA_SERVICE_IP           : 127.0.0.1       
+AA_SERVICE_PORT         : 5555            
+AA_SERVICE_TERM         : 60011575        
+DAYHAN_SERVICE_ENABLED  : true            
+DAYHAN_SERVICE_IP       : 192.168.101.200 
+DAYHAN_SERVICE_PORT     : 4444            
+DB_IP                   : 127.0.0.1       
+DB_NAME                 : ttgate_test     
+DB_PASSWORD             : postgres        
+DB_PORT                 : 5432            
+DB_USER                 : postgres        
+FUEL_SERVICE_ENABLED    : true            
+FUEL_SERVICE_IP         : 127.0.0.1       
+FUEL_SERVICE_PORT       : 3333            
+GATE_IP                 : 192.168.101.200 
+GATE_PORT               : 7777            
+HOST_CONNECT_TIMEOUT    : 2000            
+HOST_IP                 : 10.10.11.121    
+HOST_PORT               : 10010           
+HOST_READ_TIMEOUT       : 20000           
+MAILING_ENABLED         : true            
+MAIL_HOST               : smtp.mail.ru    
+MAIL_INET_ADDRESS_FROM  : y.shepilova@turkmen-tranzit.com 
+MAIL_INET_ADDRESS_TO    : anton.viktorovich84@gmail.com,a.sidorov@turkmen-tranzit.com 
+MAIL_PASSWORD           : 19idarat        
+MAIL_PORT               : 465             
+MAIL_SUBJECT            : TT.GATE_ALERT !!! 
+MAIL_USERNAME           : y.shepilova@turkmen-tranzit.com 
+OUT_OF_SERVICE          : false           
+TERM_READ_TIMEOUT       : 20000           
+====================================================== 
+
+2021-07-14 10:42:12.671 [INFO ] [main                     ] [                        main.TTGate] - NEW CONNECTION FROM: 192.168.101.200:27196
+2021-07-14 10:42:12.677 [INFO ] [T 192.168.101.200:27196  ] [                   main.util.Reader] - 192.168.101.200:27196 RECEIVING FROM TERMINAL ...
+2021-07-14 10:42:12.714 [INFO ] [T 192.168.101.200:27196  ] [                   main.util.Reader] - 192.168.101.200:27196 64 BYTES FROM TERMINAL RECEIVED
+2021-07-14 10:42:12.723 [INFO ] [T 192.168.101.200:27196  ] [               main.data.DataParser] - 192.168.101.200:27196 [TID] 70000143 DATA FROM TERMINAL PARSED
+2021-07-14 10:42:12.724 [INFO ] [T 192.168.101.200:27196  ] [               main.data.DataParser] - 
+								         [LENGTH]            = 0060
+								         [MTI]               = 0800
+								field 3  [PROC_CODE]         = 990000
+								field 7  [DATE_TIME]         = 1111094200
+								field 11 [STAN]              = 000001
+								field 24 [FUNC_CODE]         = 831
+								field 41 [TID]               = 70000143
+								field 42 [MID]               = 000000000003336
+								
+2021-07-14 10:42:20.300 [ERROR] [T 192.168.101.200:27196  ] [  main.connections.ToHostConnection] - 192.168.101.200:27196 [TID] 70000143 ERROR: CAN`T CONNECT TO HOST
+
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at main.connections.ToHostConnection.connect(ToHostConnection.java:72)
+	at main.TermHandleThread.run(TermHandleThread.java:382)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
