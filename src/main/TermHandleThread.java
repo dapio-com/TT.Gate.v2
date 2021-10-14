@@ -32,16 +32,16 @@ public class TermHandleThread extends Thread {
     public static String DB_USER;
     public static String DB_PASSWORD;
 
-    public static boolean AA_SERVICE_ENABLED;
+    public static boolean AA_SERVICE_ENABLED = false;
     public static String AA_SERVICE_IP;
     public static int AA_SERVICE_PORT;
     public static String AA_SERVICE_TERM;
 
-    public static boolean DAYHAN_SERVICE_ENABLED;
+    public static boolean DAYHAN_SERVICE_ENABLED = false;
     public static String DAYHAN_SERVICE_IP;
     public static int DAYHAN_SERVICE_PORT;
 
-    public static boolean FUEL_SERVICE_ENABLED;
+    public static boolean FUEL_SERVICE_ENABLED = false;
     public static String FUEL_SERVICE_IP;
     public static int FUEL_SERVICE_PORT;
 
@@ -461,119 +461,6 @@ public class TermHandleThread extends Thread {
 
 
 
-//    private void savePurchase(HostService hostService, TerminalService terminalService, long startTime) throws SQLException {
-//
-//        if (Converter.bytesToString(hostService.getParsedBody().get(39)).equals("000")) {
-//            DBConnection dbConnection = new DBConnection(DB_IP, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD);
-//            OperationRepo operationRepo = new OperationRepo(dbConnection);
-//            operationRepo.savePurchaseToDB(IP, hostService.getParsedBody(), serviceName, terminalService.getParsedField48());
-//            if (serviceName.equals("DAYHAN_SERVICE")) {
-//                ToHostConnection toDayhanConnection = new ToHostConnection(hostService.getParsedBody(), IP, DAYHAN_SERVICE, DAYHAN_SERVICE_IP, DAYHAN_SERVICE_PORT, 2000, 2000, null, startTime);
-//                toDayhanConnection.connect();
-//                DayhanService dayhanService = new DayhanService(toDayhanConnection, terminalService);
-//                dayhanService.sendTo(hostService.getParsedBody(), "PAID", startTime);
-//                dayhanService.closeConnection();
-//            }
-//            if (serviceName.equals("AA_SERVICE")) {
-//                ToHostConnection toAAConnection = new ToHostConnection(hostService.getParsedBody(), IP, AA_SERVICE, AA_SERVICE_IP, AA_SERVICE_PORT, 2000, 2000, null, startTime);
-//                toAAConnection.connect();
-//                AAService aaService = new AAService(toAAConnection, terminalService);
-//                aaService.sendTo(hostService.getParsedBody(), "GPAY", startTime);
-//                aaService.closeConnection();
-//            }
-//            if (serviceName.equals("FUEL_SERVICE")){
-//                ToHostConnection toFuelConnection = new ToHostConnection(hostService.getParsedBody(), IP, FUEL_SERVICE, FUEL_SERVICE_IP, FUEL_SERVICE_PORT, 2000, 2000, null, startTime);
-//                toFuelConnection.connect();
-//                FuelService fuelService = new FuelService(toFuelConnection, terminalService);
-//                fuelService.sendTo(terminalService.getParsedBody(), hostService.getParsedBody(), "PAID", startTime);
-//                fuelService.closeConnection();
-//            }
-//        }
-//
-//    }
-//
-//
-//    private void saveCancel(HostService hostService, TerminalService terminalService, long startTime) throws SQLException {
-//
-//        if (Converter.bytesToString(hostService.getParsedBody().get(39)).equals("000")) {
-//            DBConnection dbConnection = new DBConnection(DB_IP, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD);
-//            OperationRepo operationRepo = new OperationRepo(dbConnection);
-//            operationRepo.saveCancelToDB(IP, hostService.getParsedBody());
-//            if(DAYHAN_SERVICE_ENABLED){
-//                ToHostConnection toDayhanConnection = new ToHostConnection(hostService.getParsedBody(), IP, DAYHAN_SERVICE, DAYHAN_SERVICE_IP, DAYHAN_SERVICE_PORT, 2000, 2000, null, startTime);
-//                toDayhanConnection.connect();
-//                DayhanService dayhanService = new DayhanService(toDayhanConnection, terminalService);
-//                dayhanService.sendTo(hostService.getParsedBody(), "CANCEL", startTime);
-//                dayhanService.closeConnection();
-//            }
-//            if(FUEL_SERVICE_ENABLED){
-//                ToHostConnection toFuelConnection = new ToHostConnection(hostService.getParsedBody(), IP, FUEL_SERVICE, FUEL_SERVICE_IP, FUEL_SERVICE_PORT, 2000, 2000, null, startTime);
-//                toFuelConnection.connect();
-//                FuelService fuelService = new FuelService(toFuelConnection, terminalService);
-//                fuelService.sendTo(terminalService.getParsedBody(), hostService.getParsedBody(), "CANCEL", startTime);
-//                fuelService.closeConnection();
-//            }
-//
-//        }
-//
-//
-//    }
-//
-//    private void saveOperationToDB(HostService hostService, TerminalService terminalService, long startTime){
-//
-//        //System.out.println(hostService.getParsedBody());
-//        //String mti = terminalService.getMti();
-//
-//
-//        try {
-//            if (terminalService.getMti().equals("0200")) {
-//                savePurchase(hostService, terminalService, startTime);
-//            }
-//            if (terminalService.getMti().equals("0400")) {
-//                saveCancel(hostService, terminalService, startTime);
-//            }
-//        } catch (Exception e) {
-//            log.error(IP + " ERROR: TRYING TO SAVE " + terminalService.getMti() + " OPERATION ! :(", e);
-//            System.err.printf("%s ERROR: TRYING TO SAVE %s OPERATION ! :(%s%n", IP, terminalService.getMti(), e.toString());
-//        }
-//
-//    }
-
-//    private void writeToDB(Sender Sender, long startTimeN){
-//
-//
-//        DBWorker DBWorker = new DBWorker();
-//
-//        if (parsedBODY_Hs[39].equals("000")){
-//            if(parsedBODY_Hs[1].equals("0210")){
-//                /// SEND REQUEST TO PAY FOR AA
-//                if(parsedField48 != null && parsedField48[0].equals("AA_TOLEG")){
-//                    sendTo("AA_SERVICE", "GEN_PAY", Sender, startTimeN);
-//                } else if (parsedField48 != null && parsedField48[0].equals("DAYHAN_TOLEG")){
-//                    sendTo("DAYHAN_SERVICE", "PAID", Sender, startTimeN);
-//                }
-//                /// SEND REQUEST TO PAY FOR AA END
-//                try {
-//                    DBWorker.DBWriter(DB_IP, parsedBODY_Hs, billName, parsedField48, IP, null);
-//                } catch (Exception err) {
-//                    LOG.error(IP + " [TID] " + parsedBODY_Hs[41] + " ERROR: CAN`T WRITE TO DB (0210) :(\n", err);
-//                    closeConnections(IP, true);
-//                    //break;
-//                }
-//            } else if (parsedBODY_Hs[1].equals("0410")){
-//                try {
-//                    DBWorker.DBWriter(DB_IP, parsedBODY_Hs, billName, parsedField48, IP, "canceled");
-//                    sendTo("DAYHAN_SERVICE", "CANCEL", Sender, startTimeN);
-//                } catch (Exception err) {
-//                    LOG.error(IP + " [TID] " + parsedBODY_Hs[41] + " ERROR: CAN`T WRITE TO DB (0410) :(\n", err);
-//                    closeConnections(IP, true);
-//                    //break;
-//                }
-//            }
-//        }
-//
-//
-//    }
 
 
 
