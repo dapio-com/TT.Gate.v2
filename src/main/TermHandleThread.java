@@ -1,11 +1,9 @@
 package main;
 
 import main.connections.ToHostConnection;
-import main.repo.SaveError;
 import main.repo.SaveOp;
 import main.services.*;
 import main.util.Converter;
-import main.util.MailSender;
 import org.apache.log4j.Logger;
 import java.net.Socket;
 import java.net.SocketException;
@@ -171,6 +169,9 @@ public class TermHandleThread extends Thread {
     public void run(){
 
         long startTimeN = System.nanoTime();
+        //System.out.println(startTimeN);
+
+
         Thread.currentThread().setName(TName);
 
         while (threadRun) {
@@ -255,8 +256,11 @@ public class TermHandleThread extends Thread {
 
             // IF AA TERMINAL TRYING TO PROCEED RETAIL OPERATION
             if(terminalService.abortRetailing(startTimeN)){break;}
-            // IF AA TERMINAL TRYING TO PROCEED CANCEL OPERATION
-            if(terminalService.abortCancelation(startTimeN)){break;}
+
+
+//            // IF AA TERMINAL TRYING TO PROCEED CANCEL OPERATION
+//            if(terminalService.abortCancelation(startTimeN)){break;}
+
 
             if(OUT_OF_SERVICE){
                 if(terminalService.isOutOfService(terminalService.getTid(), IP, DB_IP, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD)){
@@ -446,6 +450,7 @@ public class TermHandleThread extends Thread {
 
 
             SaveOp.saveOperationToDB(hostService, terminalService, startTimeN);
+
 
             threadStop();
 

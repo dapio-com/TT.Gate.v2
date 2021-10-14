@@ -30,11 +30,12 @@ public class OperationRepo {
         ResultSet requestResult = null;
         String[] org = new String[3];
         try{
-            String query = String.format(Locale.US, "SELECT terminal_org_id, terminal_tsp " +
-                    "FROM terminal WHERE terminal_tid = %s", tid);
+//            String query = String.format(Locale.US, "SELECT terminal_org_id, terminal_tsp " +
+//                    "FROM terminal WHERE terminal_tid = %s", tid);
 
-//            String query = String.format(Locale.US, "SELECT organizations.org_gr_id, terminals.org_id, terminals.term_tsp " +
-//                    "FROM terminals, organizations WHERE terminals.term_tid = %s AND terminals.org_id = organizations.id", tid);
+            String query = String.format(Locale.US, "SELECT org.org_group_id, terminal.terminal_org_id, terminal.terminal_tsp " +
+                    "FROM org, terminal WHERE terminal.terminal_tid = '%s' AND org.id = terminal.terminal_org_id", tid);
+
 //            String query = "SELECT organizations.org_gr_id, terminals.org_id, terminals.term_tsp " +
 //                    "FROM terminals, organizations " +
 //                    "WHERE terminals.term_tid = " + tid + " AND terminals.org_id = organizations.id";
@@ -42,9 +43,9 @@ public class OperationRepo {
             requestResult = connection.getConnectionStatement().executeQuery(query);
             while (requestResult.next()) {
 
-                //org[0] = requestResult.getString("org_gr_id");
-                org[1] = requestResult.getString("org_id");
-                org[2] = requestResult.getString("term_tsp");
+                org[0] = requestResult.getString("org_group_id");
+                org[1] = requestResult.getString("terminal_org_id");
+                org[2] = requestResult.getString("terminal_tsp");
 
             }
         } catch (Exception e) {
@@ -81,7 +82,7 @@ public class OperationRepo {
         if (f48 != null) {
 
             //String queryBegin = "op_date, op_time, op_gr_id, op_org_id, op_tsp, op_ip, op_tid, op_mti, op_stan, op_rrn, op_auth_code, op_card, op_amount, billname, ";
-            String queryBegin = "op_status, op_date_time, op_org_id, op_tsp, op_ip, op_tid, op_mti, op_stan, op_rrn, op_auth_code, op_card_num, op_amount, op_bill_name, ";
+            String queryBegin = "op_status, op_date_time, op_org_group_id, op_org_id, op_tsp, op_ip, op_tid, op_mti, op_stan, op_rrn, op_auth_code, op_card_num, op_amount, op_bill_name, ";
             StringBuilder f48Values = new StringBuilder();
             StringBuilder sb = new StringBuilder(queryBegin);
 
@@ -103,8 +104,8 @@ public class OperationRepo {
 //                    "VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f, '%s', %s)",
 //                    dateS, timeS, org[0], org[1], org[2], opIp, opTID, opMTI, opSTAN, opRRN, opAuthCode, opCard, opAmountD, billName, f48Values);
             query = String.format(Locale.US, "INSERT INTO operation (" + sb.toString() + ")" +
-                            "VALUES (1, CURRENT_TIMESTAMP(3), '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f, '%s', %s)",
-                    org[1], org[2], opIp, opTID, opMTI, opSTAN, opRRN, opAuthCode, opCard, opAmountD, billName, f48Values);
+                            "VALUES (1, CURRENT_TIMESTAMP(3), '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f, '%s', %s)",
+                    org[0], org[1], org[2], opIp, opTID, opMTI, opSTAN, opRRN, opAuthCode, opCard, opAmountD, billName, f48Values);
 
 
         } else {
@@ -114,14 +115,14 @@ public class OperationRepo {
 //                            " VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f)",
 //                    dateS, timeS, org[0], org[1], org[2], opIp, opTID, opMTI, opSTAN, opRRN, opAuthCode, opCard, opAmountD);
             query = String.format(Locale.US, "INSERT INTO operation " +
-                            "(op_status, op_date_time, op_org_id, op_tsp, op_ip, op_tid, op_mti, op_stan, op_rrn, op_auth_code, op_card_num, op_amount)" +
-                            " VALUES (1, CURRENT_TIMESTAMP(3), '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f)",
-                    org[1], org[2], opIp, opTID, opMTI, opSTAN, opRRN, opAuthCode, opCard, opAmountD);
+                            "(op_status, op_date_time, op_org_group_id, op_org_id, op_tsp, op_ip, op_tid, op_mti, op_stan, op_rrn, op_auth_code, op_card_num, op_amount)" +
+                            " VALUES (1, CURRENT_TIMESTAMP(3), '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f)",
+                    org[0], org[1], org[2], opIp, opTID, opMTI, opSTAN, opRRN, opAuthCode, opCard, opAmountD);
 
         }
 
         //COUNTER
-        //String queryCount = String.format(Locale.US, "UPDATE counters SET total_operations = total_operations + 1");
+        String queryCount = String.format(Locale.US, "UPDATE counter SET total_operations = total_operations + 1");
 
 
 
@@ -129,7 +130,7 @@ public class OperationRepo {
         Statement st = connection.getConnectionStatement();
         st.execute(query);
         // COUNTER
-        // st.execute(queryCount);
+        st.execute(queryCount);
         log.info(opIp + " [TID] " + opTID + " SAVING OPERATION " + opMTI + " " + opRRN + " TO DATABASE SUCCESS\n");
         closeConnections(opIp, null);
 
@@ -156,9 +157,9 @@ public class OperationRepo {
 //                        dateS, timeS, org[0], org[1], org[2], opIp, opTID, opMTI, opSTAN, opRRN, opAuthCode, opCard, opAmountD);
 
         String cancelQuery = String.format(Locale.US, "INSERT INTO operation " +
-                        "(op_date_time, op_org_id, op_tsp, op_ip, op_tid, op_mti, op_stan, op_rrn, op_auth_code, op_card_num, op_amount) " +
-                        "VALUES (CURRENT_TIMESTAMP(3), '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f)",
-                org[1], org[2], opIp, opTID, opMTI, opSTAN, opRRN, opAuthCode, opCard, opAmountD);
+                        "(op_status, op_date_time, op_org_group_id, op_org_id, op_tsp, op_ip, op_tid, op_mti, op_stan, op_rrn, op_auth_code, op_card_num, op_amount) " +
+                        "VALUES (1, CURRENT_TIMESTAMP(3), '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %.2f)",
+                org[0], org[1], org[2], opIp, opTID, opMTI, opSTAN, opRRN, opAuthCode, opCard, opAmountD);
 
 //        String updateQuery = String.format(Locale.US, "UPDATE operations " +
 //                "SET status = 'canceled' WHERE op_mti = '0200' AND op_tid = '%s' AND op_rrn = '%s'", opTID, opRRN);
@@ -178,7 +179,7 @@ public class OperationRepo {
         st.execute(updateQuery);
 
         // COUNTER
-        //st.execute(queryCount);
+        st.execute(queryCount);
 
         log.info(opIp + " [TID] " + opTID + " SAVING OPERATION " + opMTI + " " + opRRN + " TO DATABASE SUCCESS\n");
         closeConnections(opIp, null);

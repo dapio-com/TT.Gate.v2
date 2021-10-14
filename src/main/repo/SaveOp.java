@@ -58,20 +58,20 @@ public class SaveOp {
             DBConnection dbConnection = new DBConnection(DB_IP, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD);
             OperationRepo operationRepo = new OperationRepo(dbConnection);
             operationRepo.saveCancelToDB(IP, hostService.getParsedBody());
-            if(DAYHAN_SERVICE_ENABLED){
-                ToHostConnection toDayhanConnection = new ToHostConnection(hostService.getParsedBody(), IP, DAYHAN_SERVICE, DAYHAN_SERVICE_IP, DAYHAN_SERVICE_PORT, 2000, 2000, null, startTime);
-                toDayhanConnection.connect();
-                DayhanService dayhanService = new DayhanService(toDayhanConnection, terminalService);
-                dayhanService.sendTo(hostService.getParsedBody(), "CANCEL", startTime);
-                dayhanService.closeConnection();
-            }
-            if(FUEL_SERVICE_ENABLED){
-                ToHostConnection toFuelConnection = new ToHostConnection(hostService.getParsedBody(), IP, FUEL_SERVICE, FUEL_SERVICE_IP, FUEL_SERVICE_PORT, 2000, 2000, null, startTime);
-                toFuelConnection.connect();
-                FuelService fuelService = new FuelService(toFuelConnection, terminalService);
-                fuelService.sendTo(terminalService.getParsedBody(), hostService.getParsedBody(), "CANCEL", startTime);
-                fuelService.closeConnection();
-            }
+//            if(DAYHAN_SERVICE_ENABLED){
+//                ToHostConnection toDayhanConnection = new ToHostConnection(hostService.getParsedBody(), IP, DAYHAN_SERVICE, DAYHAN_SERVICE_IP, DAYHAN_SERVICE_PORT, 2000, 2000, null, startTime);
+//                toDayhanConnection.connect();
+//                DayhanService dayhanService = new DayhanService(toDayhanConnection, terminalService);
+//                dayhanService.sendTo(hostService.getParsedBody(), "CANCEL", startTime);
+//                dayhanService.closeConnection();
+//            }
+//            if(FUEL_SERVICE_ENABLED){
+//                ToHostConnection toFuelConnection = new ToHostConnection(hostService.getParsedBody(), IP, FUEL_SERVICE, FUEL_SERVICE_IP, FUEL_SERVICE_PORT, 2000, 2000, null, startTime);
+//                toFuelConnection.connect();
+//                FuelService fuelService = new FuelService(toFuelConnection, terminalService);
+//                fuelService.sendTo(terminalService.getParsedBody(), hostService.getParsedBody(), "CANCEL", startTime);
+//                fuelService.closeConnection();
+//            }
 
         }
 

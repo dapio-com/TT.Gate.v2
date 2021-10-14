@@ -25,7 +25,7 @@ public class TerminalRepo {
 
             ResultSet requestResult = null;
             //int tidInteger = Integer.parseInt(tid);
-            String query = String.format("SELECT term_status FROM terminals WHERE term_tid = %s", tid);
+            String query = String.format("SELECT terminal_status FROM terminal WHERE terminal_tid = '%s'", tid);
             //"SELECT term_status FROM terminals WHERE term_tid = " + tidInteger;
             int status = 0;
             try {
@@ -33,7 +33,7 @@ public class TerminalRepo {
                 //System.out.println(requestResult);
                 while (requestResult.next()) {
 
-                    status = Integer.parseInt(requestResult.getString("term_status"));
+                    status = Integer.parseInt(requestResult.getString("terminal_status"));
 
                 }
 
@@ -46,6 +46,7 @@ public class TerminalRepo {
             } catch (Exception e) {
                 log.error(ip + " ERROR: TERMINAL STATUS CHECKING FAIL ! SOMETHING WRONG WITH DB ! :( \n", e);
                 System.out.println(ip + " ERROR: TERMINAL STATUS CHECKING FAIL ! SOMETHING WRONG WITH DB ! :( \n" + e);
+                SaveError.errorToDb(ip, tid, "ERROR: TERMINAL STATUS CHECKING FAIL ! SOMETHING WRONG WITH DB ! :(");
                 closeConnections(requestResult);
                 return true;
             } finally {
