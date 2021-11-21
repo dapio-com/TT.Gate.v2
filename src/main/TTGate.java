@@ -15,20 +15,10 @@ import java.util.concurrent.Executors;
 
 public class TTGate {
 
-
-
     private static final Logger log = Logger.getLogger(TTGate.class);
     private static HashMap<String, String> PROP;
     public static boolean WORKING = true;
 
-    public static boolean MAILING_ENABLED;
-    public static String MAIL_HOST;
-    public static String MAIL_PORT;
-    public static String MAIL_INET_ADDRESS_FROM;
-    public static String MAIL_INET_ADDRESS_TO;
-    public static String MAIL_SUBJECT;
-    public static String MAIL_USERNAME;
-    public static String MAIL_PASSWORD;
 
 
 
@@ -36,12 +26,12 @@ public class TTGate {
 
     public static void main(String[] args) {
 
-
+        System.out.println("Starting...");
         Date date = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
 
         CoreProperties CoreProperties = new CoreProperties();
-
+        //System.out.println("Prop obj created");
         try {
             boolean licenceCheck = CoreProperties.licenseCheck();
             if(!licenceCheck){
@@ -63,24 +53,7 @@ public class TTGate {
         }
 
 
-        MAILING_ENABLED = Boolean.parseBoolean(PROP.get("MAIL_ENABLED"));
-        MAIL_HOST = PROP.get("MAIL_HOST");
-        MAIL_PORT = PROP.get("MAIL_PORT");
-        MAIL_INET_ADDRESS_FROM = PROP.get("MAIL_INET_ADDRESS_FROM");
-        MAIL_INET_ADDRESS_TO = PROP.get("MAIL_INET_ADDRESS_TO");
-        MAIL_SUBJECT = PROP.get("MAIL_SUBJECT");
-        MAIL_USERNAME = PROP.get("MAIL_USERNAME");
-        MAIL_PASSWORD = PROP.get("MAIL_PASSWORD");
 
-
-        /*
-        if((boolean)PROP.get("MAILING")){
-            try{
-                MAIL_PROP = CoreProperties.getMailProp(PROP);
-            } catch (Exception err){
-                log.error("ERROR. CAN`T GET MAIL PROPERTIES", err);
-            }
-        }*/
 
         //System.out.println("PROPERTIES OK");
 
@@ -142,21 +115,7 @@ public class TTGate {
                     try {
                         //es.submit(new TermHandleThread(PROP, termConnected, tName));
                         es.submit(new TermHandleThread(PROP, termConnected, tName));
-                        /*
-                        es.submit(new TermHandleThread(MAIL_PROP, termConnected,
-                                (int) PROP.get("TERM_READ_TIMEOUT"),
-                                (boolean) PROP.get("OUT_OF_SERVICE"),
-                                (String) PROP.get("HOST_IP"),
-                                (int) PROP.get("HOST_PORT"),
-                                (int) PROP.get("HOST_CONNECT_TIMEOUT"),
-                                (int) PROP.get("HOST_READ_TIMEOUT"),
-                                (String) PROP.get("DB_IP"),
-                                (String) PROP.get("AA_PAYMENTS_IP"),
-                                (int) PROP.get("AA_PAYMENTS_PORT"),
-                                (String) PROP.get("AA_PAYMENTS_TERM"),
-                                tName));
 
-                         */
 
                     } catch (Exception err) {
                         log.error(ip + " THREAD START ERROR ", err);
@@ -179,6 +138,7 @@ public class TTGate {
             System.out.println("SERVER IS DOWN BY OPERATOR");
 
         } catch (IOException err) {
+            //System.out.println("CAN`T BIND ADDRESS OR PORT !!!");
             log.error("CAN`T BIND ADDRESS OR PORT !!!", err);
         }
 

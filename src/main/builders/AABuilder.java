@@ -6,8 +6,7 @@ import org.apache.log4j.Logger;
 import java.util.ArrayList;
 
 public class AABuilder extends Builder {
-
-
+    
     public byte[] aaVerifyBuild(String ip, ArrayList<ArrayList<Byte>> parsedBody, ArrayList<String> f48){
 
         ArrayList<ArrayList<Byte>> packetList = createEmptyPacketList();

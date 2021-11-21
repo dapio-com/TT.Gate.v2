@@ -4,7 +4,6 @@ package main.connections;
 import main.builders.SendBackBuilder;
 import main.repo.SaveError;
 import main.util.Converter;
-import main.util.MailSender;
 import main.util.Sender;
 import org.apache.log4j.Logger;
 
@@ -14,9 +13,6 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Arrays;
-
-import static main.TermHandleThread.*;
 
 
 public class ToHostConnection {
@@ -63,11 +59,19 @@ public class ToHostConnection {
 
     public Socket connect() {
         String errCode = "";
-        switch (connectionTarget){
-            case HOST           : {errCode = "700"; break;}
-            case AA_SERVICE     : {errCode = "710"; break;}
-            case DAYHAN_SERVICE : {errCode = "720"; break;}
-            case FUEL_SERVICE   : {errCode = "730"; break;}
+        switch (connectionTarget) {
+            case HOST -> {
+                errCode = "700";
+            }
+            case AA_SERVICE -> {
+                errCode = "710";
+            }
+            case DAYHAN_SERVICE -> {
+                errCode = "720";
+            }
+            case FUEL_SERVICE -> {
+                errCode = "730";
+            }
         }
         try {
             connection.connect(new InetSocketAddress(hostIp, hostPort), hostConnectionTimeout);

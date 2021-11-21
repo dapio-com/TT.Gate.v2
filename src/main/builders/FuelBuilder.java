@@ -35,26 +35,27 @@ public class FuelBuilder extends Builder{
     }
 
     //TODO FOR BALANCE REQUEST
-//    public byte[] fuelBalanceRequestPacketBuild(String ip, String mti, ArrayList<ArrayList<Byte>> parsedBody){
-//
-//        ArrayList<ArrayList<Byte>> packetList = createEmptyPacketList();
-//
-//        packetList.set(2, makeStringFieldSplited(Converter.bytesToString(parsedBody.get(35)))); //PAN 16
-//        packetList.set(4, makeStringFieldLen("BALANCE_REQUEST")); //OPERATION 0
-//        packetList.set(5, parsedBody.get(49)); //CURRENCY (FUEL TYPE) 3
-//
-//        //SET MAP
-//        packetList.set(1, mapRebuild(packetList));
-//        //SET MTI
-//        packetList.set(0, mtiRebuild(mti));
-//        //GETTING LENGTH
-//        ArrayList<Byte> fLen = fLenRebuild(packetList);
-//        //COMPLETE BUILDING
-//
-//        return completeBuilding(ip, Converter.bytesToString(parsedBody.get(41)), mti, fLen, packetList);
-//
-//    }
+/*
+    public byte[] fuelBalanceRequestPacketBuild(String ip, String mti, ArrayList<ArrayList<Byte>> parsedBody){
 
+        ArrayList<ArrayList<Byte>> packetList = createEmptyPacketList();
+
+        packetList.set(2, makeStringFieldSplited(Converter.bytesToString(parsedBody.get(35)))); //PAN 16
+        packetList.set(4, makeStringFieldLen("BALANCE_REQUEST")); //OPERATION 0
+        packetList.set(5, parsedBody.get(49)); //CURRENCY (FUEL TYPE) 3
+
+        //SET MAP
+        packetList.set(1, mapRebuild(packetList));
+        //SET MTI
+        packetList.set(0, mtiRebuild(mti));
+        //GETTING LENGTH
+        ArrayList<Byte> fLen = fLenRebuild(packetList);
+        //COMPLETE BUILDING
+
+        return completeBuilding(ip, Converter.bytesToString(parsedBody.get(41)), mti, fLen, packetList);
+
+    }
+*/
 
     public byte[] fuelPaidBuild(String ip, String mti, ArrayList<ArrayList<Byte>> parsedBodyT, ArrayList<ArrayList<Byte>> parsedBodyH, ArrayList<String> f48){
 

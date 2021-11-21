@@ -6,12 +6,11 @@ import org.bouncycastle.crypto.digests.SHA512Digest;
 import org.bouncycastle.crypto.params.AsymmetricKeyParameter;
 import org.bouncycastle.crypto.signers.RSADigestSigner;
 
-import javax.crypto.spec.PSource;
 import java.io.*;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Properties;
 
 public class CoreProperties {
 
@@ -137,7 +136,7 @@ public class CoreProperties {
 
 
         Properties config = new Properties();
-        config.load(new FileInputStream(new File("config.properties")));
+        config.load(new FileInputStream("config.properties"));
 
         coreProperties.put("GATE_IP",                  config.getProperty("GATE_IP"));
         coreProperties.put("GATE_PORT",                config.getProperty("GATE_PORT"));
