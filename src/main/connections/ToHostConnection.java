@@ -60,18 +60,10 @@ public class ToHostConnection {
     public Socket connect() {
         String errCode = "";
         switch (connectionTarget) {
-            case HOST -> {
-                errCode = "700";
-            }
-            case AA_SERVICE -> {
-                errCode = "710";
-            }
-            case DAYHAN_SERVICE -> {
-                errCode = "720";
-            }
-            case FUEL_SERVICE -> {
-                errCode = "730";
-            }
+            case HOST -> { errCode = "700"; }
+            case AA_SERVICE -> { errCode = "710"; }
+            case DAYHAN_SERVICE -> { errCode = "720"; }
+            case FUEL_SERVICE -> { errCode = "730"; }
         }
         try {
             connection.connect(new InetSocketAddress(hostIp, hostPort), hostConnectionTimeout);
