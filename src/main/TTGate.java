@@ -26,7 +26,7 @@ public class TTGate {
 
     public static void main(String[] args) {
 
-        System.out.println("Starting...");
+        //System.out.println("Starting...");
         Date date = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
 
